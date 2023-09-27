@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="875,1185" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,12 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -52,13 +58,45 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Busca de Livros" sap:VirtualizedContainerService.HintSize="546,550" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Projeto Busca de Livros" sap:VirtualizedContainerService.HintSize="484,439" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ded4484b-9143-4997-8388-7d36e41d133f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-3023, 292, 1332, 792" Arguments="c:\users\thiag\dropbox\compass uol\projeto final\projeto busca de livros" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOUSURBVFhH7ZVZT1NRFIUx0Qff8J/wE/wpxqAgIOCAVKCA4BQcUAOigoIzjogxMSb6ZuIIyIwglDJDKWWm83Ltc86lNvFB2hsfjDvZuR2Sc7699tr7pvyP//G7CE82wdeei8W2bCx15GD5Wy5WOvOx1n0Y671HsdF/DP7vDgSGihH84URouAwRVwUi7pMIj53xmWMSD3ieIjLTjOVuBxbbs7HccZAAeVjtPoS1niPY6CuAf6AQgcEiBIdKCFCKsOsEIqOViLpPwxyTeMDzBJh/gajnBVb7SrUKnblY7aIKPVoF/wBVGHQQoJgAToRHyglQQYBTdgA8BjyPCNEC+N5gfbCKbdAqrFGFdUuF71qFENsQHilTKkRHT9oBwMvnmpkPCNFKiHcIjNUTgCp05xPgMAG0CoHB4wQoRli1oZwAlXYAyOUPNYCCeE6It0qF1S6twkYvVegvQIBmDA4VEUCrIG0wxyQeunoL4D6T3xfeKC+ICmuiQi9VEACaUQBCP0oMwAk7AORyAzB7Tz+9r7HEiVgxKmy2gSMZtNowUspxLLcDQCoXAFY/e4fJp/cVRzKLI5lDAKrQwzb0HSFAAYLSBgXgtBNAqr/LvA3M8Dn/kospS7eBKlht8Pcf3WxDeLiEAGV2AZjqZxqZhPC0wPf1QHwbxAdsQ4DToNogAGyDOSbx2Kx+pgmYvsXk0/MMC18ylQrL39gGMaNpQwyg2C4AGs+qfrpBQ8w9IUAGFqmC+MCaBg2gfSBGjNAH5pjEI676qXoNMdsM7+eMWBssAOUDAShEyOwDuMp2m6MSi7jqp25oiNkH8H7aT4BMAmRpIxofiBFjAPJycvoIkWaO23ro6m/qi6euMa8T6B68H/fBJ22wfKD2wSE9CQQQH1iTEHZXJP5axrRVPS+erNPJSZgngPJBm/ZBPIA2ogUQdSexkuOqn6wFJq7ycyM8AkAfCIDsA1lI63wv+H+ZBA1QSoAkVnJc9RM1OqcaCJCOBfpAA2QbAGsSDICahGQBxHiTpvrxKwokOl6HuQ/pyogWwIqs5DgARwwgmZeSrp6yS+UCwBYstOVtAqhJEIC4XWAngFQ/Yaofv8yswfT7vTEF/hxgO3ObOnQrEauel49VK5AEAXYxdzC3BoHx2kZd/SUCXFAQ5q+/F3BX78HYRV5+XkGYn/9uYKIqDe6zPrjPCcBO5tblTDbgqk6Fq6qVH1OZAvAvRUrKT4vgNhTkSraCAAAAAElFTkSuQmCC" InformativeScreenshot="c1976bc67396156232202cf472cd19b7.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Projeto Busca de Livros' /&gt;" Title="Projeto Busca de Livros" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
