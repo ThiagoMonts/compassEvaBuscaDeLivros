@@ -15,6 +15,30 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "~Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PesquisarlivrosnaAmazon.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strUrl&Flowchart_1",
+        "dado_capa&Sequence_10",
+        "dado_paginas&Sequence_10",
+        "dado_autor&Sequence_10",
+        "dado_nome&Sequence_10",
+        "dado_id&Sequence_10",
+        "tabelaexcel&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
