@@ -11,10 +11,18 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/LeituradeEmails.xaml",
+      "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dtDadosId&Sequence_12",
         "strPlanilhaLivros&Sequence_13",
-        "dtDados&Sequence_12"
+        "dtDados&Sequence_12",
+        "dtDadosId&Sequence_12"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
