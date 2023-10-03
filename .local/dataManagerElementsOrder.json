@@ -28,6 +28,10 @@
       "Path": "PesquisarlivrosnaAmazon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strDadoNome&Flowchart_1",
+        "strUrlAmazonUsa&Flowchart_1",
+        "strUrlAmazonUk&Flowchart_1",
+        "ExtractDataTable&Sequence_10",
         "strDadoId&Sequence_18",
         "strDadoAutor&Sequence_18",
         "strDadoPaginas&Sequence_18",
@@ -38,7 +42,6 @@
         "variable1&Sequence_18",
         "resultsElement&Sequence_18",
         "resultsElement&Sequence_10",
-        "strDadoNome&Sequence_11",
         "uiElemElementoBusca&Flowchart_1",
         "strValorElementoBusca&Flowchart_1",
         "variable1&Sequence_10",
@@ -49,8 +52,7 @@
         "strDadoCapa&Sequence_10",
         "strDadoPaginas&Sequence_10",
         "strDadoAutor&Sequence_10",
-        "strDadoId&Sequence_10",
-        "strUrl&Flowchart_1"
+        "strDadoId&Sequence_10"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
