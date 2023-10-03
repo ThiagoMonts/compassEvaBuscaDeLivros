@@ -235,19 +235,19 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="472,2483" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="472,2742" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Serve para executar cada linha da nossa datatable" DataTable="[dataTableTabelaExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,2368" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Serve para executar cada linha da nossa datatable" DataTable="[dataTableTabelaExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,2627" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,2151" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,2410" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="strDadoId" />
                               <Variable x:TypeArguments="x:String" Name="strDadoAutor" />
@@ -294,12 +294,17 @@
                                 <OutArgument x:TypeArguments="x:String">[strDadoCapa]</OutArgument>
                               </ui:GetRowItem.Value>
                             </ui:GetRowItem>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Pesquisando Livro" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Text="[strDadoNome + strDadoAutor +strDadoCapa]" Version="V3">
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="A atividade de simulação de entrada de texto utilizando a planilha como base. Concatenei 03 váriáveis (Nome Livro, Autor e Tipo de Capa" ClickBeforeMode="Single" DisplayName="Type Into - Pesquisando Livro" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,275" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Text="[strDadoNome + strDadoAutor +strDadoCapa]" Version="V3">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/" CvElementArea="314, 125, 605, 43" CvTextArea="333, 138, 146, 14" CvTextArgument="Search Amazon.co.uk" CvType="InputBox" DesignTimeRectangle="326, 173, 591, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon.co.uk' /&gt;" Guid="1eb6577e-7b36-4d9a-9d0e-da061044ae88" InformativeScreenshot="ac89a23918fd21a91dc10a8505fff01a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp;amp; more' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                               </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Realizando click para realizar a pesquisa - na aba de pesquisa;&#xD;&#xA;" ClickType="Single" DisplayName="Click  'Lupa de Pesquisa'" sap:VirtualizedContainerService.HintSize="334,214" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/" CvElementArea="914, 170, 49, 44" CvType="Button" DesignTimeRectangle="917, 172, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Go' check:text='Go' /&gt;" Guid="d9965f05-3f02-4c6d-a436-152bd12b85eb" InformativeScreenshot="8442b66b6b34144a334c6c4dc968484b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp;amp; more' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.PointOffset>
@@ -307,8 +312,13 @@
                                   </uix:TargetAnchorable.PointOffset>
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN'" FoundElement="[resultsElement]" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" sap2010:Annotation.AnnotationText="Utilizei o seletor para localizar o elemento Result " DisplayName="Find Element - Result" FoundElement="[resultsElement]" sap:VirtualizedContainerService.HintSize="334,138" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
                               <ui:WaitUiElementAppear.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5a1f0d9-2919-43c2-8ae5-97f2ad99e3cd" InformativeScreenshot="f3f5715f2b5c7430cc1a6bf36f501185" Selector="&lt;html app='chrome.exe' title='Amazon*' /&gt;&lt;webctrl aaname='Results' parentid='search' tag='SPAN' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -319,8 +329,13 @@
                                   </ui:Target.WaitForReady>
                                 </ui:Target>
                               </ui:WaitUiElementAppear.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </ui:WaitUiElementAppear>
-                            <ui:FindRelative DisplayName="Find Relative Element 'SPAN'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="FindRelative_1" RelativeElement="[uiElemElementoBusca]">
+                            <ui:FindRelative sap2010:Annotation.AnnotationText="Como já possuimos o elemento referência (Result), utilizamos para encontrar o primeiro elemento do result, ou seja, utilizamos um elemento com base em um elemento de referência previamente encontrado" DisplayName="Find Relative Element 'Result'" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="FindRelative_1" RelativeElement="[uiElemElementoBusca]">
                               <ui:FindRelative.CursorPosition>
                                 <ui:CursorPosition OffsetX="40" OffsetY="80" Position="Center" />
                               </ui:FindRelative.CursorPosition>
@@ -334,8 +349,13 @@
                                   </ui:Target.WaitForReady>
                                 </ui:Target>
                               </ui:FindRelative.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </ui:FindRelative>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Madness'" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="NClick_10" InUiElement="[uiElemElementoBusca]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click para selecionar o primeiro livro da lista de result, conforme as informações passadas" ClickType="Single" DisplayName="Click - Result" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NClick_10" InUiElement="[uiElemElementoBusca]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/s?k=The+Madness+of+Crowds+Louise+Penny&amp;crid=KLE6SMCSMRJY&amp;sprefix=the+madness+of+crowds+louise+penny%2Caps%2C585&amp;ref=nb_sb_noss_1" DesignTimeRectangle="560, 371, 529, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'The Madness'" FullSelectorArgument="&lt;webctrl aaname='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' parentid='search' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' parentid='search' tag='SPAN' type='' class='a-size-medium a-color-base a-text-normal' check:innerText='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' /&gt;" Guid="33cfafcc-e4e4-4c2d-b383-3d5f9373111a" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41GU8hNR+SL.css,31Q1jkp0osL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.co.uk : The Madness of Crowds Louise Penny' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -343,6 +363,11 @@
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
                           </Sequence>
                         </ActivityAction>
@@ -375,25 +400,25 @@
                     <av:Size x:Key="ShapeSize">200,124</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abrir o navegador da Amazon USA onde iremos realizar as pesquisas&#xA;" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp; more" sap:VirtualizedContainerService.HintSize="200,124" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsCVEnabled="False" OpenMode="Always" ScopeGuid="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V2">
+                <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abrir o navegador da Amazon USA onde iremos realizar as pesquisas&#xA;" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp; more" sap:VirtualizedContainerService.HintSize="506,2997" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsCVEnabled="False" OpenMode="Always" ScopeGuid="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="472,2483" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="472,2738" sap2010:WorkflowViewState.IdRef="Sequence_19">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Serve para executar cada linha da nossa datatable" DataTable="[dataTableTabelaExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,2368" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Serve para executar cada linha da nossa datatable" DataTable="[dataTableTabelaExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,2623" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,2151" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,2406" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="strDadoId" />
                                   <Variable x:TypeArguments="x:String" Name="strDadoAutor" />
@@ -440,21 +465,27 @@
                                     <OutArgument x:TypeArguments="x:String">[strDadoCapa]</OutArgument>
                                   </ui:GetRowItem.Value>
                                 </ui:GetRowItem>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Pesquisando Livro" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Text="[strDadoNome + strDadoAutor +strDadoCapa]" Version="V3">
+                                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="A atividade de simulação de entrada de texto utilizando a planilha como base. Concatenei 03 variáveis (Nome Livro, Autor e Tipo de Capa" ClickBeforeMode="Single" DisplayName="Type Into - Pesquisando Livro" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,275" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Text="[strDadoNome + strDadoAutor +strDadoCapa]" Version="V3">
                                   <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/" CvElementArea="314, 125, 605, 43" CvTextArea="333, 138, 146, 14" CvTextArgument="Search Amazon.co.uk" CvType="InputBox" DesignTimeRectangle="326, 173, 591, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon.co.uk' /&gt;" Guid="1eb6577e-7b36-4d9a-9d0e-da061044ae88" InformativeScreenshot="ac89a23918fd21a91dc10a8505fff01a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp;amp; more' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                    <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="290, 173, 625, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon' /&gt;" Guid="2c8f9e17-7054-4929-aa6e-e9a87c657c2b" InformativeScreenshot="c5b82e68e414d555b4c943007a016544.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                   </uix:NTypeInto.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
+                                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Realizando click para realizar a pesquisa - na aba de pesquisa" ClickType="Single" DisplayName="Click - 'Lupa Pesquisa'" sap:VirtualizedContainerService.HintSize="334,199" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
                                   <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/" CvElementArea="914, 170, 49, 44" CvType="Button" DesignTimeRectangle="917, 172, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Go' check:text='Go' /&gt;" Guid="d9965f05-3f02-4c6d-a436-152bd12b85eb" InformativeScreenshot="8442b66b6b34144a334c6c4dc968484b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp;amp; more' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                                      <uix:TargetAnchorable.PointOffset>
-                                        <uix:PointOffset Position="TopLeft" X="20" Y="21" />
-                                      </uix:TargetAnchorable.PointOffset>
-                                    </uix:TargetAnchorable>
+                                    <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="914, 172, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Go' check:text='Go' /&gt;" Guid="f61fcf48-5ab0-49d0-8cb1-b6342f296b91" InformativeScreenshot="db7966069ded05893d72a10dcc77011c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                   </uix:NClick.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN'" FoundElement="[resultsElement]" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_15">
+                                <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" sap2010:Annotation.AnnotationText="Utilizei o seletor para localizar o elemento Result&#xD;&#xA;" DisplayName="Find Element 'Result'" FoundElement="[resultsElement]" sap:VirtualizedContainerService.HintSize="334,149" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_15">
                                   <ui:WaitUiElementAppear.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5a1f0d9-2919-43c2-8ae5-97f2ad99e3cd" InformativeScreenshot="f3f5715f2b5c7430cc1a6bf36f501185" Selector="&lt;html app='chrome.exe' title='Amazon*' /&gt;&lt;webctrl aaname='Results' parentid='search' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -465,8 +496,13 @@
                                       </ui:Target.WaitForReady>
                                     </ui:Target>
                                   </ui:WaitUiElementAppear.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </ui:WaitUiElementAppear>
-                                <ui:FindRelative DisplayName="Find Relative Element 'SPAN'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="FindRelative_2" RelativeElement="[uiElemElementoBusca]">
+                                <ui:FindRelative sap2010:Annotation.AnnotationText="Como já possuimos o elemento referência (Result), utilizamos para encontrar o primeiro elemento do result, ou seja, utilizamos um elemento com base em um elemento de referência previamente encontrado" DisplayName="Find Relative Element 'Result'" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="FindRelative_2" RelativeElement="[uiElemElementoBusca]">
                                   <ui:FindRelative.CursorPosition>
                                     <ui:CursorPosition OffsetX="40" OffsetY="80" Position="Center" />
                                   </ui:FindRelative.CursorPosition>
@@ -480,8 +516,13 @@
                                       </ui:Target.WaitForReady>
                                     </ui:Target>
                                   </ui:FindRelative.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </ui:FindRelative>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Madness'" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="NClick_12" InUiElement="[uiElemElementoBusca]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
+                                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click para selecionar o primeiro livro da lista de result, conforme as informações passadas" ClickType="Single" DisplayName="Click 'Result'" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NClick_12" InUiElement="[uiElemElementoBusca]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55cb9948-5357-48ca-bf07-2785af5a86ac" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/s?k=The+Madness+of+Crowds+Louise+Penny&amp;crid=KLE6SMCSMRJY&amp;sprefix=the+madness+of+crowds+louise+penny%2Caps%2C585&amp;ref=nb_sb_noss_1" DesignTimeRectangle="560, 371, 529, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'The Madness'" FullSelectorArgument="&lt;webctrl aaname='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' parentid='search' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' parentid='search' tag='SPAN' type='' class='a-size-medium a-color-base a-text-normal' check:innerText='The Madness of Crowds: Chief Inspector Gamache Novel Book 17' /&gt;" Guid="33cfafcc-e4e4-4c2d-b383-3d5f9373111a" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41GU8hNR+SL.css,31Q1jkp0osL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.co.uk : The Madness of Crowds Louise Penny' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -489,6 +530,11 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
                               </Sequence>
                             </ActivityAction>
