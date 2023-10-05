@@ -20,7 +20,7 @@
       "Path": "tasks/LeituradeEmails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strPlanilhaLivros&Sequence_13",
+        "strFileName&Sequence_23",
         "dtDados&Sequence_12",
         "dtDadosId&Sequence_12"
       ],
