@@ -27,6 +27,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/NotificarFinalizacaoProcesso.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strPathProcessados&Sequence_10",
+        "strPath&Sequence_16",
+        "strFolderPathProcessados&Sequence_20"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
