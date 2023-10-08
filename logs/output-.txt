@@ -1,0 +1,4 @@
+10/06/2023 19:02:05 Início da Execução
+10/06/2023 19:02:05 Armazenando a data atual do sistema
+10/06/2023 19:02:05 Criando planilha
+10/06/2023 19:02:11 Fim do processo

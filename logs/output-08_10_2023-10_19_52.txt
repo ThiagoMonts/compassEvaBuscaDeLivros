@@ -1,0 +1,4 @@
+10/08/2023 10:19:52 Início da Execução
+10/08/2023 10:19:52 Criando planilha
+10/08/2023 10:19:56 Planilha livros-08_10_2023-10_19_52.xlsx criada com sucesso
+10/08/2023 10:19:56 Fim - Preparação do projeto

@@ -1,0 +1,12 @@
+10/08/2023 10:45:36 Início da Execução
+10/08/2023 10:45:36 Criando planilha
+10/08/2023 10:45:36 Planilha livros-08_10_2023-10_45_36.xlsx criada com sucesso
+10/08/2023 10:45:36 Fim - Preparação do projeto
+10/08/2023 10:45:37 Início - Leitura de E-mails
+10/08/2023 10:45:37 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-08_10_2023-10_45_36.xlsx
+10/08/2023 10:45:37 Abrindo a caixa de E-mails
+10/08/2023 10:45:37 Percorrendo os e-mails em busca dos dados dos livros
+10/08/2023 10:45:37 Fim dos E-mails
+10/08/2023 10:45:37 Fechando a caixa de E-mails
+10/08/2023 10:45:37 Fechando o arquivo Excel
+10/08/2023 10:45:38 Fim - Leitura de E-mails

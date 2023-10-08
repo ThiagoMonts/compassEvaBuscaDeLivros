@@ -11,32 +11,56 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "main_strSpreadsheetPath&Sequence_1",
+        "main_strLogPath&Sequence_1",
+        "main_strDateTime&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "tasks/LeituradeEmails.xaml",
+      "Path": "LeituradeEmails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strFileName&Sequence_23",
         "dtDados&Sequence_12",
         "dtDadosId&Sequence_12"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strLogPath",
+        "in_strSpreadshettPath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "tasks/NotificarFinalizacaoProcesso.xaml",
+      "Path": "NotificarFinalizacaoProcesso.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strPathProcessados&Sequence_10",
-        "strPath&Sequence_16",
-        "strFolderPathProcessados&Sequence_20"
+        "strPath&Sequence_16"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Preparaçãodoprojeto.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDateTime&Sequence_17",
+        "strLogPath&Sequence_17",
+        "strSpreadsheetPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strSpreadsheetPath",
+        "out_strLogPath",
+        "out_strDateTime"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

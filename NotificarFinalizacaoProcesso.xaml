@@ -1,4 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="NotificarFinalizacaoProcesso" sap:VirtualizedContainerService.HintSize="912,6306" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NotificarFinalizacaoProcesso" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strSpreadsheetPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>912,5209</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -116,7 +121,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Fluxo de trabalho que visa registrar a conclusão do bot" DisplayName="Notificar a finalização do Processo" sap:VirtualizedContainerService.HintSize="922,6241" sap2010:WorkflowViewState.IdRef="Sequence_10">
+  <Sequence sap2010:Annotation.AnnotationText="Fluxo de trabalho que visa registrar a conclusão do bot" DisplayName="Notificar a finalização do Processo" sap:VirtualizedContainerService.HintSize="922,5144" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\RPA\compassEvaBuscaDeLivros\processados" Name="strPathProcessados" />
     </Sequence.Variables>
@@ -136,7 +141,7 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
     <ui:Comment sap:VirtualizedContainerService.HintSize="860,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Buscar o caminho da pasta com o relatório&#xA;" />
-    <Sequence DisplayName="Mover planilha para a pasta &quot;processados&quot;" sap:VirtualizedContainerService.HintSize="860,2002" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence DisplayName="Mover planilha para a pasta &quot;processados&quot;" sap:VirtualizedContainerService.HintSize="860,905" sap2010:WorkflowViewState.IdRef="Sequence_16">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="C:\RPA\compassEvaBuscaDeLivros\source" Name="strPath" />
       </Sequence.Variables>
@@ -145,57 +150,72 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="562,141" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Início - Mover planilha&quot;]" />
-      <ui:Comment sap:VirtualizedContainerService.HintSize="562,75" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// Looping percorrendo todos os arquivos da pasta" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="562,141" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Percorrendo todos os arquivos da pasta&quot;]" />
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,1414" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Directory.GetFiles(strPath, &quot;livros-*&quot;)]">
-        <ui:ForEach.Body>
-          <ActivityAction x:TypeArguments="x:String">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,1228" sap2010:WorkflowViewState.IdRef="Sequence_19">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Início - Mover planilha&quot;]" />
+      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strPathProcessados]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="MoveFile_2" Path="[in_strSpreadsheetPath]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot; Planilha &quot; &amp; in_strSpreadsheetPath &amp; &quot; movida com sucesso!&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Fim - Mover planilha&quot;]" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="624,1525" sap2010:WorkflowViewState.IdRef="Sequence_23">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,1414" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Directory.GetFiles(strPath, &quot;livros-*&quot;)]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,1228" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[currentItem.replace(&quot;C:\RPA\compassEvaBuscaDeLivros\source\&quot;, &quot;&quot;)]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[currentItem.replace(&quot;C:\RPA\compassEvaBuscaDeLivros\source\&quot;, &quot;&quot;)]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="486,56" sap2010:WorkflowViewState.IdRef="Comment_6" Text="// Mover planilha para a pasta &quot;processados&quot;" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Movendo a planilha para a pasta 'processados'&quot;]" />
+                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strPathProcessados]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="486,159" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[currentItem]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,344" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,265" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:CopyFile ContinueOnError="{x:Null}" Destination="[strPathProcessados]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="388,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[currentItem]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
                   </Sequence>
-                </ui:CommentOut.Body>
-              </ui:CommentOut>
-              <ui:Comment sap:VirtualizedContainerService.HintSize="486,56" sap2010:WorkflowViewState.IdRef="Comment_6" Text="// Mover planilha para a pasta &quot;processados&quot;" />
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Movendo a planilha para a pasta 'processados'&quot;]" />
-              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strPathProcessados]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="486,159" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[currentItem]" />
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,344" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,265" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[strPathProcessados]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="388,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[currentItem]" />
-                  </Sequence>
-                </ui:CommentOut.Body>
-              </ui:CommentOut>
-            </Sequence>
-          </ActivityAction>
-        </ui:ForEach.Body>
-      </ui:ForEach>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
     </Sequence>
-    <Sequence DisplayName="Notificar a finalização do processo" sap:VirtualizedContainerService.HintSize="860,3599" sap2010:WorkflowViewState.IdRef="Sequence_20">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Default="C:\RPA\compassEvaBuscaDeLivros\processados" Name="strFolderPathProcessados" />
-      </Sequence.Variables>
+    <Sequence DisplayName="Envio de E-mails" sap:VirtualizedContainerService.HintSize="860,3599" sap2010:WorkflowViewState.IdRef="Sequence_20">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -242,7 +262,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:Comment sap:VirtualizedContainerService.HintSize="606,56" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// Enviar os E-mails&#xA;" />
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;(&quot; + DateTime.now.ToString + &quot;) Enviando E-mail&quot;]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot; Enviando E-mail&quot;]" />
                       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="606,1595" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                         <TryCatch.Try>
                           <umab:OutlookApplicationCard Account="teste_RPA_EVA@outlook.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="568,1074" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
@@ -270,7 +290,7 @@
                                             </umabh:HtmlContentArgument.RuntimeImages>
                                             <umabh:HtmlContentArgument.ValueMappings>
                                               <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
-                                                <umabh:HtmlTextValueMapping Name="PathProcessados" Value="[strFolderPathProcessados]" />
+                                                <umabh:HtmlTextValueMapping Name="PathProcessados" Value="[strPathProcessados]" />
                                               </scg:List>
                                             </umabh:HtmlContentArgument.ValueMappings>
                                           </umabh:HtmlContentArgument>
