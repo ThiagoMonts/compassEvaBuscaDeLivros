@@ -21901,15 +21901,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Amanda\\.nuget\\packages\\": {}
+    "C:\\Users\\felip\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "compassEvaBuscaDeLivros",
       "projectName": "compassEvaBuscaDeLivros",
-      "projectPath": "C:\\Users\\Amanda\\Documents\\UiPath\\compassEvaBuscaDeLivros\\.local",
-      "packagesPath": "C:\\Users\\Amanda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amanda\\Documents\\UiPath\\compassEvaBuscaDeLivros\\.local"
+      "projectPath": "C:\\Users\\felip\\Documents\\uiPath\\compassEvaBuscaDeLivros\\.local",
+      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\felip\\Documents\\uiPath\\compassEvaBuscaDeLivros\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21945,7 +21945,7 @@
             "version": "[23.10.0-preview, 23.10.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Amanda\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\felip\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
