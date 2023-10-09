@@ -1,9 +1,10 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="LeituradeEmails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabf="clr-namespace:UiPath.Mail.Activities.Business.ForEachMail;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_strSpreadshettPath" Type="InArgument(x:String)" />
     <x:Property Name="in_strLogPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_strSpreadsheetPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_strFalhaPath" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1022,11437</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1022,12754</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -128,7 +129,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Fluxo que irá fazer a leitura dos E-mails com os dados dos livros" DisplayName="Leitura de E-mails" sap:VirtualizedContainerService.HintSize="1032,11372" sap2010:WorkflowViewState.IdRef="Sequence_23">
+  <Sequence sap2010:Annotation.AnnotationText="Fluxo que irá fazer a leitura dos E-mails com os dados dos livros" DisplayName="Leitura de E-mails" sap:VirtualizedContainerService.HintSize="1032,12689" sap2010:WorkflowViewState.IdRef="Sequence_23">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strFileName" />
     </Sequence.Variables>
@@ -148,7 +149,7 @@
     </ui:LogMessage>
     <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="970,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString + &quot; Início - Leitura de E-mails&quot;]" UseDefaultEncoding="False" />
     <ui:Comment sap:VirtualizedContainerService.HintSize="970,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Iniciar o escopo de trabalho do Excel" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="970,10426" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="970,11743" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -156,29 +157,36 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="932,9905" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="932,10938" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
           <ueab:ExcelProcessScopeX.Body>
             <ActivityAction x:TypeArguments="ui:IExcelProcess">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="898,9818" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="898,10851" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="836,133" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[DateTime.Now.ToString + &quot; Abrindo arquivo Excel&quot; &amp; in_strSpreadshettPath]" UseDefaultEncoding="False" />
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="836,9180" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="836,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo arquivo Excel&quot; &amp; in_strSpreadsheetPath]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="836,133" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[DateTime.Now.ToString + &quot; Abrindo arquivo Excel&quot; &amp; in_strSpreadsheetPath]" UseDefaultEncoding="False" />
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="836,10032" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                   <TryCatch.Try>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="798,8659" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" UseTemplate="True" WorkbookPath="[in_strSpreadshettPath]">
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="798,9227" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" UseTemplate="True" WorkbookPath="[in_strSpreadsheetPath]">
                       <ueab:ExcelApplicationCard.Body>
                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764,8367" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764,8935" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -188,15 +196,15 @@
                             <ui:Comment sap:VirtualizedContainerService.HintSize="702,56" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// Acessar a caixa de entrada do E-mail" />
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="702,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo a caixa de E-mails&quot;]" />
                             <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="702,133" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[DateTime.Now.ToString + &quot; Abrindo a caixa de E-mails&quot;]" UseDefaultEncoding="False" />
-                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="702,7452" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="702,8020" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                               <TryCatch.Try>
-                                <umab:OutlookApplicationCard Account="teste_RPA_EVA@outlook.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="664,6931" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+                                <umab:OutlookApplicationCard Account="teste_RPA_EVA@outlook.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="664,7215" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
                                   <umab:OutlookApplicationCard.Body>
                                     <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630,6749" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630,7033" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -206,7 +214,7 @@
                                         <ui:Comment sap:VirtualizedContainerService.HintSize="568,75" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// Percorrer a caixa de entrada em busca dos e-mails" />
                                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="568,141" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Percorrendo os e-mails em busca dos dados dos livros&quot;]" />
                                         <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="568,133" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[DateTime.Now.ToString + &quot; Percorrendo os e-mails em busca dos dados dos livros&quot;]" UseDefaultEncoding="False" />
-                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568,5815" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568,6099" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                           <TryCatch.Try>
                                             <umab:ForEachEmailX DisplayName="For Each Email" sap:VirtualizedContainerService.HintSize="530,5294" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Outlook.Folder(&quot;Caixa%20de%20Entrada&quot;)]" NumberOfEmailsLimit="15" RetrieveAttachments="False" UnreadOnly="True" WithAttachmentsOnly="False">
                                               <umab:ForEachEmailX.Body>
@@ -369,10 +377,10 @@
                                             </umab:ForEachEmailX>
                                           </TryCatch.Try>
                                           <TryCatch.Catches>
-                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="534,210" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="534,494" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
@@ -380,7 +388,15 @@
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                 </ActivityAction.Argument>
-                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[exception]" />
+                                                <Sequence sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[exception]" />
+                                                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strFalhaPath]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="AppendLine_19" Text="[DateTime.Now.ToString &amp; exception.ToString]" UseDefaultEncoding="False" />
+                                                </Sequence>
                                               </ActivityAction>
                                             </Catch>
                                           </TryCatch.Catches>
@@ -399,7 +415,7 @@
                                 </umab:OutlookApplicationCard>
                               </TryCatch.Try>
                               <TryCatch.Catches>
-                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="668,210" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="668,494" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -410,7 +426,15 @@
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                     </ActivityAction.Argument>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[exception]" />
+                                    <Sequence sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[exception]" />
+                                      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strFalhaPath]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="AppendLine_20" Text="[DateTime.Now.ToString &amp; exception.ToString]" UseDefaultEncoding="False" />
+                                    </Sequence>
                                   </ActivityAction>
                                 </Catch>
                               </TryCatch.Catches>
@@ -429,7 +453,7 @@
                     </ueab:ExcelApplicationCard>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="802,210" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="802,494" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -440,7 +464,15 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[exception]" />
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[exception]" />
+                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strFalhaPath]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="AppendLine_21" Text="[DateTime.Now.ToString &amp; exception.ToString]" UseDefaultEncoding="False" />
+                        </Sequence>
                       </ActivityAction>
                     </Catch>
                   </TryCatch.Catches>
@@ -459,7 +491,7 @@
         </ueab:ExcelProcessScopeX>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="936,210" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="936,494" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -470,13 +502,15 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[exception]">
+            <Sequence sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:LogMessage>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[exception]" />
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strFalhaPath]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="AppendLine_22" Text="[DateTime.Now.ToString &amp; exception.ToString]" UseDefaultEncoding="False" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>

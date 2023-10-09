@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="875,1421" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="875,1320" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -126,11 +126,12 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Busca de Livros" sap:VirtualizedContainerService.HintSize="512,1356" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Busca de Livros" sap:VirtualizedContainerService.HintSize="512,1255" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="main_strDateTime" />
       <Variable x:TypeArguments="x:String" Name="main_strLogPath" />
       <Variable x:TypeArguments="x:String" Name="main_strSpreadsheetPath" />
+      <Variable x:TypeArguments="x:String" Name="main_strFalhaPath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -140,25 +141,46 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Preparaçãodoprojeto.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Preparaçãodoprojeto.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_strDateTime">[main_strDateTime]</OutArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_strLogPath">[main_strLogPath]</OutArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_strSpreadsheetPath">[main_strSpreadsheetPath]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_strDateTime">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="main_strDateTime" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_strLogPath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="main_strLogPath" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_strSpreadsheetPath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="main_strSpreadsheetPath" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_strFalhaPath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="main_strFalhaPath" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LeituradeEmails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="LeituradeEmails.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strSpreadshettPath">[main_strSpreadsheetPath]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strLogPath">[main_strLogPath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strLogPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strLogPath" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strSpreadsheetPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strSpreadsheetPath" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strFalhaPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strFalhaPath" />
+        </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Tratamento de dados do E-mail" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_4">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </Sequence>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TratamentodedadosdoEmail.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="TratamentodedadosdoEmail.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strSpreadsheetPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strSpreadsheetPath" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strLogPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strLogPath" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="in_strFalhaPath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="main_strFalhaPath" />
+        </OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
     <Sequence DisplayName="Pesquisar livros na Amazon USA" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -190,18 +212,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Sequence>
-    <Sequence DisplayName="Notificar a finalização do processo" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_9">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NotificarFinalizacaoProcesso.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="NotificarFinalizacaoProcesso.xaml">
-        <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_strSpreadsheetPath">[main_strSpreadsheetPath]</InArgument>
-        </ui:InvokeWorkflowFile.Arguments>
-      </ui:InvokeWorkflowFile>
-    </Sequence>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NotificarFinalizacaoProcesso.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="NotificarFinalizacaoProcesso.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strSpreadsheetPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strSpreadsheetPath" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strLogPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strLogPath" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strFalhaPath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="main_strFalhaPath" />
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>

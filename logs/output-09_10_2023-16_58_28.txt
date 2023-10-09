@@ -1,0 +1,241 @@
+10/09/2023 16:58:28 Início da Execução
+10/09/2023 16:58:28 Criando planilha
+10/09/2023 16:58:29 Armazenando caminho da planilha
+10/09/2023 16:58:29 Caminho da planilha armazenado com sucesso!
+10/09/2023 16:58:34 Planilha livros-09_10_2023-16_58_28.xlsx criada com sucesso
+10/09/2023 16:58:34 Fim - Preparação do projeto
+10/09/2023 16:58:34 Início - Leitura de E-mails
+10/09/2023 16:58:34 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-09_10_2023-16_58_28.xlsx
+10/09/2023 16:58:34 Abrindo a caixa de E-mails
+10/09/2023 16:58:35 Percorrendo os e-mails em busca dos dados dos livros
+10/09/2023 16:58:35 Extraindo ID do E-mail Livro - ID 99685
+10/09/2023 16:58:35 Copiando o ID para a Data Table
+10/09/2023 16:58:35 Copiando os demais dados do E-mail Livro - ID 99685
+10/09/2023 16:58:35 Copiando os demais dados para a Data Table
+10/09/2023 16:58:35 Demais dados extraídos com sucesso!
+10/09/2023 16:58:35 Adicionando o ID Livro - ID 99685 a planilha
+10/09/2023 16:58:36 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:36 Adicionando os demais dados Livro - ID 99685 a planilha
+10/09/2023 16:58:36 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:36 E-mail Livro - ID 99685 marcado como lido com sucesso!
+10/09/2023 16:58:36 Extraindo ID do E-mail Livro - ID 85423
+10/09/2023 16:58:36 Copiando o ID para a Data Table
+10/09/2023 16:58:36 Copiando os demais dados do E-mail Livro - ID 85423
+10/09/2023 16:58:36 Copiando os demais dados para a Data Table
+10/09/2023 16:58:36 Demais dados extraídos com sucesso!
+10/09/2023 16:58:36 Adicionando o ID Livro - ID 85423 a planilha
+10/09/2023 16:58:36 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:36 Adicionando os demais dados Livro - ID 85423 a planilha
+10/09/2023 16:58:36 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:37 E-mail Livro - ID 85423 marcado como lido com sucesso!
+10/09/2023 16:58:37 Extraindo ID do E-mail Livro - ID 75682
+10/09/2023 16:58:37 Copiando o ID para a Data Table
+10/09/2023 16:58:37 Copiando os demais dados do E-mail Livro - ID 75682
+10/09/2023 16:58:37 Copiando os demais dados para a Data Table
+10/09/2023 16:58:37 Demais dados extraídos com sucesso!
+10/09/2023 16:58:37 Adicionando o ID Livro - ID 75682 a planilha
+10/09/2023 16:58:37 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:37 Adicionando os demais dados Livro - ID 75682 a planilha
+10/09/2023 16:58:37 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:37 E-mail Livro - ID 75682 marcado como lido com sucesso!
+10/09/2023 16:58:37 Extraindo ID do E-mail Livro - ID 56980
+10/09/2023 16:58:37 Copiando o ID para a Data Table
+10/09/2023 16:58:37 Copiando os demais dados do E-mail Livro - ID 56980
+10/09/2023 16:58:37 Copiando os demais dados para a Data Table
+10/09/2023 16:58:37 Demais dados extraídos com sucesso!
+10/09/2023 16:58:37 Adicionando o ID Livro - ID 56980 a planilha
+10/09/2023 16:58:37 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:37 Adicionando os demais dados Livro - ID 56980 a planilha
+10/09/2023 16:58:37 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:38 E-mail Livro - ID 56980 marcado como lido com sucesso!
+10/09/2023 16:58:38 Extraindo ID do E-mail Livro - ID 42558
+10/09/2023 16:58:38 Copiando o ID para a Data Table
+10/09/2023 16:58:38 Copiando os demais dados do E-mail Livro - ID 42558
+10/09/2023 16:58:38 Copiando os demais dados para a Data Table
+10/09/2023 16:58:38 Demais dados extraídos com sucesso!
+10/09/2023 16:58:38 Adicionando o ID Livro - ID 42558 a planilha
+10/09/2023 16:58:38 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:38 Adicionando os demais dados Livro - ID 42558 a planilha
+10/09/2023 16:58:38 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:38 E-mail Livro - ID 42558 marcado como lido com sucesso!
+10/09/2023 16:58:38 Extraindo ID do E-mail Livro - ID 33698
+10/09/2023 16:58:38 Copiando o ID para a Data Table
+10/09/2023 16:58:38 Copiando os demais dados do E-mail Livro - ID 33698
+10/09/2023 16:58:38 Copiando os demais dados para a Data Table
+10/09/2023 16:58:38 Demais dados extraídos com sucesso!
+10/09/2023 16:58:38 Adicionando o ID Livro - ID 33698 a planilha
+10/09/2023 16:58:38 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:38 Adicionando os demais dados Livro - ID 33698 a planilha
+10/09/2023 16:58:38 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:39 E-mail Livro - ID 33698 marcado como lido com sucesso!
+10/09/2023 16:58:39 Extraindo ID do E-mail Livro - ID 32568
+10/09/2023 16:58:39 Copiando o ID para a Data Table
+10/09/2023 16:58:39 Copiando os demais dados do E-mail Livro - ID 32568
+10/09/2023 16:58:39 Copiando os demais dados para a Data Table
+10/09/2023 16:58:39 Demais dados extraídos com sucesso!
+10/09/2023 16:58:39 Adicionando o ID Livro - ID 32568 a planilha
+10/09/2023 16:58:39 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:39 Adicionando os demais dados Livro - ID 32568 a planilha
+10/09/2023 16:58:39 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:39 E-mail Livro - ID 32568 marcado como lido com sucesso!
+10/09/2023 16:58:39 Extraindo ID do E-mail Livro - ID 26985
+10/09/2023 16:58:39 Copiando o ID para a Data Table
+10/09/2023 16:58:39 Copiando os demais dados do E-mail Livro - ID 26985
+10/09/2023 16:58:39 Copiando os demais dados para a Data Table
+10/09/2023 16:58:39 Demais dados extraídos com sucesso!
+10/09/2023 16:58:39 Adicionando o ID Livro - ID 26985 a planilha
+10/09/2023 16:58:39 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:39 Adicionando os demais dados Livro - ID 26985 a planilha
+10/09/2023 16:58:39 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:39 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/09/2023 16:58:40 Extraindo ID do E-mail Livro - ID 26983
+10/09/2023 16:58:40 Copiando o ID para a Data Table
+10/09/2023 16:58:40 Copiando os demais dados do E-mail Livro - ID 26983
+10/09/2023 16:58:40 Copiando os demais dados para a Data Table
+10/09/2023 16:58:40 Demais dados extraídos com sucesso!
+10/09/2023 16:58:40 Adicionando o ID Livro - ID 26983 a planilha
+10/09/2023 16:58:40 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:40 Adicionando os demais dados Livro - ID 26983 a planilha
+10/09/2023 16:58:40 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:40 E-mail Livro - ID 26983 marcado como lido com sucesso!
+10/09/2023 16:58:40 Extraindo ID do E-mail Livro - ID 23364
+10/09/2023 16:58:40 Copiando o ID para a Data Table
+10/09/2023 16:58:40 Copiando os demais dados do E-mail Livro - ID 23364
+10/09/2023 16:58:40 Copiando os demais dados para a Data Table
+10/09/2023 16:58:40 Demais dados extraídos com sucesso!
+10/09/2023 16:58:40 Adicionando o ID Livro - ID 23364 a planilha
+10/09/2023 16:58:40 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:40 Adicionando os demais dados Livro - ID 23364 a planilha
+10/09/2023 16:58:40 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:40 E-mail Livro - ID 23364 marcado como lido com sucesso!
+10/09/2023 16:58:40 Extraindo ID do E-mail Livro - ID 22316
+10/09/2023 16:58:41 Copiando o ID para a Data Table
+10/09/2023 16:58:41 Copiando os demais dados do E-mail Livro - ID 22316
+10/09/2023 16:58:41 Copiando os demais dados para a Data Table
+10/09/2023 16:58:41 Demais dados extraídos com sucesso!
+10/09/2023 16:58:41 Adicionando o ID Livro - ID 22316 a planilha
+10/09/2023 16:58:41 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:41 Adicionando os demais dados Livro - ID 22316 a planilha
+10/09/2023 16:58:41 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:41 E-mail Livro - ID 22316 marcado como lido com sucesso!
+10/09/2023 16:58:41 Extraindo ID do E-mail Livro - ID 16987
+10/09/2023 16:58:41 Copiando o ID para a Data Table
+10/09/2023 16:58:41 Copiando os demais dados do E-mail Livro - ID 16987
+10/09/2023 16:58:41 Copiando os demais dados para a Data Table
+10/09/2023 16:58:41 Demais dados extraídos com sucesso!
+10/09/2023 16:58:41 Adicionando o ID Livro - ID 16987 a planilha
+10/09/2023 16:58:41 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:41 Adicionando os demais dados Livro - ID 16987 a planilha
+10/09/2023 16:58:41 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:41 E-mail Livro - ID 16987 marcado como lido com sucesso!
+10/09/2023 16:58:41 Extraindo ID do E-mail Livro - ID 15902
+10/09/2023 16:58:41 Copiando o ID para a Data Table
+10/09/2023 16:58:42 Copiando os demais dados do E-mail Livro - ID 15902
+10/09/2023 16:58:42 Copiando os demais dados para a Data Table
+10/09/2023 16:58:42 Demais dados extraídos com sucesso!
+10/09/2023 16:58:42 Adicionando o ID Livro - ID 15902 a planilha
+10/09/2023 16:58:42 ID adicionado a planilha com sucesso!
+10/09/2023 16:58:42 Adicionando os demais dados Livro - ID 15902 a planilha
+10/09/2023 16:58:42 Demais dados adicionados a planilha com sucesso!
+10/09/2023 16:58:42 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/09/2023 16:58:42 Fim dos E-mails
+10/09/2023 16:58:42 Fechando a caixa de E-mails
+10/09/2023 16:58:42 Fechando o arquivo Excel
+10/09/2023 16:58:42 Fim - Leitura de E-mails
+10/09/2023 16:58:42 Início do tratamento de dados
+10/09/2023 16:58:42 Abrindo arquivo Excel
+10/09/2023 16:58:43 Inserindo Código VBA
+10/09/2023 16:58:45 Código VBA inserido com sucesso
+10/09/2023 16:58:45 Fechando arquivo Excel
+10/09/2023 16:58:46 Fim do tratamento de dados
+10/09/2023 16:58:46 Início - Processo de notificação
+10/09/2023 16:58:46 Início mover planilha
+10/09/2023 16:58:46 Planilha movida com sucesso!
+10/09/2023 16:58:46 Fim - Mover Planilha
+10/09/2023 16:58:46 Início do envio de E-mails para o time RPA
+10/09/2023 16:58:46 Abrindo arquivo Excel com os dados
+10/09/2023 16:58:46 Lendo os e-mails na planilha
+10/09/2023 16:58:46 Abrindo Desktop Outlook App
+10/09/2023 16:58:46 Enviando E-mail
+10/09/2023 16:58:47 E-mail enviado com sucesso!
+10/09/2023 16:58:47 Fechando Desktop Outlook App
+10/09/2023 16:58:47 Abrindo Desktop Outlook App
+10/09/2023 16:58:47 Enviando E-mail
+10/09/2023 16:58:47System.Runtime.InteropServices.COMException (0x80004005): Precisamos saber para quem enviar isto. Verifique se você inseriu pelo menos um nome.
+   at Microsoft.Office.Interop.Outlook._MailItem.Send()
+   at UiPath.Mail.Outlook.Extensions.SendMailHelpers.SendMailItem(String account, Application outlookApp, MailItem mailItem)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMailInternal(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, Action`1 SetBody)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMail(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, IDictionary`2 contentIdToImageFileMap)
+   at UiPath.Mail.Outlook.OutlookService.<>c__DisplayClass22_0.<SendMail>b__0()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at UiPath.Mail.Activities.Business.SendMailX.ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivityImplementation.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Mail.Activities.BaseMailAsyncActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+10/09/2023 16:58:47 E-mail enviado com sucesso!
+10/09/2023 16:58:47 Fechando Desktop Outlook App
+10/09/2023 16:58:47 Abrindo Desktop Outlook App
+10/09/2023 16:58:47 Enviando E-mail
+10/09/2023 16:58:47System.Runtime.InteropServices.COMException (0x80004005): Precisamos saber para quem enviar isto. Verifique se você inseriu pelo menos um nome.
+   at Microsoft.Office.Interop.Outlook._MailItem.Send()
+   at UiPath.Mail.Outlook.Extensions.SendMailHelpers.SendMailItem(String account, Application outlookApp, MailItem mailItem)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMailInternal(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, Action`1 SetBody)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMail(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, IDictionary`2 contentIdToImageFileMap)
+   at UiPath.Mail.Outlook.OutlookService.<>c__DisplayClass22_0.<SendMail>b__0()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at UiPath.Mail.Activities.Business.SendMailX.ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivityImplementation.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Mail.Activities.BaseMailAsyncActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+10/09/2023 16:58:47 E-mail enviado com sucesso!
+10/09/2023 16:58:47 Fechando Desktop Outlook App
+10/09/2023 16:58:48 Abrindo Desktop Outlook App
+10/09/2023 16:58:48 Enviando E-mail
+10/09/2023 16:58:48System.Runtime.InteropServices.COMException (0x80004005): Precisamos saber para quem enviar isto. Verifique se você inseriu pelo menos um nome.
+   at Microsoft.Office.Interop.Outlook._MailItem.Send()
+   at UiPath.Mail.Outlook.Extensions.SendMailHelpers.SendMailItem(String account, Application outlookApp, MailItem mailItem)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMailInternal(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, Action`1 SetBody)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMail(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, IDictionary`2 contentIdToImageFileMap)
+   at UiPath.Mail.Outlook.OutlookService.<>c__DisplayClass22_0.<SendMail>b__0()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at UiPath.Mail.Activities.Business.SendMailX.ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivityImplementation.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Mail.Activities.BaseMailAsyncActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+10/09/2023 16:58:48 E-mail enviado com sucesso!
+10/09/2023 16:58:48 Fechando Desktop Outlook App
+10/09/2023 16:58:48 Abrindo Desktop Outlook App
+10/09/2023 16:58:48 Enviando E-mail
+10/09/2023 16:58:48System.Runtime.InteropServices.COMException (0x80004005): Precisamos saber para quem enviar isto. Verifique se você inseriu pelo menos um nome.
+   at Microsoft.Office.Interop.Outlook._MailItem.Send()
+   at UiPath.Mail.Outlook.Extensions.SendMailHelpers.SendMailItem(String account, Application outlookApp, MailItem mailItem)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMailInternal(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, Action`1 SetBody)
+   at UiPath.Mail.Outlook.OutlookApiV2.SendMail(MailMessage mailMessage, AccountWithStore account, SendMailRequest sendMailRequest, IDictionary`2 contentIdToImageFileMap)
+   at UiPath.Mail.Outlook.OutlookService.<>c__DisplayClass22_0.<SendMail>b__0()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at UiPath.Mail.Activities.Business.SendMailX.ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivityImplementation.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Shared.Activities.AsyncTaskCodeActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at UiPath.Mail.Activities.BaseMailAsyncActivity.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+10/09/2023 16:58:48 E-mail enviado com sucesso!
+10/09/2023 16:58:48 Fechando Desktop Outlook App
+10/09/2023 16:58:48 Fim do envio de E-mails
+10/09/2023 16:58:48 Fechando arquivo Excel
+10/09/2023 16:58:48 Fechando o escopo do processo Excel
+10/09/2023 16:58:48 Fim - Processo de finalização

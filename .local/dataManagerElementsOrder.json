@@ -12,9 +12,10 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "main_strSpreadsheetPath&Sequence_1",
+        "main_strFalhaPath&Sequence_1",
+        "main_strDateTime&Sequence_1",
         "main_strLogPath&Sequence_1",
-        "main_strDateTime&Sequence_1"
+        "main_strSpreadsheetPath&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -29,8 +30,9 @@
         "dtDadosId&Sequence_12"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_strLogPath",
-        "in_strSpreadshettPath"
+        "in_strFalhaPath",
+        "in_strSpreadsheetPath",
+        "in_strLogPath"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -43,6 +45,8 @@
         "strPath&Sequence_16"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_strFalhaPath",
+        "in_strLogPath",
         "in_strSpreadsheetPath"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -57,9 +61,22 @@
         "strSpreadsheetPath&Sequence_17"
       ],
       "ArgumentsSectionElementsOrder": [
-        "out_strSpreadsheetPath",
+        "out_strDateTime",
         "out_strLogPath",
-        "out_strDateTime"
+        "out_strSpreadsheetPath",
+        "out_strFalhaPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TratamentodedadosdoEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strFalhaPath",
+        "in_strLogPath",
+        "in_strSpreadsheetPath"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
