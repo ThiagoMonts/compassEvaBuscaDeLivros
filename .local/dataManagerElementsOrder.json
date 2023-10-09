@@ -15,6 +15,36 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "melhorPreço.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "email&Sequence_26",
+        "variable1&Sequence_26",
+        "Email&Sequence_26",
+        "in_strLogPath&Sequence_1",
+        "dt_dadosEmails&Sequence_1",
+        "strDadosEmails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "argument1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "melhorPreço(Salvo automaticamente).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_dadosEmails&Sequence_1",
+        "strDadosEmails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "argument1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

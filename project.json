@@ -1,6 +1,5 @@
 {
   "name": "compassEvaBuscaDeLivros",
-  "projectId": "4c456e9f-44d2-46e7-8cc7-a0b5e08e4757",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -44,8 +43,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
-    "saveToCloud": false
+    "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
