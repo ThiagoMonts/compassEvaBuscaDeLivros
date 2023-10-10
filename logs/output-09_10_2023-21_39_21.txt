@@ -1,0 +1,9 @@
+10/09/2023 21:39:21 Início da Execução
+10/09/2023 21:39:21 Criando planilha
+10/09/2023 21:39:21 Armazenando caminho da planilha
+10/09/2023 21:39:22 Caminho da planilha armazenado com sucesso!
+10/09/2023 21:39:22 Planilha livros-09_10_2023-21_39_21.xlsx criada com sucesso
+10/09/2023 21:39:22 Fim - Preparação do projeto
+10/09/2023 21:39:23 Início - Leitura de E-mails
+10/09/2023 21:39:23 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-09_10_2023-21_39_21.xlsx
+10/09/2023 21:39:23 Abrindo a caixa de E-mails

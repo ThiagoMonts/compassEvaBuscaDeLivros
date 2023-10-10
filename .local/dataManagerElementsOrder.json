@@ -80,6 +80,18 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "EnviarEmailDadosIncompletos.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strIdEmail&Sequence_19",
+        "CellIndexValue&Sequence_15",
+        "dtSheet1&Sequence_15"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
