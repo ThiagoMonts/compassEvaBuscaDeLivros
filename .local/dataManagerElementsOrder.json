@@ -28,6 +28,13 @@
       "Path": "PesquisarlivrosnaAmazon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "boolSemPrecoUSA&Sequence_116",
+        "boolSemPrecoUK&Sequence_10",
+        "strSheetNameUK&Sequence_36",
+        "strSheetNameUSA&TryCatch_6",
+        "variable1&Sequence_8",
+        "in_strExcelPath&Flowchart_1",
+        "in_strLogPath&Flowchart_1",
         "dataTableDadosUK&Sequence_7",
         "extractedDataTable&Sequence_10",
         "strPrecoFreteUsa&Sequence_116",

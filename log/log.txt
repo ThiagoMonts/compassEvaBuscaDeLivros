@@ -1,0 +1,137 @@
+﻿10/10/2023 08:13:25Abrindo excel
+10/10/2023 08:13:25Selecionando a pasta de dados de referência
+10/10/2023 08:14:45Abrindo excel
+10/10/2023 08:14:45Selecionando a pasta de dados de referência
+10/10/2023 08:14:47Lendo os dados gravados na planilha
+10/10/2023 08:14:50 Acesso ao site Amazon UK
+10/10/2023 08:14:50Rodando o looping de inputs da DataTable
+10/10/2023 08:14:50Pesquisando livros The Vanishing Half  
+10/10/2023 08:14:53Livro encontrado The Vanishing Half  
+10/10/2023 08:14:53Extraindo preço/Frete para o Brasil
+10/10/2023 08:14:56Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/10/2023 08:14:58Rodando o looping de inputs da DataTable
+10/10/2023 08:14:58Pesquisando livros Get A Life, Chloe Brown 
+10/10/2023 08:15:00Livro encontrado Get A Life, Chloe Brown 
+10/10/2023 08:15:00Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:02Preço/Frete extraídos com sucesso
+10/10/2023 08:15:05Rodando o looping de inputs da DataTable
+10/10/2023 08:15:05Pesquisando livros Verity  
+10/10/2023 08:15:06Livro encontrado Verity  
+10/10/2023 08:15:06Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:08Preço/Frete extraídos com sucesso
+10/10/2023 08:15:11Rodando o looping de inputs da DataTable
+10/10/2023 08:15:11Pesquisando livros The Moonlight Child 
+10/10/2023 08:15:13Livro encontrado The Moonlight Child 
+10/10/2023 08:15:13Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:14Preço/Frete extraídos com sucesso
+10/10/2023 08:15:17Rodando o looping de inputs da DataTable
+10/10/2023 08:15:17Pesquisando livros You have a Match 
+10/10/2023 08:15:19Livro encontrado You have a Match 
+10/10/2023 08:15:19Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:20Erro ao extrair Preço/Frete do livro:  You have a Match 
+10/10/2023 08:15:23Rodando o looping de inputs da DataTable
+10/10/2023 08:15:23Pesquisando livros The Midnight Library 
+10/10/2023 08:15:25Livro encontrado The Midnight Library 
+10/10/2023 08:15:25Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:27Preço/Frete extraídos com sucesso
+10/10/2023 08:15:29Rodando o looping de inputs da DataTable
+10/10/2023 08:15:29Pesquisando livros The Paper Palace 
+10/10/2023 08:15:31Livro encontrado The Paper Palace 
+10/10/2023 08:15:31Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:34Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/10/2023 08:15:36Rodando o looping de inputs da DataTable
+10/10/2023 08:15:36Pesquisando livros Wilder Girls 
+10/10/2023 08:15:38Livro encontrado Wilder Girls 
+10/10/2023 08:15:38Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:40Erro ao extrair Preço/Frete do livro:  Wilder Girls 
+10/10/2023 08:15:43Rodando o looping de inputs da DataTable
+10/10/2023 08:15:43Pesquisando livros The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:15:44Livro encontrado The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:15:44Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:46Preço/Frete extraídos com sucesso
+10/10/2023 08:15:49Rodando o looping de inputs da DataTable
+10/10/2023 08:15:49Pesquisando livros The Madness of Crowds
+10/10/2023 08:15:51Livro encontrado The Madness of Crowds
+10/10/2023 08:15:51Extraindo preço/Frete para o Brasil
+10/10/2023 08:15:52Preço/Frete extraídos com sucesso
+10/10/2023 08:15:57Acessando ao site Amazon USA
+10/10/2023 08:15:57Acessando ao site Amazon USA
+10/10/2023 08:15:57Pesquisando livro The Vanishing Half  
+10/10/2023 08:16:00Livro Encontrado The Vanishing Half  
+10/10/2023 08:16:01Livro selecionado:  The Vanishing Half  
+10/10/2023 08:16:01Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:16:03Preço extraído com sucesso
+10/10/2023 08:16:10O valor do frete é: $20.26
+10/10/2023 08:16:10Frete extraído com sucesso
+10/10/2023 08:16:14Acessando ao site Amazon USA
+10/10/2023 08:16:14Pesquisando livro Get A Life, Chloe Brown 
+10/10/2023 08:16:16Livro Encontrado Get A Life, Chloe Brown 
+10/10/2023 08:16:19Livro selecionado:  Get A Life, Chloe Brown 
+10/10/2023 08:16:19Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:16:21Preço extraído com sucesso
+10/10/2023 08:16:28O valor do frete é: $18.75
+10/10/2023 08:16:28Frete extraído com sucesso
+10/10/2023 08:16:31Acessando ao site Amazon USA
+10/10/2023 08:16:31Pesquisando livro Verity  
+10/10/2023 08:16:33Livro Encontrado Verity  
+10/10/2023 08:16:35Livro selecionado:  Verity  
+10/10/2023 08:16:35Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:16:37Preço extraído com sucesso
+10/10/2023 08:16:43O valor do frete é: $18.96
+10/10/2023 08:16:43Frete extraído com sucesso
+10/10/2023 08:16:47Acessando ao site Amazon USA
+10/10/2023 08:16:47Pesquisando livro The Moonlight Child 
+10/10/2023 08:16:49Livro Encontrado The Moonlight Child 
+10/10/2023 08:16:50Livro selecionado:  The Moonlight Child 
+10/10/2023 08:16:50Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:16:51Preço extraído com sucesso
+10/10/2023 08:16:57O valor do frete é: $20.26
+10/10/2023 08:16:57Frete extraído com sucesso
+10/10/2023 08:17:01Acessando ao site Amazon USA
+10/10/2023 08:17:01Pesquisando livro You have a Match 
+10/10/2023 08:17:03Livro Encontrado You have a Match 
+10/10/2023 08:17:04Livro selecionado:  You have a Match 
+10/10/2023 08:17:04Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:17:06Preço extraído com sucesso
+10/10/2023 08:17:12O valor do frete é: $19.61
+10/10/2023 08:17:12Frete extraído com sucesso
+10/10/2023 08:17:16Acessando ao site Amazon USA
+10/10/2023 08:17:16Pesquisando livro The Midnight Library 
+10/10/2023 08:17:17Livro Encontrado The Midnight Library 
+10/10/2023 08:17:20Livro selecionado:  The Midnight Library 
+10/10/2023 08:17:20Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:17:21Preço extraído com sucesso
+10/10/2023 08:17:28O valor do frete é: $20.11
+10/10/2023 08:17:28Frete extraído com sucesso
+10/10/2023 08:17:31Acessando ao site Amazon USA
+10/10/2023 08:17:31Pesquisando livro The Paper Palace 
+10/10/2023 08:17:33Livro Encontrado The Paper Palace 
+10/10/2023 08:17:35Livro selecionado:  The Paper Palace 
+10/10/2023 08:17:35Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:17:37Preço extraído com sucesso
+10/10/2023 08:17:43O valor do frete é: $21.02
+10/10/2023 08:17:43Frete extraído com sucesso
+10/10/2023 08:17:46Acessando ao site Amazon USA
+10/10/2023 08:17:46Pesquisando livro Wilder Girls 
+10/10/2023 08:17:48Livro Encontrado Wilder Girls 
+10/10/2023 08:17:50Livro selecionado:  Wilder Girls 
+10/10/2023 08:17:50Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:17:51Preço extraído com sucesso
+10/10/2023 08:17:57O valor do frete é: $18.63
+10/10/2023 08:17:57Frete extraído com sucesso
+10/10/2023 08:18:00Acessando ao site Amazon USA
+10/10/2023 08:18:00Pesquisando livro The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:03Livro Encontrado The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:04Livro selecionado:  The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:04Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:18:06Erro ao extrair preço do livro:  The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:06Erro ao filtrar pelo valor do livro:  The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:10Elemento Details não encontrado para o livro:  The Seven Husbands of Evelyn Hugo 
+10/10/2023 08:18:13Acessando ao site Amazon USA
+10/10/2023 08:18:13Pesquisando livro The Madness of Crowds
+10/10/2023 08:18:15Livro Encontrado The Madness of Crowds
+10/10/2023 08:18:18Livro selecionado:  The Madness of Crowds
+10/10/2023 08:18:18Extraindo preço do Livro/Frete para o Brasil
+10/10/2023 08:18:19Preço extraído com sucesso
+10/10/2023 08:18:25O valor do frete é: $21.23
+10/10/2023 08:18:25Frete extraído com sucesso
