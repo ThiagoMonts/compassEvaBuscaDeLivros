@@ -1,0 +1,361 @@
+' ---------- EXTRAÇÃO DE DADOS AMAZON UK ----------------------------------------
+
+
+'  Removendo linha com descrição de informações
+Sub UK_RemoverLinhasDescricao()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 1 Step -1
+        If InStr(1, planilha.Cells(i, 1).Value, "nomeLivro", vbTextCompare) > 0 Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+'   Removendo a palavra delivery que vem junto ao preço do frete - Amazon UK
+Sub UK_RemoverPalavraDeliveryNaColunaC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 3).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        Dim conteudo As String
+        conteudo = planilha.Cells(i, 3).Value
+    
+        If InStr(1, conteudo, "delivery", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).Value = Replace(conteudo, "delivery", "")
+        End If
+    Next i
+End Sub
+
+' Quando o livro não é encontrado, vem com o tipo de capa no lugar do
+' preço, então essa macro retira a info
+
+Sub UK_LimparCelulasComPalavrasNaColunaBEC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        If InStr(1, planilha.Cells(i, 2).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 2).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 2).ClearContents
+        End If
+        
+        If InStr(1, planilha.Cells(i, 3).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 3).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+'  Deixa informações de preço em uma unica coluna
+Sub UK_UnirColunasBCeRemoverColunaC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Adiciona o conteúdo da célula na coluna C à célula correspondente na coluna B
+        planilha.Cells(i, 2).Value = planilha.Cells(i, 2).Value & " " & planilha.Cells(i, 3).Value
+    Next i
+    
+    ' Exclui a coluna C
+    planilha.Columns(3).Delete
+
+    planilha.Columns(2).AutoFit
+End Sub
+
+Sub UK_RemoverLinhasDuplicadas()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    Dim j As Long
+    Dim conteudoAtual As String
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 2 Step -1
+        conteudoAtual = planilha.Cells(i, 1).Value
+        For j = i - 1 To 1 Step -1
+            If planilha.Cells(j, 1).Value = conteudoAtual Then
+                planilha.Rows(i).Delete
+                Exit For
+            End If
+        Next j
+    Next i
+End Sub
+
+Sub UK_CopiarColunasBCEmPlanilha1()
+    Dim planilhaAmazon As Worksheet
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinhaAmazon As Long
+    Dim i As Long
+    
+    Set planilhaAmazon = ThisWorkbook.Sheets("Amazon UK")
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha1")
+    
+    ultimaLinhaAmazon = planilhaAmazon.Cells(planilhaAmazon.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaAmazon
+        ' Copia os dados da coluna B e C da Amazon UK para as colunas G e H da Planilha1
+        planilhaDestino.Cells(i, 7).Value = planilhaAmazon.Cells(i, 2).Value  ' Coluna B
+        planilhaDestino.Cells(i, 8).Value = planilhaAmazon.Cells(i, 3).Value  ' Coluna C
+    Next i
+End Sub
+
+' Planilha1: organiza dados nas linhas correspondentes a cada livro
+Sub UK_MoverConteudoColunaGH()
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha1")
+    ultimaLinha = planilhaDestino.Cells(planilhaDestino.Rows.Count, 6).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Verifica se a célula na coluna F está vazia
+        If planilhaDestino.Cells(i, 6).Value <> "" Then
+            ' Encontra a próxima linha vazia na coluna F
+            Dim proximaLinhaF As Long
+            proximaLinhaF = planilhaDestino.Cells(planilhaDestino.Rows.Count, 6).End(xlUp).Row + 1
+            planilhaDestino.Cells(proximaLinhaF, 7).Value = planilhaDestino.Cells(i, 7).Value
+            planilhaDestino.Cells(i, 7).ClearContents
+            planilhaDestino.Cells(proximaLinhaF, 8).Value = planilhaDestino.Cells(i, 8).Value
+            planilhaDestino.Cells(i, 8).ClearContents
+        End If
+    Next i
+End Sub
+
+'Complementa o cabeçalho para dados UK
+Sub UK_CabecalhoComplemento()
+    Dim ws As Worksheet
+    Dim Cabecalho As Range
+    
+    Set ws = ThisWorkbook.Sheets("Planilha1")
+      
+    Set Cabecalho = ws.Cells(1, 1)
+    
+    ' Escreve as informações em negrito no cabeçalho
+    
+    Cabecalho.Offset(0, 6).Value = "Amazon UK - Valor"
+    Cabecalho.Offset(0, 6).Font.Bold = True
+        
+    Cabecalho.Offset(0, 7).Value = "Amazon UK - Frete"
+    Cabecalho.Offset(0, 7).Font.Bold = True
+    
+    ' Organiza espaçamento e alinhando texto
+    Columns("G:G").ColumnWidth = 20#
+    Columns("H:H").ColumnWidth = 20#
+    
+End Sub
+
+' ---------- EXTRAÇÃO DE DADOS AMAZON USA ----------------------------------------
+
+'  Removendo linha com descrição de informações
+Sub USA_RemoverLinhasDescricao()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 1 Step -1
+        If InStr(1, planilha.Cells(i, 1).Value, "nomeLivro", vbTextCompare) > 0 Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+' Removendo a palavra delivery que vem junto ao preço do frete - Amazon UK
+Sub USA_RemoverPalavraDeliveryNaColunaC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 3).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        Dim conteudo As String
+        conteudo = planilha.Cells(i, 3).Value
+    
+        If InStr(1, conteudo, "delivery", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).Value = Replace(conteudo, "delivery", "")
+        End If
+    Next i
+End Sub
+
+' Quando o livro não é encontrado, vem com o tipo de capa no lugar do
+' preço, então essa macro retira a info
+
+Sub USA_LimparCelulasComPalavrasNaColunaBEC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        If InStr(1, planilha.Cells(i, 2).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 2).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 2).ClearContents
+        End If
+        
+        If InStr(1, planilha.Cells(i, 3).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 3).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+' Deixa informações de preço em uma unica coluna
+Sub USA_UnirColunasBCeRemoverColunaC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Adiciona o conteúdo da célula na coluna C à célula correspondente na coluna B
+        planilha.Cells(i, 2).Value = planilha.Cells(i, 2).Value & " " & planilha.Cells(i, 3).Value
+    Next i
+    
+    ' Exclui a coluna C
+    planilha.Columns(3).Delete
+
+    planilha.Columns(2).AutoFit
+End Sub
+
+Sub USA_RemoverLinhasDuplicadas()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    Dim j As Long
+    Dim conteudoAtual As String
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 2 Step -1
+        conteudoAtual = planilha.Cells(i, 1).Value
+        For j = i - 1 To 1 Step -1
+            If planilha.Cells(j, 1).Value = conteudoAtual Then
+                planilha.Rows(i).Delete
+                Exit For
+            End If
+        Next j
+    Next i
+End Sub
+
+Sub USA_CopiarColunasBCEmPlanilha1()
+    Dim planilhaAmazon As Worksheet
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinhaAmazon As Long
+    Dim i As Long
+    
+    Set planilhaAmazon = ThisWorkbook.Sheets("Amazon USA")
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha1")
+    
+    ultimaLinhaAmazon = planilhaAmazon.Cells(planilhaAmazon.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaAmazon
+        ' Copia os dados da coluna B e C da Amazon UK para as colunas L e M da Planilha1
+        planilhaDestino.Cells(i, 12).Value = planilhaAmazon.Cells(i, 2).Value  ' Coluna B
+        planilhaDestino.Cells(i, 13).Value = planilhaAmazon.Cells(i, 3).Value  ' Coluna C
+    Next i
+End Sub
+
+' Planilha1: organiza dados nas linhas correspondentes a cada livro
+Sub USA_MoverConteudoColunaGH()
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha1")
+    ultimaLinha = planilhaDestino.Cells(planilhaDestino.Rows.Count, 6).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Verifica se a célula na coluna F está vazia
+        If planilhaDestino.Cells(i, 6).Value <> "" Then
+            ' Encontra a próxima linha vazia na coluna F
+            Dim proximaLinhaF As Long
+            proximaLinhaF = planilhaDestino.Cells(planilhaDestino.Rows.Count, 6).End(xlUp).Row + 1
+            planilhaDestino.Cells(proximaLinhaF, 12).Value = planilhaDestino.Cells(i, 12).Value
+            planilhaDestino.Cells(i, 12).ClearContents
+            planilhaDestino.Cells(proximaLinhaF, 13).Value = planilhaDestino.Cells(i, 13).Value
+            planilhaDestino.Cells(i, 13).ClearContents
+        End If
+    Next i
+End Sub
+
+'Complementa o cabeçalho para dados USA
+Sub USA_CabecalhoComplemento()
+    Dim ws As Worksheet
+    Dim Cabecalho As Range
+    
+    Set ws = ThisWorkbook.Sheets("Planilha1")
+      
+    Set Cabecalho = ws.Cells(1, 1)
+    
+    ' Escreve as informações em negrito no cabeçalho
+    
+    Cabecalho.Offset(0, 11).Value = "Amazon USA - Valor"
+    Cabecalho.Offset(0, 11).Font.Bold = True
+        
+    Cabecalho.Offset(0, 12).Value = "Amazon USA - Frete"
+    Cabecalho.Offset(0, 12).Font.Bold = True
+    
+    ' Organiza espaçamento e alinhando texto
+    Columns("L:L").ColumnWidth = 20#
+    Columns("M:M").ColumnWidth = 20#
+    
+End Sub
+
+Sub tratamentoPesquisa()
+	UK_RemoverLinhasDescricao
+	UK_RemoverPalavraDeliveryNaColunaC
+	UK_LimparCelulasComPalavrasNaColunaBEC
+	UK_UnirColunasBCeRemoverColunaC
+	UK_RemoverLinhasDuplicadas
+	UK_CopiarColunasBCEmPlanilha1
+	UK_MoverConteudoColunaGH
+	UK_CabecalhoComplemento
+	USA_RemoverLinhasDescricao
+	USA_RemoverPalavraDeliveryNaColunaC
+	USA_LimparCelulasComPalavrasNaColunaBEC
+	USA_UnirColunasBCeRemoverColunaC
+	USA_RemoverLinhasDuplicadas
+	USA_CopiarColunasBCEmPlanilha1
+	USA_MoverConteudoColunaGH
+	USA_CabecalhoComplemento
+End Sub

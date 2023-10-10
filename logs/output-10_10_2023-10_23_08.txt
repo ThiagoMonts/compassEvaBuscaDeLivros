@@ -1,0 +1,150 @@
+10/10/2023 10:23:08 Início da Execução
+10/10/2023 10:23:08 Criando planilha
+10/10/2023 10:23:08 Armazenando caminho da planilha
+10/10/2023 10:23:08 Caminho da planilha armazenado com sucesso!
+10/10/2023 10:23:08 Planilha livros-10_10_2023-10_23_08.xlsx criada com sucesso
+10/10/2023 10:23:09 Fim - Preparação do projeto
+10/10/2023 10:23:09 Início - Leitura de E-mails
+10/10/2023 10:23:09 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-10_10_2023-10_23_08.xlsx
+10/10/2023 10:23:09 Abrindo a caixa de E-mails
+10/10/2023 10:23:10 Percorrendo os e-mails em busca dos dados dos livros
+10/10/2023 10:23:10 Extraindo ID do E-mail Livro - ID 99685
+10/10/2023 10:23:10 Copiando o ID para a Data Table
+10/10/2023 10:23:10 Copiando os demais dados do E-mail Livro - ID 99685
+10/10/2023 10:23:10 Copiando os demais dados para a Data Table
+10/10/2023 10:23:10 Demais dados extraídos com sucesso!
+10/10/2023 10:23:10 Adicionando o ID Livro - ID 99685 a planilha
+10/10/2023 10:23:10 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:10 Adicionando os demais dados Livro - ID 99685 a planilha
+10/10/2023 10:23:10 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:10 E-mail Livro - ID 99685 marcado como lido com sucesso!
+10/10/2023 10:23:11 Extraindo ID do E-mail Livro - ID 85423
+10/10/2023 10:23:11 Copiando o ID para a Data Table
+10/10/2023 10:23:11 Copiando os demais dados do E-mail Livro - ID 85423
+10/10/2023 10:23:11 Copiando os demais dados para a Data Table
+10/10/2023 10:23:11 Demais dados extraídos com sucesso!
+10/10/2023 10:23:11 Adicionando o ID Livro - ID 85423 a planilha
+10/10/2023 10:23:11 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:11 Adicionando os demais dados Livro - ID 85423 a planilha
+10/10/2023 10:23:11 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:11 E-mail Livro - ID 85423 marcado como lido com sucesso!
+10/10/2023 10:23:11 Extraindo ID do E-mail Livro - ID 75682
+10/10/2023 10:23:11 Copiando o ID para a Data Table
+10/10/2023 10:23:11 Copiando os demais dados do E-mail Livro - ID 75682
+10/10/2023 10:23:11 Copiando os demais dados para a Data Table
+10/10/2023 10:23:11 Demais dados extraídos com sucesso!
+10/10/2023 10:23:11 Adicionando o ID Livro - ID 75682 a planilha
+10/10/2023 10:23:11 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:11 Adicionando os demais dados Livro - ID 75682 a planilha
+10/10/2023 10:23:11 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:12 E-mail Livro - ID 75682 marcado como lido com sucesso!
+10/10/2023 10:23:12 Extraindo ID do E-mail Livro - ID 56980
+10/10/2023 10:23:12 Copiando o ID para a Data Table
+10/10/2023 10:23:12 Copiando os demais dados do E-mail Livro - ID 56980
+10/10/2023 10:23:12 Copiando os demais dados para a Data Table
+10/10/2023 10:23:12 Demais dados extraídos com sucesso!
+10/10/2023 10:23:12 Adicionando o ID Livro - ID 56980 a planilha
+10/10/2023 10:23:12 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:12 Adicionando os demais dados Livro - ID 56980 a planilha
+10/10/2023 10:23:12 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:12 E-mail Livro - ID 56980 marcado como lido com sucesso!
+10/10/2023 10:23:12 Extraindo ID do E-mail Livro - ID 42558
+10/10/2023 10:23:12 Copiando o ID para a Data Table
+10/10/2023 10:23:12 Copiando os demais dados do E-mail Livro - ID 42558
+10/10/2023 10:23:12 Copiando os demais dados para a Data Table
+10/10/2023 10:23:12 Demais dados extraídos com sucesso!
+10/10/2023 10:23:12 Adicionando o ID Livro - ID 42558 a planilha
+10/10/2023 10:23:12 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:12 Adicionando os demais dados Livro - ID 42558 a planilha
+10/10/2023 10:23:12 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:12 E-mail Livro - ID 42558 marcado como lido com sucesso!
+10/10/2023 10:23:13 Extraindo ID do E-mail Livro - ID 33698
+10/10/2023 10:23:13 Copiando o ID para a Data Table
+10/10/2023 10:23:13 Copiando os demais dados do E-mail Livro - ID 33698
+10/10/2023 10:23:13 Copiando os demais dados para a Data Table
+10/10/2023 10:23:13 Demais dados extraídos com sucesso!
+10/10/2023 10:23:13 Adicionando o ID Livro - ID 33698 a planilha
+10/10/2023 10:23:13 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:13 Adicionando os demais dados Livro - ID 33698 a planilha
+10/10/2023 10:23:13 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:13 E-mail Livro - ID 33698 marcado como lido com sucesso!
+10/10/2023 10:23:13 Extraindo ID do E-mail Livro - ID 32568
+10/10/2023 10:23:13 Copiando o ID para a Data Table
+10/10/2023 10:23:13 Copiando os demais dados do E-mail Livro - ID 32568
+10/10/2023 10:23:13 Copiando os demais dados para a Data Table
+10/10/2023 10:23:13 Demais dados extraídos com sucesso!
+10/10/2023 10:23:13 Adicionando o ID Livro - ID 32568 a planilha
+10/10/2023 10:23:13 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:13 Adicionando os demais dados Livro - ID 32568 a planilha
+10/10/2023 10:23:13 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:14 E-mail Livro - ID 32568 marcado como lido com sucesso!
+10/10/2023 10:23:14 Extraindo ID do E-mail Livro - ID 26985
+10/10/2023 10:23:14 Copiando o ID para a Data Table
+10/10/2023 10:23:14 Copiando os demais dados do E-mail Livro - ID 26985
+10/10/2023 10:23:14 Copiando os demais dados para a Data Table
+10/10/2023 10:23:14 Demais dados extraídos com sucesso!
+10/10/2023 10:23:14 Adicionando o ID Livro - ID 26985 a planilha
+10/10/2023 10:23:14 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:14 Adicionando os demais dados Livro - ID 26985 a planilha
+10/10/2023 10:23:14 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:14 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/10/2023 10:23:14 Extraindo ID do E-mail Livro - ID 26983
+10/10/2023 10:23:14 Copiando o ID para a Data Table
+10/10/2023 10:23:14 Copiando os demais dados do E-mail Livro - ID 26983
+10/10/2023 10:23:14 Copiando os demais dados para a Data Table
+10/10/2023 10:23:14 Demais dados extraídos com sucesso!
+10/10/2023 10:23:14 Adicionando o ID Livro - ID 26983 a planilha
+10/10/2023 10:23:14 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:14 Adicionando os demais dados Livro - ID 26983 a planilha
+10/10/2023 10:23:14 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:15 E-mail Livro - ID 26983 marcado como lido com sucesso!
+10/10/2023 10:23:15 Extraindo ID do E-mail Livro - ID 23364
+10/10/2023 10:23:15 Copiando o ID para a Data Table
+10/10/2023 10:23:15 Copiando os demais dados do E-mail Livro - ID 23364
+10/10/2023 10:23:15 Copiando os demais dados para a Data Table
+10/10/2023 10:23:15 Demais dados extraídos com sucesso!
+10/10/2023 10:23:15 Adicionando o ID Livro - ID 23364 a planilha
+10/10/2023 10:23:15 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:15 Adicionando os demais dados Livro - ID 23364 a planilha
+10/10/2023 10:23:15 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:15 E-mail Livro - ID 23364 marcado como lido com sucesso!
+10/10/2023 10:23:15 Extraindo ID do E-mail Livro - ID 22316
+10/10/2023 10:23:15 Copiando o ID para a Data Table
+10/10/2023 10:23:15 Copiando os demais dados do E-mail Livro - ID 22316
+10/10/2023 10:23:15 Copiando os demais dados para a Data Table
+10/10/2023 10:23:15 Demais dados extraídos com sucesso!
+10/10/2023 10:23:15 Adicionando o ID Livro - ID 22316 a planilha
+10/10/2023 10:23:15 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:15 Adicionando os demais dados Livro - ID 22316 a planilha
+10/10/2023 10:23:15 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:15 E-mail Livro - ID 22316 marcado como lido com sucesso!
+10/10/2023 10:23:15 Extraindo ID do E-mail Livro - ID 16987
+10/10/2023 10:23:15 Copiando o ID para a Data Table
+10/10/2023 10:23:15 Copiando os demais dados do E-mail Livro - ID 16987
+10/10/2023 10:23:15 Copiando os demais dados para a Data Table
+10/10/2023 10:23:15 Demais dados extraídos com sucesso!
+10/10/2023 10:23:15 Adicionando o ID Livro - ID 16987 a planilha
+10/10/2023 10:23:16 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:16 Adicionando os demais dados Livro - ID 16987 a planilha
+10/10/2023 10:23:16 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:16 E-mail Livro - ID 16987 marcado como lido com sucesso!
+10/10/2023 10:23:16 Extraindo ID do E-mail Livro - ID 15902
+10/10/2023 10:23:16 Copiando o ID para a Data Table
+10/10/2023 10:23:16 Copiando os demais dados do E-mail Livro - ID 15902
+10/10/2023 10:23:16 Copiando os demais dados para a Data Table
+10/10/2023 10:23:16 Demais dados extraídos com sucesso!
+10/10/2023 10:23:16 Adicionando o ID Livro - ID 15902 a planilha
+10/10/2023 10:23:16 ID adicionado a planilha com sucesso!
+10/10/2023 10:23:16 Adicionando os demais dados Livro - ID 15902 a planilha
+10/10/2023 10:23:16 Demais dados adicionados a planilha com sucesso!
+10/10/2023 10:23:16 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/10/2023 10:23:16 Fim dos E-mails
+10/10/2023 10:23:16 Fechando a caixa de E-mails
+10/10/2023 10:23:16 Fechando o arquivo Excel
+10/10/2023 10:23:16 Fim - Leitura de E-mails
+10/10/2023 10:23:16 Início do tratamento de dados
+10/10/2023 10:23:16 Abrindo arquivo Excel
+10/10/2023 10:23:17 Inserindo Código VBA
+10/10/2023 10:24:01 Código VBA inserido com sucesso
+10/10/2023 10:24:01 Fechando arquivo Excel
+10/10/2023 10:24:01 Fim do tratamento de dados

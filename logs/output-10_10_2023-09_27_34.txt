@@ -1,0 +1,55 @@
+10/10/2023 09:27:34 Início da Execução
+10/10/2023 09:27:34 Criando planilha
+10/10/2023 09:27:34 Armazenando caminho da planilha
+10/10/2023 09:27:34 Caminho da planilha armazenado com sucesso!
+10/10/2023 09:27:35 Planilha livros-10_10_2023-09_27_34.xlsx criada com sucesso
+10/10/2023 09:27:35 Fim - Preparação do projeto
+10/10/2023 09:27:35 Início - Leitura de E-mails
+10/10/2023 09:27:35 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-10_10_2023-09_27_34.xlsx
+10/10/2023 09:27:36 Abrindo a caixa de E-mails
+10/10/2023 09:27:38 Percorrendo os e-mails em busca dos dados dos livros
+10/10/2023 09:27:39 Fim dos E-mails
+10/10/2023 09:27:39 Fechando a caixa de E-mails
+10/10/2023 09:27:39 Fechando o arquivo Excel
+10/10/2023 09:27:39 Fim - Leitura de E-mails
+10/10/2023 09:27:39 Início do tratamento de dados
+10/10/2023 09:27:39 Abrindo arquivo Excel
+10/10/2023 09:27:39 Inserindo Código VBA
+10/10/2023 09:27:39 Código VBA inserido com sucesso
+10/10/2023 09:27:40 Fechando arquivo Excel
+10/10/2023 09:27:40 Fim do tratamento de dados
+10/10/2023 09:27:56Abrindo excel
+10/10/2023 09:27:56Selecionando a pasta de dados de referência
+10/10/2023 09:27:56Lendo os dados gravados na planilha
+10/10/2023 09:27:58 Acesso ao site Amazon UK
+10/10/2023 09:27:59 Início - Processo de notificação
+10/10/2023 09:27:59 Início mover planilha
+10/10/2023 09:27:59 Planilha movida com sucesso!
+10/10/2023 09:27:59 Fim - Mover Planilha
+10/10/2023 09:27:59 Início do envio de E-mails para o time RPA
+10/10/2023 09:27:59 Abrindo arquivo Excel com os dados
+10/10/2023 09:28:00 Lendo os e-mails na planilha
+10/10/2023 09:28:00 Abrindo Desktop Outlook App
+10/10/2023 09:28:00 Enviando E-mail
+10/10/2023 09:28:00 E-mail enviado com sucesso!
+10/10/2023 09:28:00 Fechando Desktop Outlook App
+10/10/2023 09:28:00 Abrindo Desktop Outlook App
+10/10/2023 09:28:00 Enviando E-mail
+10/10/2023 09:28:00 E-mail enviado com sucesso!
+10/10/2023 09:28:00 Fechando Desktop Outlook App
+10/10/2023 09:28:00 Abrindo Desktop Outlook App
+10/10/2023 09:28:00 Enviando E-mail
+10/10/2023 09:28:01 E-mail enviado com sucesso!
+10/10/2023 09:28:01 Fechando Desktop Outlook App
+10/10/2023 09:28:01 Abrindo Desktop Outlook App
+10/10/2023 09:28:01 Enviando E-mail
+10/10/2023 09:28:01 E-mail enviado com sucesso!
+10/10/2023 09:28:01 Fechando Desktop Outlook App
+10/10/2023 09:28:01 Abrindo Desktop Outlook App
+10/10/2023 09:28:01 Enviando E-mail
+10/10/2023 09:28:01 E-mail enviado com sucesso!
+10/10/2023 09:28:01 Fechando Desktop Outlook App
+10/10/2023 09:28:01 Fim do envio de E-mails
+10/10/2023 09:28:01 Fechando arquivo Excel
+10/10/2023 09:28:01 Fechando o escopo do processo Excel
+10/10/2023 09:28:01 Fim - Processo de finalização
