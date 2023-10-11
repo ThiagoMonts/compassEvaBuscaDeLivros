@@ -1378,3 +1378,180 @@
 10/10/2023 20:24:57Preço extraído com sucesso
 10/10/2023 20:25:04O valor do frete é: $21.23
 10/10/2023 20:25:04Frete extraído com sucesso
+10/10/2023 22:48:50Abrindo excel
+10/10/2023 22:48:50Selecionando a pasta de dados de referência
+10/10/2023 22:48:50Lendo os dados gravados na planilha
+10/10/2023 22:48:52 Acesso ao site Amazon UK
+10/10/2023 22:48:52Rodando o looping de inputs da DataTable
+10/10/2023 22:48:52Pesquisando livros The Vanishing Half  
+10/10/2023 22:48:59Livro encontrado The Vanishing Half  
+10/10/2023 22:48:59Extraindo preço/Frete para o Brasil
+10/10/2023 22:49:03Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/10/2023 22:49:34Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/10/2023 22:49:35Rodando o looping de inputs da DataTable
+10/10/2023 22:49:35Pesquisando livros Get A Life, Chloe Brown 
+10/10/2023 22:49:41Livro encontrado Get A Life, Chloe Brown 
+10/10/2023 22:49:41Extraindo preço/Frete para o Brasil
+10/10/2023 22:49:45Preço/Frete extraídos com sucesso
+10/10/2023 22:49:46Rodando o looping de inputs da DataTable
+10/10/2023 22:49:46Pesquisando livros Verity  
+10/10/2023 22:49:47Livro encontrado Verity  
+10/10/2023 22:49:47Extraindo preço/Frete para o Brasil
+10/10/2023 22:49:51Preço/Frete extraídos com sucesso
+10/10/2023 22:49:51Rodando o looping de inputs da DataTable
+10/10/2023 22:49:51Pesquisando livros The Moonlight Child 
+10/10/2023 22:49:53Livro encontrado The Moonlight Child 
+10/10/2023 22:49:53Extraindo preço/Frete para o Brasil
+10/10/2023 22:49:56Preço/Frete extraídos com sucesso
+10/10/2023 22:49:56Rodando o looping de inputs da DataTable
+10/10/2023 22:49:56Pesquisando livros You have a Match 
+10/10/2023 22:49:58Livro encontrado You have a Match 
+10/10/2023 22:49:58Extraindo preço/Frete para o Brasil
+10/10/2023 22:50:00Erro ao extrair Preço/Frete do livro:  You have a Match 
+10/11/2023 08:14:33Abrindo excel
+10/11/2023 08:14:33Selecionando a pasta de dados de referência
+10/11/2023 08:14:35Lendo os dados gravados na planilha
+10/11/2023 08:14:38 Acesso ao site Amazon UK
+10/11/2023 08:14:38Rodando o looping de inputs da DataTable
+10/11/2023 08:14:38Pesquisando livros The Vanishing Half  
+10/11/2023 08:14:43Livro encontrado The Vanishing Half  
+10/11/2023 08:14:43Extraindo preço/Frete para o Brasil
+10/11/2023 08:14:47Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/11/2023 08:14:56Extraido Preço/Frete de livro usado com sucesso:  The Vanishing Half  
+10/11/2023 08:14:59Rodando o looping de inputs da DataTable
+10/11/2023 08:14:59Pesquisando livros Get A Life, Chloe Brown 
+10/11/2023 08:15:01Livro encontrado Get A Life, Chloe Brown 
+10/11/2023 08:15:01Extraindo preço/Frete para o Brasil
+10/11/2023 08:15:04Preço/Frete extraídos com sucesso Get A Life, Chloe Brown 
+10/11/2023 08:15:07Rodando o looping de inputs da DataTable
+10/11/2023 08:15:07Pesquisando livros Verity  
+10/11/2023 08:15:09Livro encontrado Verity  
+10/11/2023 08:15:09Extraindo preço/Frete para o Brasil
+10/11/2023 08:15:10Preço/Frete extraídos com sucesso Verity  
+10/11/2023 08:15:13Rodando o looping de inputs da DataTable
+10/11/2023 08:15:13Pesquisando livros The Moonlight Child 
+10/11/2023 08:15:15Livro encontrado The Moonlight Child 
+10/11/2023 08:15:15Extraindo preço/Frete para o Brasil
+10/11/2023 08:15:17Preço/Frete extraídos com sucesso The Moonlight Child 
+10/11/2023 08:15:20Rodando o looping de inputs da DataTable
+10/11/2023 08:15:20Pesquisando livros You have a Match 
+10/11/2023 08:15:22Livro encontrado You have a Match 
+10/11/2023 08:15:22Extraindo preço/Frete para o Brasil
+10/11/2023 08:15:24Erro ao extrair Preço/Frete do livro:  You have a Match 
+10/11/2023 08:15:55Erro ao extrair Preço/Frete do livro:  You have a Match 
+10/11/2023 08:15:58Rodando o looping de inputs da DataTable
+10/11/2023 08:15:58Pesquisando livros The Midnight Library 
+10/11/2023 08:16:00Livro encontrado The Midnight Library 
+10/11/2023 08:16:00Extraindo preço/Frete para o Brasil
+10/11/2023 08:16:04Preço/Frete extraídos com sucesso The Midnight Library 
+10/11/2023 08:16:07Rodando o looping de inputs da DataTable
+10/11/2023 08:16:07Pesquisando livros The Paper Palace 
+10/11/2023 08:16:08Livro encontrado The Paper Palace 
+10/11/2023 08:16:08Extraindo preço/Frete para o Brasil
+10/11/2023 08:16:11Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/11/2023 08:16:43Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/11/2023 08:16:46Rodando o looping de inputs da DataTable
+10/11/2023 08:16:46Pesquisando livros Wilder Girls 
+10/11/2023 08:16:47Livro encontrado Wilder Girls 
+10/11/2023 08:16:47Extraindo preço/Frete para o Brasil
+10/11/2023 08:16:50Erro ao extrair Preço/Frete do livro:  Wilder Girls 
+10/11/2023 08:17:21Erro ao extrair Preço/Frete do livro:  Wilder Girls 
+10/11/2023 08:17:24Rodando o looping de inputs da DataTable
+10/11/2023 08:17:24Pesquisando livros The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:17:26Livro encontrado The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:17:26Extraindo preço/Frete para o Brasil
+10/11/2023 08:17:28Preço/Frete extraídos com sucesso The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:17:31Rodando o looping de inputs da DataTable
+10/11/2023 08:17:31Pesquisando livros The Madness of Crowds
+10/11/2023 08:17:33Livro encontrado The Madness of Crowds
+10/11/2023 08:17:33Extraindo preço/Frete para o Brasil
+10/11/2023 08:17:34Preço/Frete extraídos com sucesso The Madness of Crowds
+10/11/2023 08:17:39Acessando ao site Amazon USA
+10/11/2023 08:17:39Acessando ao site Amazon USA
+10/11/2023 08:17:39Pesquisando livro The Vanishing Half  
+10/11/2023 08:17:42Livro Encontrado The Vanishing Half  
+10/11/2023 08:17:43Livro selecionado:  The Vanishing Half  
+10/11/2023 08:17:43Extraindo preço do Livro/Frete para o Brasil The Vanishing Half  
+10/11/2023 08:17:46Preço extraído com sucesso
+10/11/2023 08:17:55O valor do frete é: $20.26
+10/11/2023 08:17:55Frete extraído com sucesso
+10/11/2023 08:17:59Acessando ao site Amazon USA
+10/11/2023 08:17:59Pesquisando livro Get A Life, Chloe Brown 
+10/11/2023 08:18:01Livro Encontrado Get A Life, Chloe Brown 
+10/11/2023 08:18:03Livro selecionado:  Get A Life, Chloe Brown 
+10/11/2023 08:18:03Extraindo preço do Livro/Frete para o Brasil Get A Life, Chloe Brown 
+10/11/2023 08:18:04Preço extraído com sucesso
+10/11/2023 08:18:10O valor do frete é: $18.75
+10/11/2023 08:18:10Frete extraído com sucesso
+10/11/2023 08:18:14Acessando ao site Amazon USA
+10/11/2023 08:18:14Pesquisando livro Verity  
+10/11/2023 08:18:16Livro Encontrado Verity  
+10/11/2023 08:18:18Livro selecionado:  Verity  
+10/11/2023 08:18:18Extraindo preço do Livro/Frete para o Brasil Verity  
+10/11/2023 08:18:20Preço extraído com sucesso
+10/11/2023 08:18:26O valor do frete é: $18.96
+10/11/2023 08:18:26Frete extraído com sucesso
+10/11/2023 08:18:29Acessando ao site Amazon USA
+10/11/2023 08:18:29Pesquisando livro The Moonlight Child 
+10/11/2023 08:18:31Livro Encontrado The Moonlight Child 
+10/11/2023 08:18:33Livro selecionado:  The Moonlight Child 
+10/11/2023 08:18:33Extraindo preço do Livro/Frete para o Brasil The Moonlight Child 
+10/11/2023 08:18:35Preço extraído com sucesso
+10/11/2023 08:18:41O valor do frete é: $20.26
+10/11/2023 08:18:41Frete extraído com sucesso
+10/11/2023 08:18:44Acessando ao site Amazon USA
+10/11/2023 08:18:44Pesquisando livro You have a Match 
+10/11/2023 08:18:46Livro Encontrado You have a Match 
+10/11/2023 08:18:48Livro selecionado:  You have a Match 
+10/11/2023 08:18:48Extraindo preço do Livro/Frete para o Brasil You have a Match 
+10/11/2023 08:18:50Preço extraído com sucesso
+10/11/2023 08:18:57O valor do frete é: $19.61
+10/11/2023 08:18:57Frete extraído com sucesso
+10/11/2023 08:19:00Acessando ao site Amazon USA
+10/11/2023 08:19:00Pesquisando livro The Midnight Library 
+10/11/2023 08:19:02Livro Encontrado The Midnight Library 
+10/11/2023 08:19:04Livro selecionado:  The Midnight Library 
+10/11/2023 08:19:04Extraindo preço do Livro/Frete para o Brasil The Midnight Library 
+10/11/2023 08:19:06Preço extraído com sucesso
+10/11/2023 08:19:12O valor do frete é: $20.11
+10/11/2023 08:19:12Frete extraído com sucesso
+10/11/2023 08:19:15Acessando ao site Amazon USA
+10/11/2023 08:19:15Pesquisando livro The Paper Palace 
+10/11/2023 08:19:18Livro Encontrado The Paper Palace 
+10/11/2023 08:19:19Livro selecionado:  The Paper Palace 
+10/11/2023 08:19:19Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/11/2023 08:19:21Preço extraído com sucesso
+10/11/2023 08:19:27O valor do frete é: $21.02
+10/11/2023 08:19:27Frete extraído com sucesso
+10/11/2023 08:19:31Acessando ao site Amazon USA
+10/11/2023 08:19:31Pesquisando livro Wilder Girls 
+10/11/2023 08:19:33Livro Encontrado Wilder Girls 
+10/11/2023 08:19:35Livro selecionado:  Wilder Girls 
+10/11/2023 08:19:35Extraindo preço do Livro/Frete para o Brasil Wilder Girls 
+10/11/2023 08:19:36Preço extraído com sucesso
+10/11/2023 08:19:42O valor do frete é: $18.63
+10/11/2023 08:19:42Frete extraído com sucesso
+10/11/2023 08:19:45Acessando ao site Amazon USA
+10/11/2023 08:19:45Pesquisando livro The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:19:48Livro Encontrado The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:19:49Livro selecionado:  The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:19:49Extraindo preço do Livro/Frete para o Brasil The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:19:57Extraindo preço do Livro/Frete usado para o Brasil The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:19:57Erro ao filtrar pelo valor do livro:  The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:20:01Elemento Details não encontrado para o livro:  The Seven Husbands of Evelyn Hugo 
+10/11/2023 08:20:04Acessando ao site Amazon USA
+10/11/2023 08:20:04Pesquisando livro The Madness of Crowds
+10/11/2023 08:20:06Livro Encontrado The Madness of Crowds
+10/11/2023 08:20:07Livro selecionado:  The Madness of Crowds
+10/11/2023 08:20:07Extraindo preço do Livro/Frete para o Brasil The Madness of Crowds
+10/11/2023 08:20:09Preço extraído com sucesso
+10/11/2023 08:20:16O valor do frete é: $21.23
+10/11/2023 08:20:16Frete extraído com sucesso
+10/11/2023 08:27:54Abrindo excel
+10/11/2023 08:27:54Selecionando a pasta de dados de referência
+10/11/2023 08:27:57Lendo os dados gravados na planilha
+10/11/2023 08:27:59 Acesso ao site Amazon UK
+10/11/2023 08:27:59Rodando o looping de inputs da DataTable
+10/11/2023 08:27:59Pesquisando livros The Vanishing Half  
+10/11/2023 08:28:05Livro encontrado The Vanishing Half  
+10/11/2023 08:28:05Extraindo preço/Frete para o Brasil
