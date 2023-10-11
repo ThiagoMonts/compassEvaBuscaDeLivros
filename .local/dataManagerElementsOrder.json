@@ -85,11 +85,14 @@
       "Path": "EnviarEmailDadosIncompletos.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strColuna&Sequence_19",
         "strIdEmail&Sequence_19",
         "CellIndexValue&Sequence_15",
         "dtSheet1&Sequence_15"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -154,6 +157,34 @@
       ],
       "ArgumentsSectionElementsOrder": [
         "in_strSpreadsheetPath",
+        "in_strLogPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Pesquisa cotação corrigido sem VBA.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "valorCelula&Sequence_16",
+        "valorLibraTeste&Sequence_16",
+        "ExtractDataTable&Sequence_16",
+        "strSiteBcbPath&Sequence_9",
+        "strValorDolar&Sequence_16",
+        "strValorLibra&Sequence_16"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath",
+        "in_strLogPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "verificarMelhorPreco.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
         "in_strLogPath"
       ],
       "ConstantsSectionElementsOrder": [],
