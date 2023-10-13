@@ -1,0 +1,119 @@
+10/12/2023 16:37:33 Início da Execução
+10/12/2023 16:37:33 Criando planilha
+10/12/2023 16:37:33 Armazenando caminho da planilha
+10/12/2023 16:37:33 Caminho da planilha armazenado com sucesso!
+10/12/2023 16:37:34 Planilha livros-12_10_2023-16_37_33.xlsx criada com sucesso
+10/12/2023 16:37:34 Fim - Preparação do projeto
+10/12/2023 16:37:34 Início - Leitura de E-mails
+10/12/2023 16:37:34 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-16_37_33.xlsx
+10/12/2023 16:37:34 Abrindo a caixa de E-mails
+10/12/2023 16:37:34 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 16:37:35 Extraindo ID do E-mail Livro - ID 85423
+10/12/2023 16:37:35 Copiando o ID para a Data Table
+10/12/2023 16:37:35 Copiando os demais dados do E-mail Livro - ID 85423
+10/12/2023 16:37:35 Copiando os demais dados para a Data Table
+10/12/2023 16:37:35 Demais dados extraídos com sucesso!
+10/12/2023 16:37:35 Adicionando o ID Livro - ID 85423 a planilha
+10/12/2023 16:37:35 ID adicionado a planilha com sucesso!
+10/12/2023 16:37:35 Adicionando os demais dados Livro - ID 85423 a planilha
+10/12/2023 16:37:35 Demais dados adicionados a planilha com sucesso!
+10/12/2023 16:37:35 E-mail Livro - ID 85423 marcado como lido com sucesso!
+10/12/2023 16:37:35 Extraindo ID do E-mail Livro - ID 42558
+10/12/2023 16:37:35 Copiando o ID para a Data Table
+10/12/2023 16:37:35 Copiando os demais dados do E-mail Livro - ID 42558
+10/12/2023 16:37:35 Copiando os demais dados para a Data Table
+10/12/2023 16:37:35 Demais dados extraídos com sucesso!
+10/12/2023 16:37:35 Adicionando o ID Livro - ID 42558 a planilha
+10/12/2023 16:37:35 ID adicionado a planilha com sucesso!
+10/12/2023 16:37:35 Adicionando os demais dados Livro - ID 42558 a planilha
+10/12/2023 16:37:35 Demais dados adicionados a planilha com sucesso!
+10/12/2023 16:37:36 E-mail Livro - ID 42558 marcado como lido com sucesso!
+10/12/2023 16:37:36 Fim dos E-mails
+10/12/2023 16:37:36 Fechando a caixa de E-mails
+10/12/2023 16:37:36 Fechando o arquivo Excel
+10/12/2023 16:37:36 Fim - Leitura de E-mails
+10/12/2023 16:37:36 Início do tratamento de dados
+10/12/2023 16:37:36 Abrindo arquivo Excel
+10/12/2023 16:37:36 Inserindo Código VBA
+10/12/2023 16:37:37 Código VBA inserido com sucesso
+10/12/2023 16:37:37 Fechando arquivo Excel
+10/12/2023 16:37:37 Fim do tratamento de dados
+10/12/2023 16:37:37 Início - Envio de e-mails dados incompletos
+10/12/2023 16:37:37 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-16_37_33.xlsx
+10/12/2023 16:37:37 Buscando E-mails com informações faltantes
+10/12/2023 16:37:37 Verificando qual informação está faltando
+10/12/2023 16:37:38 Verificando qual informação está faltando
+10/12/2023 16:37:38Abrindo excel
+10/12/2023 16:37:38Selecionando a pasta de dados de referência
+10/12/2023 16:37:38Lendo os dados gravados na planilha
+10/12/2023 16:37:42 Acesso ao site Amazon UK
+10/12/2023 16:37:42Rodando o looping de inputs da DataTable
+10/12/2023 16:37:42Pesquisando livros Get A Life, Chloe Brown 
+10/12/2023 16:37:47Livro encontrado Get A Life, Chloe Brown 
+10/12/2023 16:37:47Extraindo preço/Frete para o Brasil
+10/12/2023 16:38:51Frete extraído com sucesso Get A Life, Chloe Brown 
+10/12/2023 16:38:51Preço/Frete extraídos com sucesso Get A Life, Chloe Brown 
+10/12/2023 16:38:51Rodando o looping de inputs da DataTable
+10/12/2023 16:38:52Pesquisando livros You have a Match 
+10/12/2023 16:38:54Livro encontrado You have a Match 
+10/12/2023 16:38:54Extraindo preço/Frete para o Brasil
+10/12/2023 16:39:07Erro ao extrair Preço/Frete do livro:  You have a Match 
+10/12/2023 16:39:14Extraido Preço/Frete de livro usado com sucesso:  You have a Match 
+10/12/2023 16:39:19Acessando ao site Amazon USA
+10/12/2023 16:39:19Acessando ao site Amazon USA
+10/12/2023 16:39:20Pesquisando livro Get A Life, Chloe Brown 
+10/12/2023 16:39:22Livro Encontrado Get A Life, Chloe Brown 
+10/12/2023 16:39:25Livro selecionado:  Get A Life, Chloe Brown 
+10/12/2023 16:39:25Extraindo preço do Livro/Frete para o Brasil Get A Life, Chloe Brown 
+10/12/2023 16:39:27Preço extraído com sucesso
+10/12/2023 16:39:33O valor do frete é: US$ 18,75
+10/12/2023 16:39:33Frete extraído com sucesso
+10/12/2023 16:40:51Erro ao extrair o frete do livro:  Get A Life, Chloe Brown 
+10/12/2023 16:40:52Acessando ao site Amazon USA
+10/12/2023 16:40:52Pesquisando livro You have a Match 
+10/12/2023 16:40:54Livro Encontrado You have a Match 
+10/12/2023 16:40:57Livro selecionado:  You have a Match 
+10/12/2023 16:40:57Extraindo preço do Livro/Frete para o Brasil You have a Match 
+10/12/2023 16:40:58Preço extraído com sucesso
+10/12/2023 16:41:06O valor do frete é: US$ 19,61
+10/12/2023 16:41:06Frete extraído com sucesso
+10/12/2023 16:41:21Erro ao extrair o frete do livro:  You have a Match 
+10/12/2023 16:41:23 Início - pesquisa cotação de valores
+10/12/2023 16:41:26Início - acesso ao site BCB
+10/12/2023 16:41:30 Localizando cotação dólar
+10/12/2023 16:41:34 Valor do dólar extraído com sucesso
+10/12/2023 16:41:34 Inserção valor do dolar no excel
+10/12/2023 16:41:34 Localizando cotação libra
+10/12/2023 16:41:35Valor da libra extraído com sucesso
+10/12/2023 16:41:35 Inserção valor da libra na planilha
+10/12/2023 16:41:37 Início - Processo de notificação
+10/12/2023 16:41:37 Início mover planilha
+10/12/2023 16:41:37 Planilha movida com sucesso!
+10/12/2023 16:41:37 Fim - Mover Planilha
+10/12/2023 16:41:37 Início do envio de E-mails para o time RPA
+10/12/2023 16:41:37 Abrindo arquivo Excel com os dados
+10/12/2023 16:41:40 Lendo os e-mails na planilha
+10/12/2023 16:41:40 Abrindo Desktop Outlook App
+10/12/2023 16:41:40 Enviando E-mail
+10/12/2023 16:41:40 E-mail enviado com sucesso!
+10/12/2023 16:41:40 Fechando Desktop Outlook App
+10/12/2023 16:41:40 Abrindo Desktop Outlook App
+10/12/2023 16:41:40 Enviando E-mail
+10/12/2023 16:41:41 E-mail enviado com sucesso!
+10/12/2023 16:41:41 Fechando Desktop Outlook App
+10/12/2023 16:41:41 Abrindo Desktop Outlook App
+10/12/2023 16:41:41 Enviando E-mail
+10/12/2023 16:41:41 E-mail enviado com sucesso!
+10/12/2023 16:41:41 Fechando Desktop Outlook App
+10/12/2023 16:41:41 Abrindo Desktop Outlook App
+10/12/2023 16:41:41 Enviando E-mail
+10/12/2023 16:41:41 E-mail enviado com sucesso!
+10/12/2023 16:41:41 Fechando Desktop Outlook App
+10/12/2023 16:41:41 Abrindo Desktop Outlook App
+10/12/2023 16:41:41 Enviando E-mail
+10/12/2023 16:41:41 E-mail enviado com sucesso!
+10/12/2023 16:41:41 Fechando Desktop Outlook App
+10/12/2023 16:41:41 Fim do envio de E-mails
+10/12/2023 16:41:41 Fechando arquivo Excel
+10/12/2023 16:41:42 Fechando o escopo do processo Excel
+10/12/2023 16:41:42 Fim - Processo de finalização

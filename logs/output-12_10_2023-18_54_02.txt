@@ -1,0 +1,49 @@
+10/12/2023 18:54:02 Início da Execução
+10/12/2023 18:54:02 Criando planilha
+10/12/2023 18:54:02 Armazenando caminho da planilha
+10/12/2023 18:54:02 Caminho da planilha armazenado com sucesso!
+10/12/2023 18:54:03 Planilha livros-12_10_2023-18_54_02.xlsx criada com sucesso
+10/12/2023 18:54:03 Fim - Preparação do projeto
+10/12/2023 18:54:03 Início - Leitura de E-mails
+10/12/2023 18:54:03 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-18_54_02.xlsx
+10/12/2023 18:54:04 Abrindo a caixa de E-mails
+10/12/2023 18:54:04 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 18:54:04 Fim dos E-mails
+10/12/2023 18:54:04 Fechando a caixa de E-mails
+10/12/2023 18:54:04 Fechando o arquivo Excel
+10/12/2023 18:54:04 Fim - Leitura de E-mails
+10/12/2023 18:54:05 Início do tratamento de dados
+10/12/2023 18:54:05 Abrindo arquivo Excel
+10/12/2023 18:54:05 Inserindo Código VBA
+10/12/2023 18:54:06 Código VBA inserido com sucesso
+10/12/2023 18:54:06 Fechando arquivo Excel
+10/12/2023 18:54:06 Fim do tratamento de dados
+10/12/2023 18:54:06 Início - Envio de e-mails dados incompletos
+10/12/2023 18:54:06 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-18_54_02.xlsx
+10/12/2023 18:54:06 Buscando E-mails com informações faltantes
+10/12/2023 18:54:06 Erro ao fazer o looping System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   at Microsoft.Office.Interop.Excel._Application.Intersect(Range Arg1, Range Arg2, Object Arg3, Object Arg4, Object Arg5, Object Arg6, Object Arg7, Object Arg8, Object Arg9, Object Arg10, Object Arg11, Object Arg12, Object Arg13, Object Arg14, Object Arg15, Object Arg16, Object Arg17, Object Arg18, Object Arg19, Object Arg20, Object Arg21, Object Arg22, Object Arg23, Object Arg24, Object Arg25, Object Arg26, Object Arg27, Object Arg28, Object Arg29, Object Arg30)
+   at UiPath.Excel.WorkbookMetadataOperations.<>c__DisplayClass20_0.<ResizeColumnOrRowRangesToUsedRange>b__0()
+   at UiPath.Excel.ExcelContextHelper.Execute[T](Func`1 func, ExcelContext context, Object[] contextParams)
+   at UiPath.Excel.WorkbookApplication.XlObject[T](Func`1 func, T& excelObject, ExcelContext context, Object[] contextParameters)
+   at UiPath.Excel.WorkbookApplication.XlRange(Func`1 func, Range& excelRange, String rangeAddress)
+   at UiPath.Excel.WorkbookMetadataOperations.ResizeColumnOrRowRangesToUsedRange(Range usedRange, Range resultRange)
+   at UiPath.Excel.WorkbookMetadataOperations.IntersectWithUsedRange(String rangeAddress, Range usedRange, Boolean extendSingleCell, Range& resultRange, ExcelMetadata& excelMetadata)
+   at UiPath.Excel.WorkbookMetadataOperations.GetExcelMetadataForRange(String range, String worksheet, Boolean clipToUsedRange, Boolean addVisibleRows)
+   at UiPath.Excel.CurrentRowQuickHandle.<>c__DisplayClass57_0.<GetLazySrcMetadataResolver>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at UiPath.Excel.CurrentRowQuickHandle.GetColumnsFromRange(IReadRangeRef rangeRef, Boolean firstRowAreHeaders, Boolean& hasColumns)
+   at UiPath.Excel.CurrentRowQuickHandle..ctor(IReadRangeRef rangeRef, EmptyRowBehavior emptyRowBehavior, Boolean firstRowAreHeaders)
+   at UiPath.Excel.Activities.Business.ExcelForEachRowX.Execute(NativeActivityContext context)
+   at System.Activities.NativeActivity.InternalExecute(ActivityInstance instance, ActivityExecutor executor, BookmarkManager bookmarkManager)
+   at System.Activities.ActivityInstance.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)
+10/12/2023 18:54:07Abrindo excel
+10/12/2023 18:54:07Selecionando a pasta de dados de referência
+10/12/2023 18:54:07Lendo os dados gravados na planilha
+10/12/2023 18:54:11 Acesso ao site Amazon UK
+10/12/2023 18:54:13Acessando ao site Amazon USA

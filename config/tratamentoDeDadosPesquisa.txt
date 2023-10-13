@@ -1,0 +1,467 @@
+'  Removendo linha com descrição de informações
+Sub USA_RemoverLinhasDescricao()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 1 Step -1
+        If InStr(1, planilha.Cells(i, 1).Value, "nomeLivro", vbTextCompare) > 0 Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+Sub USA_RemoverPalavrasDesnecessarias()
+    Dim planilha As Worksheet
+    Dim ultimaLinhaB As Long
+    Dim ultimaLinhaD As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinhaB = planilha.Cells(planilha.Rows.Count, "B").End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaB
+        Dim conteudoB As String
+        conteudoB = planilha.Cells(i, "B").Value
+    
+        If InStr(1, conteudoB, "Entrega", vbTextCompare) > 0 Then
+            conteudoB = Replace(conteudoB, "Entrega", "")
+        End If
+        
+        If InStr(1, conteudoB, ":", vbTextCompare) > 0 Then
+            Dim partes() As String
+            partes = Split(conteudoB, ":")
+            
+            If UBound(partes) > 0 Then
+                conteudoB = Trim(partes(0))  ' Remove espaços extras
+            End If
+        End If
+        
+        planilha.Cells(i, "B").Value = conteudoB
+    Next i
+    
+    ultimaLinhaD = planilha.Cells(planilha.Rows.Count, "D").End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaD
+        Dim conteudoD As String
+        conteudoD = planilha.Cells(i, "D").Value
+    
+        If InStr(1, conteudoD, "Entrega", vbTextCompare) > 0 Then
+            conteudoD = Replace(conteudoD, "Entrega", "")
+        End If
+        
+        If InStr(1, conteudoD, ":", vbTextCompare) > 0 Then
+            Dim partesD() As String
+            partesD = Split(conteudoD, ":")
+            
+            If UBound(partesD) > 0 Then
+                conteudoD = Trim(partesD(0))  ' Remove espaços extras
+            End If
+        End If
+        
+        planilha.Cells(i, "D").Value = conteudoD
+    Next i
+End Sub
+
+' Quando o livro não é encontrado, vem com o tipo de capa no lugar do
+' preço, então essa macro retira a info
+
+Sub USA_LimparCelulasComPalavrasNaColunaBEC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        If InStr(1, planilha.Cells(i, 2).Value, "Capa dura", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 2).Value, "Capa Comum", vbTextCompare) > 0 Then
+            planilha.Cells(i, 2).ClearContents
+        End If
+        
+        If InStr(1, planilha.Cells(i, 3).Value, "Capa dura", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 3).Value, "Capa Comum", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+' Deixa informações de preço em uma unica coluna
+Sub USA_UnirColunasBCeRemoverColunaC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Adiciona o conteúdo da célula na coluna C à célula correspondente na coluna B
+        planilha.Cells(i, 2).Value = planilha.Cells(i, 2).Value & " " & planilha.Cells(i, 3).Value
+    Next i
+    
+    ' Exclui a coluna C
+    planilha.Columns(3).Delete
+
+    planilha.Columns(2).AutoFit
+End Sub
+
+Sub MoverConteudoParaLinhaAcima()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = 2 To ultimaLinha
+        If IsEmpty(planilha.Cells(i, 1)) Then
+            planilha.Cells(i - 1, 2).Value = planilha.Cells(i, 2).Value
+            planilha.Cells(i - 1, 3).Value = planilha.Cells(i, 3).Value
+            
+            planilha.Cells(i, 2).ClearContents
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+Sub RemoverLinhasSemConteudo()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = ultimaLinha To 1 Step -1
+        If IsEmpty(planilha.Cells(i, 2)) Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+Sub USA_RemoverLinhasDuplicadas()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    Dim j As Long
+    Dim conteudoAtual As String
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon USA")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 2 Step -1
+        conteudoAtual = planilha.Cells(i, 1).Value
+        For j = i - 1 To 1 Step -1
+            If planilha.Cells(j, 1).Value = conteudoAtual Then
+                planilha.Rows(i).Delete
+                Exit For
+            End If
+        Next j
+    Next i
+End Sub
+
+Sub USA_CopiarColunasBCEmPlanilha2()
+    Dim planilhaAmazon As Worksheet
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinhaAmazon As Long
+    Dim i As Long
+    
+    Set planilhaAmazon = ThisWorkbook.Sheets("Amazon USA")
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinhaAmazon = planilhaAmazon.Cells(planilhaAmazon.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaAmazon
+        planilhaDestino.Cells(i + 1, 12).Value = planilhaAmazon.Cells(i, 2).Value
+        planilhaDestino.Cells(i + 1, 13).Value = planilhaAmazon.Cells(i, 3).Value
+    Next i
+End Sub
+
+
+' ---------- EXTRAÇÃO DE DADOS AMAZON UK ----------------------------------------
+
+'  Removendo linha com descrição de informações
+Sub UK_RemoverLinhasDescricao()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 1 Step -1
+        If InStr(1, planilha.Cells(i, 1).Value, "nomeLivro", vbTextCompare) > 0 Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+Sub UK_RemoverPalavrasDesnecessarias()
+    Dim planilha As Worksheet
+    Dim ultimaLinhaC As Long
+    Dim ultimaLinhaD As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    ultimaLinhaC = planilha.Cells(planilha.Rows.Count, "C").End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaC
+        Dim conteudoC As String
+        conteudoC = planilha.Cells(i, "C").Value
+    
+        If InStr(1, conteudoC, "delivery", vbTextCompare) > 0 Then
+            Dim partes() As String
+            partes = Split(conteudoC, "delivery")
+            If UBound(partes) > 0 Then
+                conteudoC = Trim(partes(0)) ' Remove espaços extras
+            End If
+        End If
+        
+        planilha.Cells(i, "C").Value = conteudoC
+    Next i
+    
+    ultimaLinhaD = planilha.Cells(planilha.Rows.Count, "D").End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaD
+        Dim conteudoD As String
+        conteudoD = planilha.Cells(i, "D").Value
+    
+        If InStr(1, conteudoD, "delivery", vbTextCompare) > 0 Then
+            Dim partesD() As String
+            partesD = Split(conteudoD, "delivery")
+            If UBound(partesD) > 0 Then
+                conteudoD = Trim(partesD(0))
+            End If
+        End If
+        
+        planilha.Cells(i, "D").Value = conteudoD
+    Next i
+End Sub
+
+' Quando o livro não é encontrado, vem com o tipo de capa no lugar do
+' preço, então essa macro retira a info
+
+Sub UK_LimparCelulasComPalavrasNaColunaBEC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        If InStr(1, planilha.Cells(i, 2).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 2).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 2).ClearContents
+        End If
+        
+        If InStr(1, planilha.Cells(i, 3).Value, "Hardcover", vbTextCompare) > 0 Or _
+           InStr(1, planilha.Cells(i, 3).Value, "Paperback", vbTextCompare) > 0 Then
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+' Deixa informações de preço em uma unica coluna
+Sub UK_MoverConteudoColunasBC()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Verifica se a célula na coluna B está vazia
+        If planilha.Cells(i, 2).Value = "" Then
+            ' Move o conteúdo da célula na coluna C para a coluna B
+            planilha.Cells(i, 2).Value = planilha.Cells(i, 3).Value
+            
+            ' Move o conteúdo da célula na coluna D para a coluna C
+            planilha.Cells(i, 3).Value = planilha.Cells(i, 4).Value
+        End If
+    Next i
+    
+    ' Exclui a coluna D
+    planilha.Columns(4).Delete
+
+    planilha.Columns(3).AutoFit
+End Sub
+
+
+Sub UK_MoverConteudoParaLinhaAcima()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = 2 To ultimaLinha
+        If IsEmpty(planilha.Cells(i, 1)) Then
+            planilha.Cells(i - 1, 2).Value = planilha.Cells(i, 2).Value
+            planilha.Cells(i - 1, 3).Value = planilha.Cells(i, 3).Value
+            
+            ' Limpa as células originais nas colunas B e C
+            planilha.Cells(i, 2).ClearContents
+            planilha.Cells(i, 3).ClearContents
+        End If
+    Next i
+End Sub
+
+Sub UK_RemoverLinhasSemConteudo()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+
+    For i = ultimaLinha To 1 Step -1
+        If IsEmpty(planilha.Cells(i, 1)) Then
+            planilha.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+
+Sub UK_RemoverLinhasDuplicadas()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    Dim j As Long
+    Dim conteudoAtual As String
+    
+    Set planilha = ThisWorkbook.Sheets("Amazon UK")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = ultimaLinha To 2 Step -1
+        conteudoAtual = planilha.Cells(i, 1).Value
+        For j = i - 1 To 1 Step -1
+            If planilha.Cells(j, 1).Value = conteudoAtual Then
+                planilha.Rows(i).Delete
+                Exit For
+            End If
+        Next j
+    Next i
+End Sub
+
+Sub UK_CopiarColunasBCEmPlanilha1()
+    Dim planilhaAmazon As Worksheet
+    Dim planilhaDestino As Worksheet
+    Dim ultimaLinhaAmazon As Long
+    Dim i As Long
+    
+    Set planilhaAmazon = ThisWorkbook.Sheets("Amazon UK")
+    Set planilhaDestino = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinhaAmazon = planilhaAmazon.Cells(planilhaAmazon.Rows.Count, 2).End(xlUp).Row
+    
+    For i = 1 To ultimaLinhaAmazon
+        ' Copia os dados da coluna B e C da Amazon UK para as colunas L e M da Planilha1
+        planilhaDestino.Cells(i + 1, 7).Value = planilhaAmazon.Cells(i, 2).Value
+        planilhaDestino.Cells(i + 1, 8).Value = planilhaAmazon.Cells(i, 3).Value
+    Next i
+End Sub
+
+
+Sub SomaUK()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 7).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        Dim valorG As Double
+        valorG = Val(Mid(planilha.Cells(i, 7).Value, 2))
+        
+        Dim valorH As Double
+        valorH = Val(Mid(planilha.Cells(i, 8).Value, 2))
+
+        planilha.Cells(i, 9).Value = valorG + valorH
+    Next i
+End Sub
+
+Sub CalcularSomaColunasLMEColocarNaColunaN()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 12).End(xlUp).Row
+    
+    ' Loop para percorrer as linhas e calcular a soma
+    For i = 1 To ultimaLinha
+        ' Valores em dólar (remove US$ e converter para Double)
+        Dim valorL As String
+        valorL = Replace(planilha.Cells(i, 12).Value, "US$", "")
+        valorL = Replace(valorL, ".", "")
+        valorL = Replace(valorL, ",", ".")
+        valorL = Trim(valorL) '
+        
+        Dim valorM As String
+        valorM = Replace(planilha.Cells(i, 13).Value, "US$", "")
+        valorM = Replace(valorM, ".", "")
+        valorM = Replace(valorM, ",", ".")
+        valorM = Trim(valorM) '
+        
+        ' Calcula a soma e colocar na coluna N
+        If IsNumeric(valorL) And IsNumeric(valorM) Then
+            ' Converte para Double e dividir por 100 para representar centavos
+            Dim soma As Double
+            soma = (CDbl(valorL) + CDbl(valorM)) / 100
+            ' Resultado formatado na coluna N
+            planilha.Cells(i, 14).NumberFormat = "0.00"
+            planilha.Cells(i, 14).Value = soma
+        Else
+            ' Erro
+            planilha.Cells(i, 14).Value = "Erro de conversão"
+        End If
+    Next i
+End Sub
+
+
+
+
+
+Sub tratamentoDeDadosPesquisa()
+	USA_RemoverLinhasDescricao
+	USA_RemoverPalavrasDesnecessarias
+	USA_LimparCelulasComPalavrasNaColunaBEC
+	USA_UnirColunasBCeRemoverColunaC
+	MoverConteudoParaLinhaAcima
+	RemoverLinhasSemConteudo
+	USA_RemoverLinhasDuplicadas
+	USA_CopiarColunasBCEmPlanilha2
+	UK_RemoverLinhasDescricao
+	UK_RemoverPalavrasDesnecessarias
+	UK_LimparCelulasComPalavrasNaColunaBEC
+	UK_MoverConteudoColunasBC
+	UK_MoverConteudoParaLinhaAcima
+	UK_RemoverLinhasSemConteudo
+	UK_RemoverLinhasDuplicadas
+	UK_CopiarColunasBCEmPlanilha1
+	SomaUK
+	CalcularSomaColunasLMEColocarNaColunaN
+End Sub
+
+

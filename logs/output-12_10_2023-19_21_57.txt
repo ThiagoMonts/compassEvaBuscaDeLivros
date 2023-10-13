@@ -1,0 +1,19 @@
+10/12/2023 19:21:57 Início da Execução
+10/12/2023 19:21:57 Criando planilha
+10/12/2023 19:21:57 Armazenando caminho da planilha
+10/12/2023 19:21:57 Caminho da planilha armazenado com sucesso!
+10/12/2023 19:22:02 Planilha livros-12_10_2023-19_21_57.xlsx criada com sucesso
+10/12/2023 19:22:02 Fim - Preparação do projeto
+10/12/2023 19:22:02 Início - Leitura de E-mails
+10/12/2023 19:22:02 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-19_21_57.xlsx
+10/12/2023 19:22:02 Abrindo a caixa de E-mails
+10/12/2023 19:22:03 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 19:22:03 Extraindo ID do E-mail Livro - ID 99685
+10/12/2023 19:22:03 Copiando o ID para a Data Table
+10/12/2023 19:22:03 Copiando os demais dados do E-mail Livro - ID 99685
+10/12/2023 19:22:03 Copiando os demais dados para a Data Table
+10/12/2023 19:22:03 Demais dados extraídos com sucesso!
+10/12/2023 19:22:03 Adicionando o ID Livro - ID 99685 a planilha
+10/12/2023 19:22:03 ID adicionado a planilha com sucesso!
+10/12/2023 19:22:03 Adicionando os demais dados Livro - ID 99685 a planilha
+10/12/2023 19:22:03 Demais dados adicionados a planilha com sucesso!

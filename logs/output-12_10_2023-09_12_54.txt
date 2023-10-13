@@ -1,0 +1,106 @@
+10/12/2023 09:12:54 Início da Execução
+10/12/2023 09:12:54 Criando planilha
+10/12/2023 09:12:54 Armazenando caminho da planilha
+10/12/2023 09:12:54 Caminho da planilha armazenado com sucesso!
+10/12/2023 09:12:57 Planilha livros-12_10_2023-09_12_54.xlsx criada com sucesso
+10/12/2023 09:12:57 Fim - Preparação do projeto
+10/12/2023 09:12:57 Início - Leitura de E-mails
+10/12/2023 09:12:57 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-09_12_54.xlsx
+10/12/2023 09:12:58 Abrindo a caixa de E-mails
+10/12/2023 09:12:58 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 09:12:58 Extraindo ID do E-mail Livro - ID 15902
+10/12/2023 09:12:58 Copiando o ID para a Data Table
+10/12/2023 09:12:58 Copiando os demais dados do E-mail Livro - ID 15902
+10/12/2023 09:12:58 Copiando os demais dados para a Data Table
+10/12/2023 09:12:58 Demais dados extraídos com sucesso!
+10/12/2023 09:12:58 Adicionando o ID Livro - ID 15902 a planilha
+10/12/2023 09:12:58 ID adicionado a planilha com sucesso!
+10/12/2023 09:12:58 Adicionando os demais dados Livro - ID 15902 a planilha
+10/12/2023 09:12:59 Demais dados adicionados a planilha com sucesso!
+10/12/2023 09:12:59 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/12/2023 09:12:59 Fim dos E-mails
+10/12/2023 09:12:59 Fechando a caixa de E-mails
+10/12/2023 09:12:59 Fechando o arquivo Excel
+10/12/2023 09:12:59 Fim - Leitura de E-mails
+10/12/2023 09:12:59 Início do tratamento de dados
+10/12/2023 09:12:59 Abrindo arquivo Excel
+10/12/2023 09:12:59 Inserindo Código VBA
+10/12/2023 09:13:00 Código VBA inserido com sucesso
+10/12/2023 09:13:00 Fechando arquivo Excel
+10/12/2023 09:13:00 Fim do tratamento de dados
+10/12/2023 09:13:00 Início - Envio de e-mails dados incompletos
+10/12/2023 09:13:00 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-09_12_54.xlsx
+10/12/2023 09:13:01 Buscando E-mails com informações faltantes
+10/12/2023 09:13:01 Erro ao fazer o looping UiPath.Excel.ExcelException: Failed setting the current sheet to: Planilha1 in workbook: C:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-09_12_54.xlsx. Original error message:  O servidor RPC não está disponível. (0x800706BA)
+ ---> System.Runtime.InteropServices.COMException (0x800706BA): O servidor RPC não está disponível. (0x800706BA)
+   at Microsoft.Office.Interop.Excel._Workbook.get_Sheets()
+   at UiPath.Excel.WorkbookApplication.SetSheet(String sheetName, Boolean createNew)
+   --- End of inner exception stack trace ---
+   at UiPath.Excel.WorkbookApplication.SetSheet(String sheetName, Boolean createNew)
+   at UiPath.Excel.Activities.QuickHandle.WorksheetIndexer.get_Item(String name)
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.EnviarEmailDadosIncompletos_Expressions_TypedDataContext5_ForReadOnly.__Expr12Get()
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.EnviarEmailDadosIncompletos_Expressions_TypedDataContext5_ForReadOnly.ValueType___Expr12Get()
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.InvokeExpression(Int32 expressionId, IList`1 locations, ActivityContext activityContext)
+   at System.Activities.Expressions.CompiledExpressionInvoker.InvokeExpression(ActivityContext activityContext)
+   at Microsoft.VisualBasic.Activities.VisualBasicValue`1.Execute(CodeActivityContext context)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteInResolutionContext[T](ActivityInstance parentInstance, Activity`1 expressionActivity)
+   at System.Activities.InArgument`1.TryPopulateValue(LocationEnvironment targetEnvironment, ActivityInstance activityInstance, ActivityExecutor executor)
+   at System.Activities.ActivityInstance.InternalTryPopulateArgumentValueOrScheduleExpression(RuntimeArgument argument, Int32 nextArgumentIndex, ActivityExecutor executor, IDictionary`2 argumentValueOverrides, Location resultLocation, Boolean isDynamicUpdate)
+   at System.Activities.ActivityInstance.ResolveArguments(ActivityExecutor executor, IDictionary`2 argumentValueOverrides, Location resultLocation, Int32 startIndex)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)
+10/12/2023 09:13:01Abrindo excel
+10/12/2023 09:13:01Selecionando a pasta de dados de referência
+10/12/2023 09:13:04Lendo os dados gravados na planilha
+10/12/2023 09:13:06 Acesso ao site Amazon UK
+10/12/2023 09:13:06Rodando o looping de inputs da DataTable
+10/12/2023 09:13:06Pesquisando livros The Madness of Crowds
+10/12/2023 09:13:11Livro encontrado The Madness of Crowds
+10/12/2023 09:13:11Extraindo preço/Frete para o Brasil
+10/12/2023 09:13:14Preço/Frete extraídos com sucesso The Madness of Crowds
+10/12/2023 09:13:19Acessando ao site Amazon USA
+10/12/2023 09:13:19Acessando ao site Amazon USA
+10/12/2023 09:13:19Pesquisando livro The Madness of Crowds
+10/12/2023 09:13:23Livro Encontrado The Madness of Crowds
+10/12/2023 09:13:26Livro selecionado:  The Madness of Crowds
+10/12/2023 09:13:26Extraindo preço do Livro/Frete para o Brasil The Madness of Crowds
+10/12/2023 09:13:28Preço extraído com sucesso
+10/12/2023 09:14:05Erro ao extrair o frete do livro:  The Madness of Crowds
+10/12/2023 09:14:09 Início - pesquisa cotação de valores
+10/12/2023 09:14:10 Acesso ao site BCB
+10/12/2023 09:14:11 Localizando cotação dólar
+10/12/2023 09:14:17 Valor do dólar extraído com sucesso
+10/12/2023 09:14:17 Inserindo valor do dólar planilha
+10/12/2023 09:14:35 Localizando cotação libra 
+10/12/2023 09:14:42 Inserindo valor da libra na planilha
+10/12/2023 09:14:58 Fim - Pesquisa cotação de valores
+10/12/2023 09:14:58 Início - Processo de notificação
+10/12/2023 09:14:58 Início mover planilha
+10/12/2023 09:14:58 Planilha movida com sucesso!
+10/12/2023 09:14:58 Fim - Mover Planilha
+10/12/2023 09:14:58 Início do envio de E-mails para o time RPA
+10/12/2023 09:14:58 Abrindo arquivo Excel com os dados
+10/12/2023 09:14:58 Lendo os e-mails na planilha
+10/12/2023 09:14:59 Abrindo Desktop Outlook App
+10/12/2023 09:14:59 Enviando E-mail
+10/12/2023 09:14:59 E-mail enviado com sucesso!
+10/12/2023 09:14:59 Fechando Desktop Outlook App
+10/12/2023 09:14:59 Abrindo Desktop Outlook App
+10/12/2023 09:14:59 Enviando E-mail
+10/12/2023 09:14:59 E-mail enviado com sucesso!
+10/12/2023 09:14:59 Fechando Desktop Outlook App
+10/12/2023 09:14:59 Abrindo Desktop Outlook App
+10/12/2023 09:14:59 Enviando E-mail
+10/12/2023 09:14:59 E-mail enviado com sucesso!
+10/12/2023 09:14:59 Fechando Desktop Outlook App
+10/12/2023 09:14:59 Abrindo Desktop Outlook App
+10/12/2023 09:14:59 Enviando E-mail
+10/12/2023 09:14:59 E-mail enviado com sucesso!
+10/12/2023 09:14:59 Fechando Desktop Outlook App
+10/12/2023 09:14:59 Abrindo Desktop Outlook App
+10/12/2023 09:15:00 Enviando E-mail
+10/12/2023 09:15:00 E-mail enviado com sucesso!
+10/12/2023 09:15:00 Fechando Desktop Outlook App
+10/12/2023 09:15:00 Fim do envio de E-mails
+10/12/2023 09:15:00 Fechando arquivo Excel
+10/12/2023 09:15:00 Fechando o escopo do processo Excel
+10/12/2023 09:15:00 Fim - Processo de finalização

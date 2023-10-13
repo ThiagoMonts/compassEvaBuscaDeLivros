@@ -1,0 +1,149 @@
+Sub SomaUK()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 7).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        Dim valorG As Double
+        valorG = Val(Mid(planilha.Cells(i, 7).Value, 2))
+        
+        Dim valorH As Double
+        valorH = Val(Mid(planilha.Cells(i, 8).Value, 2))
+
+        planilha.Cells(i, 9).Value = valorG + valorH
+    Next i
+End Sub
+
+Sub CalcularSomaColunasLMEColocarNaColunaN()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 12).End(xlUp).Row
+    
+    ' Loop para percorrer as linhas e calcular a soma
+    For i = 1 To ultimaLinha
+        ' Valores em dólar (remove US$ e converter para Double)
+        Dim valorL As String
+        valorL = Replace(planilha.Cells(i, 12).Value, "US$", "")
+        valorL = Replace(valorL, ".", "")
+        valorL = Replace(valorL, ",", ".")
+        valorL = Trim(valorL) '
+        
+        Dim valorM As String
+        valorM = Replace(planilha.Cells(i, 13).Value, "US$", "")
+        valorM = Replace(valorM, ".", "")
+        valorM = Replace(valorM, ",", ".")
+        valorM = Trim(valorM) '
+        
+        ' Calcula a soma e colocar na coluna N
+        If IsNumeric(valorL) And IsNumeric(valorM) Then
+            ' Converte para Double e dividir por 100 para representar centavos
+            Dim soma As Double
+            soma = (CDbl(valorL) + CDbl(valorM)) / 100
+            ' Resultado formatado na coluna N
+            planilha.Cells(i, 14).NumberFormat = "0.00"
+            planilha.Cells(i, 14).Value = soma
+        Else
+            ' Erro
+            planilha.Cells(i, 14).Value = "Erro de conversão"
+        End If
+    Next i
+End Sub
+
+
+Sub ExcluirLinha1()
+    Dim planilha As Worksheet
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    planilha.Rows(1).Delete
+End Sub
+
+Sub Cabecalho()
+    Dim ws As Worksheet
+    Dim Cabecalho As Range
+    
+    Set ws = ThisWorkbook.Sheets("Planilha2")
+    
+    ws.Rows(1).Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    
+    Set Cabecalho = ws.Cells(1, 1)
+    
+    Cabecalho.Value = "ID E-mail"
+    Cabecalho.Font.Bold = True
+    
+    Cabecalho.Offset(0, 1) = "Nome"
+    Cabecalho.Offset(0, 1).Font.Bold = True
+    
+    Cabecalho.Offset(0, 2).Value = "Autor"
+    Cabecalho.Offset(0, 2).Font.Bold = True
+    
+    Cabecalho.Offset(0, 3).Value = "No de Paginas"
+    Cabecalho.Offset(0, 3).Font.Bold = True
+    
+    Cabecalho.Offset(0, 4).Value = "Tipo de Capa"
+    Cabecalho.Offset(0, 4).Font.Bold = True
+    
+    Cabecalho.Offset(0, 5).Value = "Status RPA"
+    Cabecalho.Offset(0, 5).Font.Bold = True
+    
+    Cabecalho.Offset(0, 6).Value = "Amazon UK - Valor"
+    Cabecalho.Offset(0, 6).Font.Bold = True
+        
+    Cabecalho.Offset(0, 7).Value = "Amazon UK - Frete"
+    Cabecalho.Offset(0, 7).Font.Bold = True
+    
+    Cabecalho.Offset(0, 8).Value = "Preco £"
+    Cabecalho.Offset(0, 8).Font.Bold = True
+    
+    Cabecalho.Offset(0, 9).Value = "Cotacao £"
+    Cabecalho.Offset(0, 9).Font.Bold = True
+    
+    Cabecalho.Offset(0, 10).Value = "Preco R$ "
+    Cabecalho.Offset(0, 10).Font.Bold = True
+    
+    Cabecalho.Offset(0, 11).Value = "Amazon USA - Valor"
+    Cabecalho.Offset(0, 11).Font.Bold = True
+        
+    Cabecalho.Offset(0, 12).Value = "Amazon USA - Frete"
+    Cabecalho.Offset(0, 12).Font.Bold = True
+    
+    Cabecalho.Offset(0, 13).Value = "Preco US$"
+    Cabecalho.Offset(0, 13).Font.Bold = True
+    
+    Cabecalho.Offset(0, 14).Value = "Cotação US$"
+    Cabecalho.Offset(0, 14).Font.Bold = True
+    
+    Cabecalho.Offset(0, 15).Value = "Preco R$ "
+    Cabecalho.Offset(0, 15).Font.Bold = True
+    
+End Sub
+
+Sub AjustarLarguraColunasPlanilha2()
+    Dim planilha As Worksheet
+    Dim ultimaColuna As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaColuna = planilha.Cells(1, planilha.Columns.Count).End(xlToLeft).Column
+    
+    For i = 1 To ultimaColuna
+        planilha.Columns(i).AutoFit
+    Next i
+End Sub
+
+Sub organizandoValores()
+	SomaUK
+	CalcularSomaColunasLMEColocarNaColunaN
+	ExcluirLinha1
+	Cabecalho
+	AjustarLarguraColunasPlanilha2
+End Sub

@@ -1,0 +1,361 @@
+10/12/2023 15:35:48 Início da Execução
+10/12/2023 15:35:48 Criando planilha
+10/12/2023 15:35:49 Armazenando caminho da planilha
+10/12/2023 15:35:49 Caminho da planilha armazenado com sucesso!
+10/12/2023 15:35:52 Planilha livros-12_10_2023-15_35_48.xlsx criada com sucesso
+10/12/2023 15:35:52 Fim - Preparação do projeto
+10/12/2023 15:35:52 Início - Leitura de E-mails
+10/12/2023 15:35:52 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-15_35_48.xlsx
+10/12/2023 15:35:52 Abrindo a caixa de E-mails
+10/12/2023 15:35:52 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 15:35:52 Extraindo ID do E-mail Livro - ID 99685
+10/12/2023 15:35:52 Copiando o ID para a Data Table
+10/12/2023 15:35:52 Copiando os demais dados do E-mail Livro - ID 99685
+10/12/2023 15:35:52 Copiando os demais dados para a Data Table
+10/12/2023 15:35:52 Demais dados extraídos com sucesso!
+10/12/2023 15:35:52 Adicionando o ID Livro - ID 99685 a planilha
+10/12/2023 15:35:53 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:53 Adicionando os demais dados Livro - ID 99685 a planilha
+10/12/2023 15:35:53 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:53 E-mail Livro - ID 99685 marcado como lido com sucesso!
+10/12/2023 15:35:53 Extraindo ID do E-mail Livro - ID 85423
+10/12/2023 15:35:53 Copiando o ID para a Data Table
+10/12/2023 15:35:53 Copiando os demais dados do E-mail Livro - ID 85423
+10/12/2023 15:35:53 Copiando os demais dados para a Data Table
+10/12/2023 15:35:53 Demais dados extraídos com sucesso!
+10/12/2023 15:35:53 Adicionando o ID Livro - ID 85423 a planilha
+10/12/2023 15:35:53 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:53 Adicionando os demais dados Livro - ID 85423 a planilha
+10/12/2023 15:35:53 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:53 E-mail Livro - ID 85423 marcado como lido com sucesso!
+10/12/2023 15:35:53 Extraindo ID do E-mail Livro - ID 75682
+10/12/2023 15:35:53 Copiando o ID para a Data Table
+10/12/2023 15:35:53 Copiando os demais dados do E-mail Livro - ID 75682
+10/12/2023 15:35:53 Copiando os demais dados para a Data Table
+10/12/2023 15:35:53 Demais dados extraídos com sucesso!
+10/12/2023 15:35:53 Adicionando o ID Livro - ID 75682 a planilha
+10/12/2023 15:35:53 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:53 Adicionando os demais dados Livro - ID 75682 a planilha
+10/12/2023 15:35:54 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:54 E-mail Livro - ID 75682 marcado como lido com sucesso!
+10/12/2023 15:35:54 Extraindo ID do E-mail Livro - ID 56980
+10/12/2023 15:35:54 Copiando o ID para a Data Table
+10/12/2023 15:35:54 Copiando os demais dados do E-mail Livro - ID 56980
+10/12/2023 15:35:54 Copiando os demais dados para a Data Table
+10/12/2023 15:35:54 Demais dados extraídos com sucesso!
+10/12/2023 15:35:54 Adicionando o ID Livro - ID 56980 a planilha
+10/12/2023 15:35:54 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:54 Adicionando os demais dados Livro - ID 56980 a planilha
+10/12/2023 15:35:54 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:54 E-mail Livro - ID 56980 marcado como lido com sucesso!
+10/12/2023 15:35:54 Extraindo ID do E-mail Livro - ID 42558
+10/12/2023 15:35:54 Copiando o ID para a Data Table
+10/12/2023 15:35:54 Copiando os demais dados do E-mail Livro - ID 42558
+10/12/2023 15:35:54 Copiando os demais dados para a Data Table
+10/12/2023 15:35:54 Demais dados extraídos com sucesso!
+10/12/2023 15:35:54 Adicionando o ID Livro - ID 42558 a planilha
+10/12/2023 15:35:54 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:54 Adicionando os demais dados Livro - ID 42558 a planilha
+10/12/2023 15:35:54 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:55 E-mail Livro - ID 42558 marcado como lido com sucesso!
+10/12/2023 15:35:55 Extraindo ID do E-mail Livro - ID 33698
+10/12/2023 15:35:55 Copiando o ID para a Data Table
+10/12/2023 15:35:55 Copiando os demais dados do E-mail Livro - ID 33698
+10/12/2023 15:35:55 Copiando os demais dados para a Data Table
+10/12/2023 15:35:55 Demais dados extraídos com sucesso!
+10/12/2023 15:35:55 Adicionando o ID Livro - ID 33698 a planilha
+10/12/2023 15:35:55 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:55 Adicionando os demais dados Livro - ID 33698 a planilha
+10/12/2023 15:35:55 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:55 E-mail Livro - ID 33698 marcado como lido com sucesso!
+10/12/2023 15:35:55 Extraindo ID do E-mail Livro - ID 32568
+10/12/2023 15:35:55 Copiando o ID para a Data Table
+10/12/2023 15:35:55 Copiando os demais dados do E-mail Livro - ID 32568
+10/12/2023 15:35:55 Copiando os demais dados para a Data Table
+10/12/2023 15:35:55 Demais dados extraídos com sucesso!
+10/12/2023 15:35:55 Adicionando o ID Livro - ID 32568 a planilha
+10/12/2023 15:35:55 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:55 Adicionando os demais dados Livro - ID 32568 a planilha
+10/12/2023 15:35:55 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:55 E-mail Livro - ID 32568 marcado como lido com sucesso!
+10/12/2023 15:35:55 Extraindo ID do E-mail Livro - ID 26985
+10/12/2023 15:35:55 Copiando o ID para a Data Table
+10/12/2023 15:35:55 Copiando os demais dados do E-mail Livro - ID 26985
+10/12/2023 15:35:55 Copiando os demais dados para a Data Table
+10/12/2023 15:35:55 Demais dados extraídos com sucesso!
+10/12/2023 15:35:55 Adicionando o ID Livro - ID 26985 a planilha
+10/12/2023 15:35:56 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:56 Adicionando os demais dados Livro - ID 26985 a planilha
+10/12/2023 15:35:56 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:56 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/12/2023 15:35:56 Extraindo ID do E-mail Livro - ID 26983
+10/12/2023 15:35:56 Copiando o ID para a Data Table
+10/12/2023 15:35:56 Copiando os demais dados do E-mail Livro - ID 26983
+10/12/2023 15:35:56 Copiando os demais dados para a Data Table
+10/12/2023 15:35:56 Demais dados extraídos com sucesso!
+10/12/2023 15:35:56 Adicionando o ID Livro - ID 26983 a planilha
+10/12/2023 15:35:56 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:56 Adicionando os demais dados Livro - ID 26983 a planilha
+10/12/2023 15:35:56 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:56 E-mail Livro - ID 26983 marcado como lido com sucesso!
+10/12/2023 15:35:56 Extraindo ID do E-mail Livro - ID 23364
+10/12/2023 15:35:56 Copiando o ID para a Data Table
+10/12/2023 15:35:56 Copiando os demais dados do E-mail Livro - ID 23364
+10/12/2023 15:35:56 Copiando os demais dados para a Data Table
+10/12/2023 15:35:56 Demais dados extraídos com sucesso!
+10/12/2023 15:35:56 Adicionando o ID Livro - ID 23364 a planilha
+10/12/2023 15:35:56 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:56 Adicionando os demais dados Livro - ID 23364 a planilha
+10/12/2023 15:35:56 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:57 E-mail Livro - ID 23364 marcado como lido com sucesso!
+10/12/2023 15:35:57 Extraindo ID do E-mail Livro - ID 22316
+10/12/2023 15:35:57 Copiando o ID para a Data Table
+10/12/2023 15:35:57 Copiando os demais dados do E-mail Livro - ID 22316
+10/12/2023 15:35:57 Copiando os demais dados para a Data Table
+10/12/2023 15:35:57 Demais dados extraídos com sucesso!
+10/12/2023 15:35:57 Adicionando o ID Livro - ID 22316 a planilha
+10/12/2023 15:35:57 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:57 Adicionando os demais dados Livro - ID 22316 a planilha
+10/12/2023 15:35:57 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:57 E-mail Livro - ID 22316 marcado como lido com sucesso!
+10/12/2023 15:35:57 Extraindo ID do E-mail Livro - ID 16987
+10/12/2023 15:35:57 Copiando o ID para a Data Table
+10/12/2023 15:35:57 Copiando os demais dados do E-mail Livro - ID 16987
+10/12/2023 15:35:57 Copiando os demais dados para a Data Table
+10/12/2023 15:35:57 Demais dados extraídos com sucesso!
+10/12/2023 15:35:57 Adicionando o ID Livro - ID 16987 a planilha
+10/12/2023 15:35:57 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:57 Adicionando os demais dados Livro - ID 16987 a planilha
+10/12/2023 15:35:57 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:57 E-mail Livro - ID 16987 marcado como lido com sucesso!
+10/12/2023 15:35:57 Extraindo ID do E-mail Livro - ID 15902
+10/12/2023 15:35:57 Copiando o ID para a Data Table
+10/12/2023 15:35:57 Copiando os demais dados do E-mail Livro - ID 15902
+10/12/2023 15:35:57 Copiando os demais dados para a Data Table
+10/12/2023 15:35:57 Demais dados extraídos com sucesso!
+10/12/2023 15:35:57 Adicionando o ID Livro - ID 15902 a planilha
+10/12/2023 15:35:57 ID adicionado a planilha com sucesso!
+10/12/2023 15:35:57 Adicionando os demais dados Livro - ID 15902 a planilha
+10/12/2023 15:35:58 Demais dados adicionados a planilha com sucesso!
+10/12/2023 15:35:58 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/12/2023 15:35:58 Fim dos E-mails
+10/12/2023 15:35:58 Fechando a caixa de E-mails
+10/12/2023 15:35:58 Fechando o arquivo Excel
+10/12/2023 15:35:58 Fim - Leitura de E-mails
+10/12/2023 15:35:58 Início do tratamento de dados
+10/12/2023 15:35:58 Abrindo arquivo Excel
+10/12/2023 15:35:58 Inserindo Código VBA
+10/12/2023 15:36:00 Código VBA inserido com sucesso
+10/12/2023 15:36:00 Fechando arquivo Excel
+10/12/2023 15:36:00 Fim do tratamento de dados
+10/12/2023 15:36:00 Início - Envio de e-mails dados incompletos
+10/12/2023 15:36:00 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-15_35_48.xlsx
+10/12/2023 15:36:01 Buscando E-mails com informações faltantes
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Verificando qual informação está faltando
+10/12/2023 15:36:01 Armazenando ID do E-mail faltante
+10/12/2023 15:36:01 Dado faltante armazenado com sucesso - Autor
+10/12/2023 15:36:01 Enviando E-mail
+10/12/2023 15:36:02 E-mail enviado com sucesso
+10/12/2023 15:36:02 Verificando qual informação está faltando
+10/12/2023 15:36:02 Verificando qual informação está faltando
+10/12/2023 15:36:02 Armazenando ID do E-mail faltante
+10/12/2023 15:36:02 Dado faltante armazenado com sucesso - Tipo de Capa
+10/12/2023 15:36:03 Enviando E-mail
+10/12/2023 15:36:03 E-mail enviado com sucesso
+10/12/2023 15:36:03 Verificando qual informação está faltando
+10/12/2023 15:36:03 Armazenando ID do E-mail faltante
+10/12/2023 15:36:03 Dado faltante armazenado com sucesso - Nome
+10/12/2023 15:36:04 Enviando E-mail
+10/12/2023 15:36:04 E-mail enviado com sucesso
+10/12/2023 15:36:04 Verificando qual informação está faltando
+10/12/2023 15:36:04 Verificando qual informação está faltando
+10/12/2023 15:36:04 Verificando qual informação está faltando
+10/12/2023 15:36:05Abrindo excel
+10/12/2023 15:36:05Selecionando a pasta de dados de referência
+10/12/2023 15:36:05Lendo os dados gravados na planilha
+10/12/2023 15:36:10 Acesso ao site Amazon UK
+10/12/2023 15:36:10Rodando o looping de inputs da DataTable
+10/12/2023 15:36:10Pesquisando livros The Vanishing Half  
+10/12/2023 15:36:14Livro encontrado The Vanishing Half  
+10/12/2023 15:36:14Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:17Preço/Frete extraídos com sucesso The Vanishing Half  
+10/12/2023 15:36:17Rodando o looping de inputs da DataTable
+10/12/2023 15:36:17Pesquisando livros Get A Life, Chloe Brown 
+10/12/2023 15:36:20Livro encontrado Get A Life, Chloe Brown 
+10/12/2023 15:36:20Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:23Preço/Frete extraídos com sucesso Get A Life, Chloe Brown 
+10/12/2023 15:36:23Rodando o looping de inputs da DataTable
+10/12/2023 15:36:23Pesquisando livros Verity  
+10/12/2023 15:36:25Livro encontrado Verity  
+10/12/2023 15:36:25Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:28Preço/Frete extraídos com sucesso Verity  
+10/12/2023 15:36:29Rodando o looping de inputs da DataTable
+10/12/2023 15:36:29Pesquisando livros The Moonlight Child 
+10/12/2023 15:36:31Livro encontrado The Moonlight Child 
+10/12/2023 15:36:31Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:34Preço/Frete extraídos com sucesso The Moonlight Child 
+10/12/2023 15:36:34Rodando o looping de inputs da DataTable
+10/12/2023 15:36:34Pesquisando livros You have a Match 
+10/12/2023 15:36:36Livro encontrado You have a Match 
+10/12/2023 15:36:36Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:39Preço/Frete extraídos com sucesso You have a Match 
+10/12/2023 15:36:40Rodando o looping de inputs da DataTable
+10/12/2023 15:36:40Pesquisando livros The Midnight Library 
+10/12/2023 15:36:41Livro encontrado The Midnight Library 
+10/12/2023 15:36:41Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:43Preço/Frete extraídos com sucesso The Midnight Library 
+10/12/2023 15:36:44Rodando o looping de inputs da DataTable
+10/12/2023 15:36:44Pesquisando livros The Paper Palace 
+10/12/2023 15:36:46Livro encontrado The Paper Palace 
+10/12/2023 15:36:46Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:49Preço/Frete extraídos com sucesso The Paper Palace 
+10/12/2023 15:36:49Rodando o looping de inputs da DataTable
+10/12/2023 15:36:49Pesquisando livros Wilder Girls 
+10/12/2023 15:36:52Livro encontrado Wilder Girls 
+10/12/2023 15:36:52Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:53Preço/Frete extraídos com sucesso Wilder Girls 
+10/12/2023 15:36:54Rodando o looping de inputs da DataTable
+10/12/2023 15:36:54Pesquisando livros The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:36:56Livro encontrado The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:36:56Extraindo preço/Frete para o Brasil
+10/12/2023 15:36:59Preço/Frete extraídos com sucesso The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:36:59Rodando o looping de inputs da DataTable
+10/12/2023 15:36:59Pesquisando livros The Madness of Crowds
+10/12/2023 15:37:01Livro encontrado The Madness of Crowds
+10/12/2023 15:37:01Extraindo preço/Frete para o Brasil
+10/12/2023 15:37:04Preço/Frete extraídos com sucesso The Madness of Crowds
+10/12/2023 15:37:08Acessando ao site Amazon USA
+10/12/2023 15:37:08Acessando ao site Amazon USA
+10/12/2023 15:37:08Pesquisando livro The Vanishing Half  
+10/12/2023 15:37:11Livro Encontrado The Vanishing Half  
+10/12/2023 15:37:13Livro selecionado:  The Vanishing Half  
+10/12/2023 15:37:14Extraindo preço do Livro/Frete para o Brasil The Vanishing Half  
+10/12/2023 15:37:15Preço extraído com sucesso
+10/12/2023 15:37:24O valor do frete é: US$ 20,26
+10/12/2023 15:37:24Frete extraído com sucesso
+10/12/2023 15:37:35Erro ao extrair o frete do livro:  The Vanishing Half  
+10/12/2023 15:37:35Acessando ao site Amazon USA
+10/12/2023 15:37:35Pesquisando livro Get A Life, Chloe Brown 
+10/12/2023 15:37:38Livro Encontrado Get A Life, Chloe Brown 
+10/12/2023 15:37:40Livro selecionado:  Get A Life, Chloe Brown 
+10/12/2023 15:37:40Extraindo preço do Livro/Frete para o Brasil Get A Life, Chloe Brown 
+10/12/2023 15:37:41Preço extraído com sucesso
+10/12/2023 15:37:49O valor do frete é: US$ 18,75
+10/12/2023 15:37:49Frete extraído com sucesso
+10/12/2023 15:38:00Erro ao extrair o frete do livro:  Get A Life, Chloe Brown 
+10/12/2023 15:38:00Acessando ao site Amazon USA
+10/12/2023 15:38:00Pesquisando livro Verity  
+10/12/2023 15:38:02Livro Encontrado Verity  
+10/12/2023 15:38:04Livro selecionado:  Verity  
+10/12/2023 15:38:04Extraindo preço do Livro/Frete para o Brasil Verity  
+10/12/2023 15:38:05Preço extraído com sucesso
+10/12/2023 15:38:12O valor do frete é: US$ 18,96
+10/12/2023 15:38:12Frete extraído com sucesso
+10/12/2023 15:38:23Erro ao extrair o frete do livro:  Verity  
+10/12/2023 15:38:23Acessando ao site Amazon USA
+10/12/2023 15:38:23Pesquisando livro The Moonlight Child 
+10/12/2023 15:38:26Livro Encontrado The Moonlight Child 
+10/12/2023 15:38:28Livro selecionado:  The Moonlight Child 
+10/12/2023 15:38:28Extraindo preço do Livro/Frete para o Brasil The Moonlight Child 
+10/12/2023 15:38:30Preço extraído com sucesso
+10/12/2023 15:38:37O valor do frete é: US$ 20,26
+10/12/2023 15:38:37Frete extraído com sucesso
+10/12/2023 15:38:48Erro ao extrair o frete do livro:  The Moonlight Child 
+10/12/2023 15:38:48Acessando ao site Amazon USA
+10/12/2023 15:38:48Pesquisando livro You have a Match 
+10/12/2023 15:38:51Livro Encontrado You have a Match 
+10/12/2023 15:38:54Livro selecionado:  You have a Match 
+10/12/2023 15:38:54Extraindo preço do Livro/Frete para o Brasil You have a Match 
+10/12/2023 15:38:55Preço extraído com sucesso
+10/12/2023 15:39:02O valor do frete é: US$ 19,61
+10/12/2023 15:39:02Frete extraído com sucesso
+10/12/2023 15:39:13Erro ao extrair o frete do livro:  You have a Match 
+10/12/2023 15:39:13Acessando ao site Amazon USA
+10/12/2023 15:39:13Pesquisando livro The Midnight Library 
+10/12/2023 15:39:16Livro Encontrado The Midnight Library 
+10/12/2023 15:39:18Livro selecionado:  The Midnight Library 
+10/12/2023 15:39:18Extraindo preço do Livro/Frete para o Brasil The Midnight Library 
+10/12/2023 15:39:19Preço extraído com sucesso
+10/12/2023 15:39:27O valor do frete é: US$ 20,11
+10/12/2023 15:39:27Frete extraído com sucesso
+10/12/2023 15:39:38Erro ao extrair o frete do livro:  The Midnight Library 
+10/12/2023 15:39:38Acessando ao site Amazon USA
+10/12/2023 15:39:38Pesquisando livro The Paper Palace 
+10/12/2023 15:39:41Livro Encontrado The Paper Palace 
+10/12/2023 15:39:43Livro selecionado:  The Paper Palace 
+10/12/2023 15:39:43Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/12/2023 15:39:44Preço extraído com sucesso
+10/12/2023 15:39:52O valor do frete é: US$ 21,02
+10/12/2023 15:39:52Frete extraído com sucesso
+10/12/2023 15:40:02Erro ao extrair o frete do livro:  The Paper Palace 
+10/12/2023 15:40:03Acessando ao site Amazon USA
+10/12/2023 15:40:03Pesquisando livro Wilder Girls 
+10/12/2023 15:40:05Livro Encontrado Wilder Girls 
+10/12/2023 15:40:07Livro selecionado:  Wilder Girls 
+10/12/2023 15:40:07Extraindo preço do Livro/Frete para o Brasil Wilder Girls 
+10/12/2023 15:40:09Preço extraído com sucesso
+10/12/2023 15:40:16O valor do frete é: US$ 18,63
+10/12/2023 15:40:16Frete extraído com sucesso
+10/12/2023 15:40:27Erro ao extrair o frete do livro:  Wilder Girls 
+10/12/2023 15:40:27Acessando ao site Amazon USA
+10/12/2023 15:40:27Pesquisando livro The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:30Livro Encontrado The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:31Livro selecionado:  The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:31Extraindo preço do Livro/Frete para o Brasil The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:40Extraindo preço do Livro/Frete usado para o Brasil The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:40Erro ao filtrar pelo valor do livro:  The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:44Elemento Details não encontrado para o livro:  The Seven Husbands of Evelyn Hugo 
+10/12/2023 15:40:45Acessando ao site Amazon USA
+10/12/2023 15:40:45Pesquisando livro The Madness of Crowds
+10/12/2023 15:40:47Livro Encontrado The Madness of Crowds
+10/12/2023 15:40:49Livro selecionado:  The Madness of Crowds
+10/12/2023 15:40:49Extraindo preço do Livro/Frete para o Brasil The Madness of Crowds
+10/12/2023 15:40:51Preço extraído com sucesso
+10/12/2023 15:40:59O valor do frete é: US$ 21,23
+10/12/2023 15:40:59Frete extraído com sucesso
+10/12/2023 15:41:10Erro ao extrair o frete do livro:  The Madness of Crowds
+10/12/2023 15:41:12 Início - pesquisa cotação de valores
+10/12/2023 15:41:15Início - acesso ao site BCB
+10/12/2023 15:41:18 Localizando cotação dólar
+10/12/2023 15:41:21 Valor do dólar extraído com sucesso
+10/12/2023 15:41:21 Inserção valor do dolar no excel
+10/12/2023 15:41:21 Localizando cotação libra
+10/12/2023 15:41:22Valor da libra extraído com sucesso
+10/12/2023 15:41:22 Inserção valor da libra na planilha
+10/12/2023 15:41:24 Início - Processo de notificação
+10/12/2023 15:41:24 Início mover planilha
+10/12/2023 15:41:24 Planilha movida com sucesso!
+10/12/2023 15:41:24 Fim - Mover Planilha
+10/12/2023 15:41:24 Início do envio de E-mails para o time RPA
+10/12/2023 15:41:24 Abrindo arquivo Excel com os dados
+10/12/2023 15:41:28 Lendo os e-mails na planilha
+10/12/2023 15:41:29 Abrindo Desktop Outlook App
+10/12/2023 15:41:29 Enviando E-mail
+10/12/2023 15:41:29 E-mail enviado com sucesso!
+10/12/2023 15:41:29 Fechando Desktop Outlook App
+10/12/2023 15:41:29 Abrindo Desktop Outlook App
+10/12/2023 15:41:29 Enviando E-mail
+10/12/2023 15:41:29 E-mail enviado com sucesso!
+10/12/2023 15:41:29 Fechando Desktop Outlook App
+10/12/2023 15:41:29 Abrindo Desktop Outlook App
+10/12/2023 15:41:29 Enviando E-mail
+10/12/2023 15:41:29 E-mail enviado com sucesso!
+10/12/2023 15:41:29 Fechando Desktop Outlook App
+10/12/2023 15:41:29 Abrindo Desktop Outlook App
+10/12/2023 15:41:29 Enviando E-mail
+10/12/2023 15:41:30 E-mail enviado com sucesso!
+10/12/2023 15:41:30 Fechando Desktop Outlook App
+10/12/2023 15:41:30 Abrindo Desktop Outlook App
+10/12/2023 15:41:30 Enviando E-mail
+10/12/2023 15:41:30 E-mail enviado com sucesso!
+10/12/2023 15:41:30 Fechando Desktop Outlook App
+10/12/2023 15:41:30 Fim do envio de E-mails
+10/12/2023 15:41:30 Fechando arquivo Excel
+10/12/2023 15:41:30 Fechando o escopo do processo Excel
+10/12/2023 15:41:30 Fim - Processo de finalização

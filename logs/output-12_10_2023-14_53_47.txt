@@ -1,0 +1,85 @@
+10/12/2023 14:53:47 Início da Execução
+10/12/2023 14:53:47 Criando planilha
+10/12/2023 14:53:47 Armazenando caminho da planilha
+10/12/2023 14:53:47 Caminho da planilha armazenado com sucesso!
+10/12/2023 14:53:49 Planilha livros-12_10_2023-14_53_47.xlsx criada com sucesso
+10/12/2023 14:53:49 Fim - Preparação do projeto
+10/12/2023 14:53:49 Início - Leitura de E-mails
+10/12/2023 14:53:49 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-14_53_47.xlsx
+10/12/2023 14:53:50 Abrindo a caixa de E-mails
+10/12/2023 14:53:50 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 14:53:51 Extraindo ID do E-mail Livro - ID 99685
+10/12/2023 14:53:51 Copiando o ID para a Data Table
+10/12/2023 14:53:51 Copiando os demais dados do E-mail Livro - ID 99685
+10/12/2023 14:53:51 Copiando os demais dados para a Data Table
+10/12/2023 14:53:51 Demais dados extraídos com sucesso!
+10/12/2023 14:53:51 Adicionando o ID Livro - ID 99685 a planilha
+10/12/2023 14:53:51 ID adicionado a planilha com sucesso!
+10/12/2023 14:53:51 Adicionando os demais dados Livro - ID 99685 a planilha
+10/12/2023 14:53:51 Demais dados adicionados a planilha com sucesso!
+10/12/2023 14:53:51 E-mail Livro - ID 99685 marcado como lido com sucesso!
+10/12/2023 14:53:51 Extraindo ID do E-mail Livro - ID 85423
+10/12/2023 14:53:51 Copiando o ID para a Data Table
+10/12/2023 14:53:51 Copiando os demais dados do E-mail Livro - ID 85423
+10/12/2023 14:53:51 Copiando os demais dados para a Data Table
+10/12/2023 14:53:51 Demais dados extraídos com sucesso!
+10/12/2023 14:53:51 Adicionando o ID Livro - ID 85423 a planilha
+10/12/2023 14:53:51 ID adicionado a planilha com sucesso!
+10/12/2023 14:53:51 Adicionando os demais dados Livro - ID 85423 a planilha
+10/12/2023 14:53:52 Demais dados adicionados a planilha com sucesso!
+10/12/2023 14:53:52 E-mail Livro - ID 85423 marcado como lido com sucesso!
+10/12/2023 14:53:52 Fim dos E-mails
+10/12/2023 14:53:52 Fechando a caixa de E-mails
+10/12/2023 14:53:52 Fechando o arquivo Excel
+10/12/2023 14:53:52 Fim - Leitura de E-mails
+10/12/2023 14:53:52 Início do tratamento de dados
+10/12/2023 14:53:52 Abrindo arquivo Excel
+10/12/2023 14:53:53 Inserindo Código VBA
+10/12/2023 14:53:54 Código VBA inserido com sucesso
+10/12/2023 14:53:54 Fechando arquivo Excel
+10/12/2023 14:53:54 Fim do tratamento de dados
+10/12/2023 14:53:54 Início - Envio de e-mails dados incompletos
+10/12/2023 14:53:54 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-14_53_47.xlsx
+10/12/2023 14:53:55 Buscando E-mails com informações faltantes
+10/12/2023 14:53:55 Verificando qual informação está faltando
+10/12/2023 14:53:55 Verificando qual informação está faltando
+10/12/2023 14:53:56Abrindo excel
+10/12/2023 14:53:56Selecionando a pasta de dados de referência
+10/12/2023 14:53:57Lendo os dados gravados na planilha
+10/12/2023 14:54:01 Acesso ao site Amazon UK
+10/12/2023 14:54:01Rodando o looping de inputs da DataTable
+10/12/2023 14:54:01Pesquisando livros The Vanishing Half  
+10/12/2023 14:54:06Livro encontrado The Vanishing Half  
+10/12/2023 14:54:06Extraindo preço/Frete para o Brasil
+10/12/2023 14:54:20Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/12/2023 14:54:29Extraido Preço/Frete de livro usado com sucesso:  The Vanishing Half  
+10/12/2023 14:54:31Rodando o looping de inputs da DataTable
+10/12/2023 14:54:31Pesquisando livros Get A Life, Chloe Brown 
+10/12/2023 14:54:33Livro encontrado Get A Life, Chloe Brown 
+10/12/2023 14:54:33Extraindo preço/Frete para o Brasil
+10/12/2023 14:54:44Erro ao extrair Preço/Frete do livro:  Get A Life, Chloe Brown 
+10/12/2023 14:55:25Erro ao extrair Preço/Frete do livro:  Get A Life, Chloe Brown 
+10/12/2023 14:55:30Acessando ao site Amazon USA
+10/12/2023 14:55:31Acessando ao site Amazon USA
+10/12/2023 14:55:31Pesquisando livro The Vanishing Half  
+10/12/2023 14:55:34Livro Encontrado The Vanishing Half  
+10/12/2023 14:55:37Livro selecionado:  The Vanishing Half  
+10/12/2023 14:55:37Extraindo preço do Livro/Frete para o Brasil The Vanishing Half  
+10/12/2023 14:55:39Preço extraído com sucesso
+10/12/2023 14:55:49O valor do frete é: US$ 20,26
+10/12/2023 14:55:49Frete extraído com sucesso
+10/12/2023 14:56:14Erro ao extrair o frete do livro:  The Vanishing Half  
+10/12/2023 14:56:15Acessando ao site Amazon USA
+10/12/2023 14:56:15Pesquisando livro Get A Life, Chloe Brown 
+10/12/2023 14:56:18Livro Encontrado Get A Life, Chloe Brown 
+10/12/2023 14:56:22Livro selecionado:  Get A Life, Chloe Brown 
+10/12/2023 14:56:22Extraindo preço do Livro/Frete para o Brasil Get A Life, Chloe Brown 
+10/12/2023 14:56:23Preço extraído com sucesso
+10/12/2023 14:56:30O valor do frete é: US$ 18,75
+10/12/2023 14:56:30Frete extraído com sucesso
+10/12/2023 14:56:56Erro ao extrair o frete do livro:  Get A Life, Chloe Brown 
+10/12/2023 14:57:00 Início - pesquisa cotação de valores
+10/12/2023 14:57:00Início - acesso ao site BCB
+10/12/2023 14:57:04 Localizando cotação dólar
+10/12/2023 14:57:08 Valor do dólar extraído com sucesso
+10/12/2023 14:57:08 Inserção valor do dolar no excel

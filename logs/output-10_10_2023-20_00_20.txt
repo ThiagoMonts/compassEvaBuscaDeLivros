@@ -1,0 +1,25 @@
+10/10/2023 20:00:20 Início da Execução
+10/10/2023 20:00:20 Criando planilha
+10/10/2023 20:00:20 Armazenando caminho da planilha
+10/10/2023 20:00:20 Caminho da planilha armazenado com sucesso!
+10/10/2023 20:00:22 Planilha livros-10_10_2023-20_00_20.xlsx criada com sucesso
+10/10/2023 20:00:22 Fim - Preparação do projeto
+10/10/2023 20:00:22 Início - Leitura de E-mails
+10/10/2023 20:00:22 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-10_10_2023-20_00_20.xlsx
+10/10/2023 20:00:23 Abrindo a caixa de E-mails
+10/10/2023 20:00:25 Percorrendo os e-mails em busca dos dados dos livros
+10/10/2023 20:00:25 Fim dos E-mails
+10/10/2023 20:00:25 Fechando a caixa de E-mails
+10/10/2023 20:00:25 Fechando o arquivo Excel
+10/10/2023 20:00:25 Fim - Leitura de E-mails
+10/10/2023 20:00:26 Início do tratamento de dados
+10/10/2023 20:00:26 Abrindo arquivo Excel
+10/10/2023 20:00:26 Inserindo Código VBA
+10/10/2023 20:00:27 Código VBA inserido com sucesso
+10/10/2023 20:00:27 Fechando arquivo Excel
+10/10/2023 20:00:27 Fim do tratamento de dados
+10/10/2023 20:00:49Abrindo excel
+10/10/2023 20:00:49Selecionando a pasta de dados de referência
+10/10/2023 20:00:49Lendo os dados gravados na planilha
+10/10/2023 20:00:51 Acesso ao site Amazon UK
+10/10/2023 20:00:53Acessando ao site Amazon USA

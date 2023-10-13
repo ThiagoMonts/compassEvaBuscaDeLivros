@@ -1,0 +1,314 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PesquisaCotação" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strLogPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_strSpreadsheetPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_strFalhaPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>1039,6579</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Management</AssemblyReference>
+      <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1046,6514" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Pesquisa Cotação" sap:VirtualizedContainerService.HintSize="984,6403" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="source\testecotacao.txt" Name="logTeste" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="922,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot; Início - pesquisa cotação de valores&quot;]" />
+      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="922,133" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[DateTime.Now.ToString + &quot; Início - pesquisa cotação de valores&quot;]" UseDefaultEncoding="False" />
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="922,5938" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+        <TryCatch.Try>
+          <Sequence sap:VirtualizedContainerService.HintSize="884,5710" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="822,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Abertura da planilha&#xA;" />
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="822,5330" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="788,5243" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="Default" ResizeWindow="Minimize" TemplatePath="source\livros-10_10_2023-11_16_07.xlsx" WorkbookPath="[in_strSpreadsheetPath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence sap:VirtualizedContainerService.HintSize="754,4974" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap:VirtualizedContainerService.HintSize="692,4523" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="630,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot; Acesso ao site BCB&quot;]" />
+                            <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="630,133" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[DateTime.Now.ToString + &quot;Início - acesso ao site BCB&quot;]" UseDefaultEncoding="False" />
+                            <ui:Comment sap:VirtualizedContainerService.HintSize="630,56" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Acesso ao site do BCB para cotação&#xA;&#xA;" />
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630,3962" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568,3851" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                <TryCatch.Variables>
+                                  <Variable x:TypeArguments="x:String" Default="https://www.bcb.gov.br/estabilidadefinanceira/cotacoestodas" Name="strBcbSitePath" />
+                                </TryCatch.Variables>
+                                <TryCatch.Try>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Cotação de todas as moedas" sap:VirtualizedContainerService.HintSize="530,3623" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="8e47d4c0-023c-482c-8b1a-2c34e056a269" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3406" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="x:String" Name="strValorDolar" />
+                                            <Variable x:TypeArguments="x:String" Name="strValorLibra" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:Comment sap:VirtualizedContainerService.HintSize="434,56" sap2010:WorkflowViewState.IdRef="Comment_7" Text="// Extração valor dólar" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot; Localizando cotação dólar&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[DateTime.Now.ToString + &quot; Localizando cotação dólar&quot;]" UseDefaultEncoding="False" />
+                                          <uix:NGetText DisplayName="Get Text '5,0856'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8e47d4c0-023c-482c-8b1a-2c34e056a269" TextString="[strValorDolar]" Version="V3">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?method=consultaTodasMoedas" CvTextArea="890, 1226, 39, 12" CvType="AnyWordGroup" DesignTimeRectangle="814, 1224, 116, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'5,0862'" FullSelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='49' tag='TD' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="862ef4ae-7189-428f-a4b5-ba3f10e11a04" InformativeScreenshot="f26e3128ef75e11359826f4e5a756763.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cotação de todas as moedas' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArea="772, 1226, 40, 13" CvTextArgument="5,0856" CvType="Text" DesignTimeRectangle="683, 1224, 130, 15" ElementType="Text" FriendlyName="'5,0856'" FullSelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='49' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='5,0856' check:innerText='5,0856' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAATCAYAAABV0nVhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF6SURBVGhD7Zo9SkQxFIWzIJlNDLoAC60FcREW4jpsBMFqYGo7wdJS0M5WEYQpRLAQMnyBO1xvYtTGvOIc+Obl5bc4J8kUL72/PmTEUwhAqfxKUlD6/FiVAk8hACkYogIpGKICKRiiAikYA7i/u82z2VZOKW04PTlu9gXavuvn244OD/Lb6rnU/7TGy9Nj3tmel3r60d/akIIxAEzY39st5rTaPTfXVxvDgTJ1tF2cn30xmzJ1lHtrWChsnghSMAbwl2B4s8GHIQaD998EI46LIAVjAJjmj3l/BUQw0O9syt5Uyq15emv4McDp4QOEFIzB2PVgOz3SC4YvWxB8XyOuEeeMJwhSMCZA72in3ofG+prZMTT+ZPD4NeKccRxSMAawXFyWHU457ub47k2zNgsDBpvZ8b23RgxCnAcpGAPAGH/He1MwM/5ppL3V1wy3Nm92bw0gJK1xgBSMiYGh0cT/BikYE4OdbFfFKJCCISqQvseQmtIXXKIi55zXoNGTN38UZt4AAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NGetText.Target>
+                                          </uix:NGetText>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot; Valor do dólar extraído com sucesso&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[DateTime.Now.ToString + &quot; Valor do dólar extraído com sucesso&quot;]" UseDefaultEncoding="False" />
+                                          <ui:Comment sap:VirtualizedContainerService.HintSize="434,56" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// Inserindo valor da cotação dólar na planilha&#xA;" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot; Inserção valor do dolar no excel&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[DateTime.Now.ToString + &quot; Inserção valor do dolar no excel&quot;]" UseDefaultEncoding="False" />
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Planilha2&quot;).Cell(&quot;O2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[strValorDolar]" />
+                                          <ui:Comment sap:VirtualizedContainerService.HintSize="434,56" sap2010:WorkflowViewState.IdRef="Comment_8" Text="// Extração valor libra" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot; Localizando cotação libra&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[DateTime.Now.ToString + &quot; Localizando cotação libra&quot;]" UseDefaultEncoding="False" />
+                                          <uix:NGetText DisplayName="Get Text '6,2472'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="8e47d4c0-023c-482c-8b1a-2c34e056a269" TextString="[strValorLibra]" Version="V3">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?method=consultaTodasMoedas" CvTextArea="890, 1202, 39, 12" CvType="AnyWordGroup" DesignTimeRectangle="814, 1200, 116, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'6,2499'" FullSelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='85' tag='TD' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="edd22059-03ea-47e8-92df-deaea8db4615" InformativeScreenshot="c37f068b6ad9107076a4bacbc9959178.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cotação de todas as moedas' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArea="773, 1202, 39, 12" CvTextArgument="6,2472" CvType="Text" DesignTimeRectangle="683, 1200, 130, 15" ElementType="Text" FriendlyName="'6,2472'" FullSelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='85' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://ptax.bcb.gov.br/ptax_internet/consultarTodasAsMoedas.do?*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='6,2472' check:innerText='6,2472' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAATCAYAAABV0nVhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVGhD7ZqxSgNBFEXngyQfocYPsNBaEEsLsbIQv8NG8CvshHQKNoLpbBVBSCGChfDkLDwZ3s7MWjkp7oWTze6+eSnenbsJJH2+Lw1xFAJQGl4lKSh9f62GNxyFACRjiBFIxhAjkIwhRiAZoxNvL8+2M9+ylJLNZhv29HhfrOM696mDi/OzYt311eXQj76cU+drnKPDA/tYvU72RDJGB9wUi9ub4v0cBu51tXWcz7c3bX9v99cYEfqAv2/1RDJGBxhMbedPwbp8iOz+05Nje7hbVI1BTcs0sSeSMToQYz5/BLRgwCQDR85Zw+OBY2v4fJ6nRST2BCRjdCDu0L8kCAPPI5/vCiSFD7RmjJZhYk8HyRgdiDuYwfgXw7zOKQ3Qr+XJU0qfWlrUTAFIxuhANALD88TgGvd8mNS2frU4pWSopcVUTyRjdILB+y7PTRKHiWHyRIj1TlznBislwlRPJGOsGQzS06MXSMZYM0iS0i7/T5CMIUYg/R9DKkr/4BIjzMx+AEXCs6c7GlY9AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NGetText.Target>
+                                          </uix:NGetText>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot; Valor da libra extraído com sucesso&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_15" Text="[DateTime.Now.ToString + &quot;Valor da libra extraído com sucesso&quot;]" UseDefaultEncoding="False" />
+                                          <ui:Comment sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="Comment_6" Text="// // Inserindo valor da cotação libra&#xA; na planilha" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot; Inserção valor da libra na planilha&quot;]" />
+                                          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strLogPath]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="[DateTime.Now.ToString + &quot; Inserção valor da libra na planilha&quot;]" UseDefaultEncoding="False" />
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Planilha2&quot;).Cell(&quot;J2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[strValorLibra]" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="-1727, 0, 1734, 1407" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF9SURBVFhH1ZSxTsMwFEWzsTH3X5BY+RyQ+AEqfgDUz6iY273M7Zy1YsycNehEfuHlyY5t6jTqla7UpM/vHju2q25h3R7A13brfpVRFsD34bAcAOGbj8+uaRr3Jixq67p2T9OKAtCsqqresdnr2iIAumEKwOvzSzkAG46vBvBzPo+CxVcDYLAOFhMAhPZ+t3OjxgBsWFvLqlqNAGSHhwB81k01gPXq7r5fWasBgEY0sILc1xDbGYUAQuFoAKDQB8Bq2KXEp+PRVfwJIF9tKBxFAebW7QDI8qaI2uxjGALgW/MfjgEQLLXFAAhNBWD8RQAcF5poPz08FgNghah5f1u7NwYg5ksBGG/vhCwAAmiinXMVM3N7JwwAEItpqoNDtrPRANbRq1gLCF8TbV/DEEAoHGUDyGfwNZS7QtdPhaNsAAJiktpYOJoVIBaOvABt2/YQ2rIxUwBkTIq8AD7REAAuJvZByBw1JpCqbIApp3xzq2IA/wlHyQBzaWGArvsFX3FHTCvn7cUAAAAASUVORK5CYII=" InformativeScreenshot="b8e57558d47277d977cc1169bbfaa850.jpg" Selector="&lt;html app='chrome.exe' title='Cotação de todas as moedas' /&gt;" Title="Cotação de todas as moedas" Url="[strBcbSitePath]" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="534,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_15" Message="[&quot;Fim - Pesquisa cotaçãod de valores&quot;]" />
+                                        <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_strFalhaPath]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="AppendLine_13" Text="[DateTime.Now.ToString + &quot;Fim - acesso ao site BCB&quot;]" UseDefaultEncoding="False" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                            </Sequence>
+                          </Sequence>
+                          <ueab:InvokeVBAX Result="{x:Null}" CodeFilePath="config\formatarValores.txt" DisplayName="Invoke VBA" EntryMethodName="DividirPor10000ECSubstituir" sap:VirtualizedContainerService.HintSize="692,300" sap2010:WorkflowViewState.IdRef="InvokeVBAX_1" Workbook="[Excel]">
+                            <ueab:InvokeVBAX.Body>
+                              <ActivityAction>
+                                <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:InvokeVBAX.Body>
+                          </ueab:InvokeVBAX>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="822,133" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="EXCEL" />
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="888,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+    </Sequence>
+  </Sequence>
+</Activity>

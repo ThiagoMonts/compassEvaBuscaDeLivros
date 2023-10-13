@@ -1,0 +1,244 @@
+Sub MultiplicaUK()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim valorLinha2ColunaJ As Double
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    valorLinha2ColunaJ = CDbl(planilha.Cells(2, 10).Value)
+    On Error GoTo 0
+    
+    If IsError(valorLinha2ColunaJ) Then
+        MsgBox "Erro: Valor na linha 2 da coluna J não é um número."
+        Exit Sub
+    End If
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 9).End(xlUp).Row
+        For i = 1 To ultimaLinha
+        Dim valorColunaI As Double
+        On Error Resume Next
+        valorColunaI = CDbl(planilha.Cells(i, 9).Value)
+        On Error GoTo 0
+        
+        If IsNumeric(valorColunaI) Then
+            ' Multiplicação
+            planilha.Cells(i, 11).Value = valorColunaI * valorLinha2ColunaJ
+        Else
+            planilha.Cells(i, 11).Value = "Erro: Valor inválido em I" & i
+        End If
+    Next i
+End Sub
+
+
+Sub MultiplicaUSA()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim valorLinha2ColunaJ As Double
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    valorLinha2ColunaP = CDbl(planilha.Cells(2, 15).Value)
+    On Error GoTo 0
+    
+    If IsError(valorLinha2ColunaP) Then
+        MsgBox "Erro: Valor na linha 2 da coluna O não é um número."
+        Exit Sub
+    End If
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 14).End(xlUp).Row
+        For i = 1 To ultimaLinha
+        Dim valorColunaN As Double
+        On Error Resume Next
+        valorColunaN = CDbl(planilha.Cells(i, 14).Value)
+        On Error GoTo 0
+        
+        If IsNumeric(valorColunaN) Then
+            ' Multiplicação
+            planilha.Cells(i, 16).Value = valorColunaN * valorLinha2ColunaP
+        Else
+            planilha.Cells(i, 16).Value = "Erro: Valor inválido em I" & i
+        End If
+    Next i
+    
+    Columns("K:K").Select
+    Selection.NumberFormat = "$ #,##0.00"
+    Columns("P:P").Select
+    Selection.NumberFormat = "$ #,##0.00"
+
+End Sub
+
+Sub DestacarMelhorPreço()
+
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim i As Long
+    
+    
+    On Error Resume Next
+    Set ws = ThisWorkbook.Sheets("Planilha2")
+    On Error GoTo 0
+    
+    If ws Is Nothing Then
+        MsgBox "Planilha 'Planilha2' não encontrada!", vbExclamation
+        Exit Sub
+    End If
+ 
+    lastRow = ws.Cells(ws.Rows.Count, "I").End(xlUp).Row
+
+    For i = 2 To lastRow
+        If Not IsEmpty(ws.Cells(i, 11).Value) And Not IsEmpty(ws.Cells(i, 16).Value) Then
+    
+            On Error Resume Next
+            
+            Dim valorDolar As Double
+            Dim valorLibra As Double
+            valorDolar = ws.Cells(i, 16).Value
+            valorLibra = ws.Cells(i, 11).Value
+
+            If valorDolar <= valorLibra Then
+                'Determina o valor mais vantajoso, em reais, na coluna H.
+                ws.Cells(i, 17).Value = Format(valorRealDolar, "Currency")
+                ws.Cells(i, 16).Interior.Color = RGB(0, 255, 0)
+                'Destaca de verde a célula em F (Dólar).
+            Else
+                ws.Cells(i, 17).Value = Format(valorRealLibra, "Currency")
+                ws.Cells(i, 11).Interior.Color = RGB(0, 255, 0)
+                'Destaca de verde a célula em G (Libra).
+            End If
+        End If
+    Next i
+End Sub
+
+
+Sub ExcluirLinha1()
+    Dim planilha As Worksheet
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    planilha.Rows(1).Delete
+End Sub
+
+Sub Cabecalho()
+    Dim ws As Worksheet
+    Dim Cabecalho As Range
+    
+    Set ws = ThisWorkbook.Sheets("Planilha2")
+    
+    ws.Rows(1).Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    
+    Set Cabecalho = ws.Cells(1, 1)
+    
+    Cabecalho.Value = "ID E-mail"
+    Cabecalho.Font.Bold = True
+    
+    Cabecalho.Offset(0, 1) = "Nome"
+    Cabecalho.Offset(0, 1).Font.Bold = True
+    
+    Cabecalho.Offset(0, 2).Value = "Autor"
+    Cabecalho.Offset(0, 2).Font.Bold = True
+    
+    Cabecalho.Offset(0, 3).Value = "No de Paginas"
+    Cabecalho.Offset(0, 3).Font.Bold = True
+    
+    Cabecalho.Offset(0, 4).Value = "Tipo de Capa"
+    Cabecalho.Offset(0, 4).Font.Bold = True
+    
+    Cabecalho.Offset(0, 5).Value = "Status RPA"
+    Cabecalho.Offset(0, 5).Font.Bold = True
+    
+    Cabecalho.Offset(0, 6).Value = "Amazon UK - Valor"
+    Cabecalho.Offset(0, 6).Font.Bold = True
+        
+    Cabecalho.Offset(0, 7).Value = "Amazon UK - Frete"
+    Cabecalho.Offset(0, 7).Font.Bold = True
+    
+    Cabecalho.Offset(0, 8).Value = "Preco £"
+    Cabecalho.Offset(0, 8).Font.Bold = True
+    
+    Cabecalho.Offset(0, 9).Value = "Cotacao £"
+    Cabecalho.Offset(0, 9).Font.Bold = True
+    
+    Cabecalho.Offset(0, 10).Value = "Preco R$ - Amazon UK"
+    Cabecalho.Offset(0, 10).Font.Bold = True
+    
+    Cabecalho.Offset(0, 11).Value = "Amazon USA - Valor"
+    Cabecalho.Offset(0, 11).Font.Bold = True
+        
+    Cabecalho.Offset(0, 12).Value = "Amazon USA - Frete"
+    Cabecalho.Offset(0, 12).Font.Bold = True
+    
+    Cabecalho.Offset(0, 13).Value = "Preco US$"
+    Cabecalho.Offset(0, 13).Font.Bold = True
+    
+    Cabecalho.Offset(0, 14).Value = "Cotacao US$"
+    Cabecalho.Offset(0, 14).Font.Bold = True
+    
+    Cabecalho.Offset(0, 15).Value = "Preco R$ - Amazon USA"
+    Cabecalho.Offset(0, 15).Font.Bold = True
+    
+End Sub
+
+Sub AjustarLarguraColunasPlanilha2()
+    Dim planilha As Worksheet
+    Dim ultimaColuna As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaColuna = planilha.Cells(1, planilha.Columns.Count).End(xlToLeft).Column
+    
+    For i = 1 To ultimaColuna
+        planilha.Columns(i).AutoFit
+    Next i
+End Sub
+
+Sub StatusRPAfinalUK()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = 2 To ultimaLinha
+        ' Verifica se alguma célula nas colunas 1 a 5 está vazia
+        If WorksheetFunction.CountBlank(planilha.Range(planilha.Cells(i, 7), planilha.Cells(i, 8))) > 0 Then
+            planilha.Cells(i, 6).Value = "Falta informacoes - Amazon UK"
+        End If
+    Next i
+
+End Sub
+
+Sub StatusRPAfinalUSA()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha2")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = 2 To ultimaLinha
+        ' Verifica se alguma célula nas colunas 1 a 5 está vazia
+        If WorksheetFunction.CountBlank(planilha.Range(planilha.Cells(i, 12), planilha.Cells(i, 13))) > 0 Then
+            planilha.Cells(i, 6).Value = "Falta informacoes - Amazon USA"
+        End If
+    Next i
+
+End Sub
+
+
+Sub multiplicaDestaca()
+	MultiplicaUK
+	MultiplicaUSA
+	DestacarMelhorPreço
+	ExcluirLinha1
+	Cabecalho
+	AjustarLarguraColunasPlanilha2
+	StatusRPAfinalUK
+	StatusRPAfinalUSA
+End Sub
+

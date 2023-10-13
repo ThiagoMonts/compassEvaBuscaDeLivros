@@ -1,0 +1,72 @@
+﻿10/12/2023 08:26:11 Início - pesquisa cotação de valores
+10/12/2023 08:26:11Início - acesso ao site BCB
+10/12/2023 08:26:17 Localizando cotação dólar
+10/12/2023 08:26:22 Valor do dólar extraído com sucesso
+10/12/2023 08:26:22 Inserção valor do dolar no excel
+10/12/2023 08:26:22 Localizando cotação libra
+10/12/2023 08:26:22Valor da libra extraído com sucesso
+10/12/2023 08:26:22 Inserção valor da libra na planilha
+10/12/2023 08:29:39 Início - pesquisa cotação de valores
+10/12/2023 08:29:42Início - acesso ao site BCB
+10/12/2023 08:29:46 Localizando cotação dólar
+10/12/2023 08:29:49 Valor do dólar extraído com sucesso
+10/12/2023 08:29:49 Inserção valor do dolar no excel
+10/12/2023 08:29:50 Localizando cotação libra
+10/12/2023 08:29:50Valor da libra extraído com sucesso
+10/12/2023 08:29:50 Inserção valor da libra na planilha
+10/12/2023 08:30:50 Início - pesquisa cotação de valores
+10/12/2023 08:30:53Início - acesso ao site BCB
+10/12/2023 08:30:58 Localizando cotação dólar
+10/12/2023 08:31:00 Valor do dólar extraído com sucesso
+10/12/2023 08:31:00 Inserção valor do dolar no excel
+10/12/2023 08:31:00 Localizando cotação libra
+10/12/2023 08:31:01Valor da libra extraído com sucesso
+10/12/2023 08:31:01 Inserção valor da libra na planilha
+10/12/2023 08:45:25 Início - pesquisa cotação de valores
+10/12/2023 08:45:29Início - acesso ao site BCB
+10/12/2023 08:45:31 Localizando cotação dólar
+10/12/2023 08:45:34 Valor do dólar extraído com sucesso
+10/12/2023 08:45:34 Inserção valor do dolar no excel
+10/12/2023 08:45:35 Localizando cotação libra
+10/12/2023 08:45:35Valor da libra extraído com sucesso
+10/12/2023 08:45:35 Inserção valor da libra na planilha
+10/12/2023 08:46:42 Início - pesquisa cotação de valores
+10/12/2023 08:46:45Início - acesso ao site BCB
+10/12/2023 08:46:47 Localizando cotação dólar
+10/12/2023 08:46:50 Valor do dólar extraído com sucesso
+10/12/2023 08:46:50 Inserção valor do dolar no excel
+10/12/2023 08:46:50 Localizando cotação libra
+10/12/2023 08:46:50Valor da libra extraído com sucesso
+10/12/2023 08:46:50 Inserção valor da libra na planilha
+10/12/2023 08:50:55 Início - pesquisa cotação de valores
+10/12/2023 08:50:58Início - acesso ao site BCB
+10/12/2023 08:51:00 Localizando cotação dólar
+10/12/2023 08:51:04 Valor do dólar extraído com sucesso
+10/12/2023 08:51:04 Inserção valor do dolar no excel
+10/12/2023 08:51:04 Localizando cotação libra
+10/12/2023 08:51:04Valor da libra extraído com sucesso
+10/12/2023 08:51:04 Inserção valor da libra na planilha
+10/12/2023 08:53:08 Início - pesquisa cotação de valores
+10/12/2023 08:53:11Início - acesso ao site BCB
+10/12/2023 08:53:12 Localizando cotação dólar
+10/12/2023 08:53:17 Valor do dólar extraído com sucesso
+10/12/2023 08:53:17 Inserção valor do dolar no excel
+10/12/2023 08:53:17 Localizando cotação libra
+10/12/2023 08:53:18Valor da libra extraído com sucesso
+10/12/2023 08:53:18 Inserção valor da libra na planilha
+10/12/2023 08:57:34 Início - pesquisa cotação de valores
+10/12/2023 08:57:37Início - acesso ao site BCB
+10/12/2023 08:57:39 Localizando cotação dólar
+10/12/2023 08:57:43 Valor do dólar extraído com sucesso
+10/12/2023 08:57:43 Inserção valor do dolar no excel
+10/12/2023 08:57:43 Localizando cotação libra
+10/12/2023 08:57:44Valor da libra extraído com sucesso
+10/12/2023 08:57:44 Inserção valor da libra na planilha
+10/12/2023 14:41:22 Início - pesquisa cotação de valores
+10/12/2023 14:41:22Início - acesso ao site BCB
+10/12/2023 14:41:27 Localizando cotação dólar
+10/12/2023 14:41:31 Valor do dólar extraído com sucesso
+10/12/2023 14:41:31 Inserção valor do dolar no excel
+10/12/2023 14:41:31 Localizando cotação libra
+10/12/2023 14:41:32Valor da libra extraído com sucesso
+10/12/2023 14:41:32 Inserção valor da libra na planilha

@@ -1,0 +1,43 @@
+10/12/2023 10:00:20 Início da Execução
+10/12/2023 10:00:20 Criando planilha
+10/12/2023 10:00:20 Armazenando caminho da planilha
+10/12/2023 10:00:20 Caminho da planilha armazenado com sucesso!
+10/12/2023 10:00:25 Planilha livros-12_10_2023-10_00_20.xlsx criada com sucesso
+10/12/2023 10:00:25 Fim - Preparação do projeto
+10/12/2023 10:00:25 Início - Leitura de E-mails
+10/12/2023 10:00:25 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-10_00_20.xlsx
+10/12/2023 10:00:25 Abrindo a caixa de E-mails
+10/12/2023 10:00:26 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 10:00:26 Fim dos E-mails
+10/12/2023 10:00:26 Fechando a caixa de E-mails
+10/12/2023 10:00:26 Fechando o arquivo Excel
+10/12/2023 10:00:26 Fim - Leitura de E-mails
+10/12/2023 10:00:26 Início do tratamento de dados
+10/12/2023 10:00:26 Abrindo arquivo Excel
+10/12/2023 10:00:26 Inserindo Código VBA
+10/12/2023 10:00:27 Código VBA inserido com sucesso
+10/12/2023 10:00:27 Fechando arquivo Excel
+10/12/2023 10:00:28 Fim do tratamento de dados
+10/12/2023 10:00:28 Início - Envio de e-mails dados incompletos
+10/12/2023 10:00:28 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-10_00_20.xlsx
+10/12/2023 10:00:28 Buscando E-mails com informações faltantes
+10/12/2023 10:00:28 Erro ao fazer o looping UiPath.Excel.ExcelException: Failed setting the current sheet to: Planilha1 in workbook: C:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-10_00_20.xlsx. Original error message:  Falha na chamada de procedimento remoto. (0x800706BE)
+ ---> System.Runtime.InteropServices.COMException (0x800706BE): Falha na chamada de procedimento remoto. (0x800706BE)
+   at Microsoft.Office.Interop.Excel._Workbook.get_Sheets()
+   at UiPath.Excel.WorkbookApplication.SetSheet(String sheetName, Boolean createNew)
+   --- End of inner exception stack trace ---
+   at UiPath.Excel.WorkbookApplication.SetSheet(String sheetName, Boolean createNew)
+   at UiPath.Excel.Activities.QuickHandle.WorksheetIndexer.get_Item(String name)
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.EnviarEmailDadosIncompletos_Expressions_TypedDataContext5_ForReadOnly.__Expr12Get()
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.EnviarEmailDadosIncompletos_Expressions_TypedDataContext5_ForReadOnly.ValueType___Expr12Get()
+   at Namespace_8754.EnviarEmailDadosIncompletos_Expressions.InvokeExpression(Int32 expressionId, IList`1 locations, ActivityContext activityContext)
+   at System.Activities.Expressions.CompiledExpressionInvoker.InvokeExpression(ActivityContext activityContext)
+   at Microsoft.VisualBasic.Activities.VisualBasicValue`1.Execute(CodeActivityContext context)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteInResolutionContext[T](ActivityInstance parentInstance, Activity`1 expressionActivity)
+   at System.Activities.InArgument`1.TryPopulateValue(LocationEnvironment targetEnvironment, ActivityInstance activityInstance, ActivityExecutor executor)
+   at System.Activities.ActivityInstance.InternalTryPopulateArgumentValueOrScheduleExpression(RuntimeArgument argument, Int32 nextArgumentIndex, ActivityExecutor executor, IDictionary`2 argumentValueOverrides, Location resultLocation, Boolean isDynamicUpdate)
+   at System.Activities.ActivityInstance.ResolveArguments(ActivityExecutor executor, IDictionary`2 argumentValueOverrides, Location resultLocation, Int32 startIndex)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)
+10/12/2023 10:00:28Abrindo excel
+10/12/2023 10:00:28Selecionando a pasta de dados de referência
+10/12/2023 10:00:31Lendo os dados gravados na planilha

@@ -1,0 +1,48 @@
+10/11/2023 19:42:18 Início da Execução
+10/11/2023 19:42:18 Criando planilha
+10/11/2023 19:42:18 Armazenando caminho da planilha
+10/11/2023 19:42:18 Caminho da planilha armazenado com sucesso!
+10/11/2023 19:42:26 Planilha livros-11_10_2023-19_42_18.xlsx criada com sucesso
+10/11/2023 19:42:26 Fim - Preparação do projeto
+10/11/2023 19:42:27 Início - Leitura de E-mails
+10/11/2023 19:42:27 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-11_10_2023-19_42_18.xlsx
+10/11/2023 19:42:29 Abrindo a caixa de E-mails
+10/11/2023 19:42:30 Percorrendo os e-mails em busca dos dados dos livros
+10/11/2023 19:42:31 Extraindo ID do E-mail Livro - ID 26985
+10/11/2023 19:42:31 Copiando o ID para a Data Table
+10/11/2023 19:42:31 Copiando os demais dados do E-mail Livro - ID 26985
+10/11/2023 19:42:31 Copiando os demais dados para a Data Table
+10/11/2023 19:42:31 Demais dados extraídos com sucesso!
+10/11/2023 19:42:31 Adicionando o ID Livro - ID 26985 a planilha
+10/11/2023 19:42:31 ID adicionado a planilha com sucesso!
+10/11/2023 19:42:31 Adicionando os demais dados Livro - ID 26985 a planilha
+10/11/2023 19:42:32 Demais dados adicionados a planilha com sucesso!
+10/11/2023 19:42:32 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/11/2023 19:42:32 Fim dos E-mails
+10/11/2023 19:42:32 Fechando a caixa de E-mails
+10/11/2023 19:42:33 Fechando o arquivo Excel
+10/11/2023 19:42:33 Fim - Leitura de E-mails
+10/11/2023 19:42:34 Início do tratamento de dados
+10/11/2023 19:42:34 Abrindo arquivo Excel
+10/11/2023 19:42:35 Inserindo Código VBA
+10/11/2023 19:42:38 Código VBA inserido com sucesso
+10/11/2023 19:42:39 Fechando arquivo Excel
+10/11/2023 19:42:39 Fim do tratamento de dados
+10/11/2023 19:42:43Abrindo excel
+10/11/2023 19:42:43Selecionando a pasta de dados de referência
+10/11/2023 19:42:43Lendo os dados gravados na planilha
+10/11/2023 19:42:54 Acesso ao site Amazon UK
+10/11/2023 19:42:54Rodando o looping de inputs da DataTable
+10/11/2023 19:42:55Pesquisando livros The Paper Palace 
+10/11/2023 19:43:03Livro encontrado The Paper Palace 
+10/11/2023 19:43:03Extraindo preço/Frete para o Brasil
+10/11/2023 19:43:14Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/11/2023 19:43:37Extraido Preço/Frete de livro usado com sucesso:  The Paper Palace 
+10/11/2023 19:43:56Acessando ao site Amazon USA
+10/11/2023 19:43:56Acessando ao site Amazon USA
+10/11/2023 19:43:56Pesquisando livro The Paper Palace 
+10/11/2023 19:44:02Livro Encontrado The Paper Palace 
+10/11/2023 19:44:10Livro selecionado:  The Paper Palace 
+10/11/2023 19:44:10Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/11/2023 19:44:43Erro ao extrair frete do livro:  The Paper Palace 
+10/11/2023 19:44:43Erro ao filtrar pelo valor do livro:  The Paper Palace 

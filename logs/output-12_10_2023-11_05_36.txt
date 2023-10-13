@@ -1,0 +1,46 @@
+10/12/2023 11:05:36 Início da Execução
+10/12/2023 11:05:36 Criando planilha
+10/12/2023 11:05:36 Armazenando caminho da planilha
+10/12/2023 11:05:36 Caminho da planilha armazenado com sucesso!
+10/12/2023 11:05:40 Planilha livros-12_10_2023-11_05_36.xlsx criada com sucesso
+10/12/2023 11:05:40 Fim - Preparação do projeto
+10/12/2023 11:05:40 Início - Leitura de E-mails
+10/12/2023 11:05:40 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-11_05_36.xlsx
+10/12/2023 11:05:40 Abrindo a caixa de E-mails
+10/12/2023 11:05:41 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 11:05:41 Extraindo ID do E-mail Livro - ID 26985
+10/12/2023 11:05:41 Copiando o ID para a Data Table
+10/12/2023 11:05:41 Copiando os demais dados do E-mail Livro - ID 26985
+10/12/2023 11:05:41 Copiando os demais dados para a Data Table
+10/12/2023 11:05:41 Demais dados extraídos com sucesso!
+10/12/2023 11:05:41 Adicionando o ID Livro - ID 26985 a planilha
+10/12/2023 11:05:41 ID adicionado a planilha com sucesso!
+10/12/2023 11:05:41 Adicionando os demais dados Livro - ID 26985 a planilha
+10/12/2023 11:05:41 Demais dados adicionados a planilha com sucesso!
+10/12/2023 11:05:41 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/12/2023 11:05:41 Fim dos E-mails
+10/12/2023 11:05:41 Fechando a caixa de E-mails
+10/12/2023 11:05:41 Fechando o arquivo Excel
+10/12/2023 11:05:42 Fim - Leitura de E-mails
+10/12/2023 11:05:42 Início do tratamento de dados
+10/12/2023 11:05:42 Abrindo arquivo Excel
+10/12/2023 11:05:42 Inserindo Código VBA
+10/12/2023 11:05:43 Código VBA inserido com sucesso
+10/12/2023 11:05:43 Fechando arquivo Excel
+10/12/2023 11:05:43 Fim do tratamento de dados
+10/12/2023 11:05:43 Início - Envio de e-mails dados incompletos
+10/12/2023 11:05:43 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-11_05_36.xlsx
+10/12/2023 11:05:46 Buscando E-mails com informações faltantes
+10/12/2023 11:05:46 Verificando qual informação está faltando
+10/12/2023 11:05:48Abrindo excel
+10/12/2023 11:05:48Selecionando a pasta de dados de referência
+10/12/2023 11:05:51Lendo os dados gravados na planilha
+10/12/2023 11:05:57Acessando ao site Amazon USA
+10/12/2023 11:05:57Acessando ao site Amazon USA
+10/12/2023 11:05:57Pesquisando livro The Paper Palace 
+10/12/2023 11:06:00Livro Encontrado The Paper Palace 
+10/12/2023 11:06:03Livro selecionado:  The Paper Palace 
+10/12/2023 11:06:03Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/12/2023 11:06:05Preço extraído com sucesso
+10/12/2023 11:06:12O valor do frete é: US$ 21,02
+10/12/2023 11:06:12Erro ao extrair o frete do livro:  The Paper Palace 

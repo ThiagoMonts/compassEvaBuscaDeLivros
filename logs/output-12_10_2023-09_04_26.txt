@@ -1,0 +1,112 @@
+10/12/2023 09:04:26 Início da Execução
+10/12/2023 09:04:26 Criando planilha
+10/12/2023 09:04:26 Armazenando caminho da planilha
+10/12/2023 09:04:26 Caminho da planilha armazenado com sucesso!
+10/12/2023 09:04:29 Planilha livros-12_10_2023-09_04_26.xlsx criada com sucesso
+10/12/2023 09:04:29 Fim - Preparação do projeto
+10/12/2023 09:04:29 Início - Leitura de E-mails
+10/12/2023 09:04:29 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-09_04_26.xlsx
+10/12/2023 09:04:29 Abrindo a caixa de E-mails
+10/12/2023 09:04:30 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 09:04:30 Extraindo ID do E-mail Livro - ID 26985
+10/12/2023 09:04:30 Copiando o ID para a Data Table
+10/12/2023 09:04:30 Copiando os demais dados do E-mail Livro - ID 26985
+10/12/2023 09:04:30 Copiando os demais dados para a Data Table
+10/12/2023 09:04:30 Demais dados extraídos com sucesso!
+10/12/2023 09:04:30 Adicionando o ID Livro - ID 26985 a planilha
+10/12/2023 09:04:30 ID adicionado a planilha com sucesso!
+10/12/2023 09:04:30 Adicionando os demais dados Livro - ID 26985 a planilha
+10/12/2023 09:04:30 Demais dados adicionados a planilha com sucesso!
+10/12/2023 09:04:30 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/12/2023 09:04:30 Extraindo ID do E-mail Livro - ID 15902
+10/12/2023 09:04:30 Copiando o ID para a Data Table
+10/12/2023 09:04:30 Copiando os demais dados do E-mail Livro - ID 15902
+10/12/2023 09:04:30 Copiando os demais dados para a Data Table
+10/12/2023 09:04:30 Demais dados extraídos com sucesso!
+10/12/2023 09:04:30 Adicionando o ID Livro - ID 15902 a planilha
+10/12/2023 09:04:30 ID adicionado a planilha com sucesso!
+10/12/2023 09:04:30 Adicionando os demais dados Livro - ID 15902 a planilha
+10/12/2023 09:04:31 Demais dados adicionados a planilha com sucesso!
+10/12/2023 09:04:31 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/12/2023 09:04:31 Fim dos E-mails
+10/12/2023 09:04:31 Fechando a caixa de E-mails
+10/12/2023 09:04:31 Fechando o arquivo Excel
+10/12/2023 09:04:31 Fim - Leitura de E-mails
+10/12/2023 09:04:31 Início do tratamento de dados
+10/12/2023 09:04:31 Abrindo arquivo Excel
+10/12/2023 09:04:31 Inserindo Código VBA
+10/12/2023 09:04:32 Código VBA inserido com sucesso
+10/12/2023 09:04:32 Fechando arquivo Excel
+10/12/2023 09:04:32 Fim do tratamento de dados
+10/12/2023 09:04:32 Início - Envio de e-mails dados incompletos
+10/12/2023 09:04:32 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-09_04_26.xlsx
+10/12/2023 09:04:33 Buscando E-mails com informações faltantes
+10/12/2023 09:04:33 Verificando qual informação está faltando
+10/12/2023 09:04:33 Verificando qual informação está faltando
+10/12/2023 09:04:33Abrindo excel
+10/12/2023 09:04:33Selecionando a pasta de dados de referência
+10/12/2023 09:04:33Lendo os dados gravados na planilha
+10/12/2023 09:04:35 Acesso ao site Amazon UK
+10/12/2023 09:04:35Rodando o looping de inputs da DataTable
+10/12/2023 09:04:35Pesquisando livros The Paper Palace 
+10/12/2023 09:04:40Livro encontrado The Paper Palace 
+10/12/2023 09:04:40Extraindo preço/Frete para o Brasil
+10/12/2023 09:04:44Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/12/2023 09:04:51Extraido Preço/Frete de livro usado com sucesso:  The Paper Palace 
+10/12/2023 09:04:52Rodando o looping de inputs da DataTable
+10/12/2023 09:04:52Pesquisando livros The Madness of Crowds
+10/12/2023 09:04:54Livro encontrado The Madness of Crowds
+10/12/2023 09:04:54Extraindo preço/Frete para o Brasil
+10/12/2023 09:04:56Preço/Frete extraídos com sucesso The Madness of Crowds
+10/12/2023 09:04:58Acessando ao site Amazon USA
+10/12/2023 09:04:58Acessando ao site Amazon USA
+10/12/2023 09:04:58Pesquisando livro The Paper Palace 
+10/12/2023 09:05:02Livro Encontrado The Paper Palace 
+10/12/2023 09:05:04Livro selecionado:  The Paper Palace 
+10/12/2023 09:05:04Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/12/2023 09:05:06Preço extraído com sucesso
+10/12/2023 09:05:42Erro ao extrair o frete do livro:  The Paper Palace 
+10/12/2023 09:05:42Acessando ao site Amazon USA
+10/12/2023 09:05:42Pesquisando livro The Madness of Crowds
+10/12/2023 09:05:45Livro Encontrado The Madness of Crowds
+10/12/2023 09:05:49Livro selecionado:  The Madness of Crowds
+10/12/2023 09:05:49Extraindo preço do Livro/Frete para o Brasil The Madness of Crowds
+10/12/2023 09:05:50Preço extraído com sucesso
+10/12/2023 09:05:56Elemento Details não encontrado para o livro:  The Madness of Crowds
+10/12/2023 09:05:58 Início - pesquisa cotação de valores
+10/12/2023 09:05:59 Acesso ao site BCB
+10/12/2023 09:06:00 Localizando cotação dólar
+10/12/2023 09:06:04 Valor do dólar extraído com sucesso
+10/12/2023 09:06:04 Inserindo valor do dólar planilha
+10/12/2023 09:06:05 Fim - Pesquisa cotação de valores
+10/12/2023 09:06:05 Início - Processo de notificação
+10/12/2023 09:06:05 Início mover planilha
+10/12/2023 09:06:05 Planilha movida com sucesso!
+10/12/2023 09:06:05 Fim - Mover Planilha
+10/12/2023 09:06:05 Início do envio de E-mails para o time RPA
+10/12/2023 09:06:05 Abrindo arquivo Excel com os dados
+10/12/2023 09:06:05 Lendo os e-mails na planilha
+10/12/2023 09:06:05 Abrindo Desktop Outlook App
+10/12/2023 09:06:05 Enviando E-mail
+10/12/2023 09:06:06 E-mail enviado com sucesso!
+10/12/2023 09:06:06 Fechando Desktop Outlook App
+10/12/2023 09:06:06 Abrindo Desktop Outlook App
+10/12/2023 09:06:06 Enviando E-mail
+10/12/2023 09:06:06 E-mail enviado com sucesso!
+10/12/2023 09:06:06 Fechando Desktop Outlook App
+10/12/2023 09:06:06 Abrindo Desktop Outlook App
+10/12/2023 09:06:06 Enviando E-mail
+10/12/2023 09:06:06 E-mail enviado com sucesso!
+10/12/2023 09:06:06 Fechando Desktop Outlook App
+10/12/2023 09:06:06 Abrindo Desktop Outlook App
+10/12/2023 09:06:06 Enviando E-mail
+10/12/2023 09:06:06 E-mail enviado com sucesso!
+10/12/2023 09:06:06 Fechando Desktop Outlook App
+10/12/2023 09:06:06 Abrindo Desktop Outlook App
+10/12/2023 09:06:06 Enviando E-mail
+10/12/2023 09:06:06 E-mail enviado com sucesso!
+10/12/2023 09:06:06 Fechando Desktop Outlook App
+10/12/2023 09:06:06 Fim do envio de E-mails
+10/12/2023 09:06:06 Fechando arquivo Excel
+10/12/2023 09:06:06 Fechando o escopo do processo Excel
+10/12/2023 09:06:06 Fim - Processo de finalização

@@ -1,0 +1,74 @@
+10/12/2023 11:40:57 Início da Execução
+10/12/2023 11:40:57 Criando planilha
+10/12/2023 11:40:57 Armazenando caminho da planilha
+10/12/2023 11:40:57 Caminho da planilha armazenado com sucesso!
+10/12/2023 11:40:58 Planilha livros-12_10_2023-11_40_57.xlsx criada com sucesso
+10/12/2023 11:40:58 Fim - Preparação do projeto
+10/12/2023 11:40:59 Início - Leitura de E-mails
+10/12/2023 11:40:59 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-11_40_57.xlsx
+10/12/2023 11:40:59 Abrindo a caixa de E-mails
+10/12/2023 11:41:03 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 11:41:03 Extraindo ID do E-mail Livro - ID 26985
+10/12/2023 11:41:03 Copiando o ID para a Data Table
+10/12/2023 11:41:03 Copiando os demais dados do E-mail Livro - ID 26985
+10/12/2023 11:41:03 Copiando os demais dados para a Data Table
+10/12/2023 11:41:03 Demais dados extraídos com sucesso!
+10/12/2023 11:41:03 Adicionando o ID Livro - ID 26985 a planilha
+10/12/2023 11:41:04 ID adicionado a planilha com sucesso!
+10/12/2023 11:41:04 Adicionando os demais dados Livro - ID 26985 a planilha
+10/12/2023 11:41:04 Demais dados adicionados a planilha com sucesso!
+10/12/2023 11:41:04 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/12/2023 11:41:04 Extraindo ID do E-mail Livro - ID 15902
+10/12/2023 11:41:04 Copiando o ID para a Data Table
+10/12/2023 11:41:04 Copiando os demais dados do E-mail Livro - ID 15902
+10/12/2023 11:41:04 Copiando os demais dados para a Data Table
+10/12/2023 11:41:04 Demais dados extraídos com sucesso!
+10/12/2023 11:41:04 Adicionando o ID Livro - ID 15902 a planilha
+10/12/2023 11:41:04 ID adicionado a planilha com sucesso!
+10/12/2023 11:41:04 Adicionando os demais dados Livro - ID 15902 a planilha
+10/12/2023 11:41:04 Demais dados adicionados a planilha com sucesso!
+10/12/2023 11:41:04 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/12/2023 11:41:04 Fim dos E-mails
+10/12/2023 11:41:04 Fechando a caixa de E-mails
+10/12/2023 11:41:04 Fechando o arquivo Excel
+10/12/2023 11:41:04 Fim - Leitura de E-mails
+10/12/2023 11:41:04 Início do tratamento de dados
+10/12/2023 11:41:04 Abrindo arquivo Excel
+10/12/2023 11:41:05 Inserindo Código VBA
+10/12/2023 11:41:06 Código VBA inserido com sucesso
+10/12/2023 11:41:06 Fechando arquivo Excel
+10/12/2023 11:41:06 Fim do tratamento de dados
+10/12/2023 11:41:06 Início - Envio de e-mails dados incompletos
+10/12/2023 11:41:06 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-11_40_57.xlsx
+10/12/2023 11:41:06 Buscando E-mails com informações faltantes
+10/12/2023 11:41:06 Verificando qual informação está faltando
+10/12/2023 11:41:06 Verificando qual informação está faltando
+10/12/2023 11:41:07Abrindo excel
+10/12/2023 11:41:07Selecionando a pasta de dados de referência
+10/12/2023 11:41:07Lendo os dados gravados na planilha
+10/12/2023 11:41:13 Acesso ao site Amazon UK
+10/12/2023 11:41:13Rodando o looping de inputs da DataTable
+10/12/2023 11:41:13Pesquisando livros The Paper Palace 
+10/12/2023 11:41:20Livro encontrado The Paper Palace 
+10/12/2023 11:41:20Extraindo preço/Frete para o Brasil
+10/12/2023 11:41:22Erro ao extrair Preço/Frete do livro:  The Paper Palace 
+10/12/2023 11:41:31Extraido Preço/Frete de livro usado com sucesso:  The Paper Palace 
+10/12/2023 11:41:32Rodando o looping de inputs da DataTable
+10/12/2023 11:41:32Pesquisando livros The Madness of Crowds
+10/12/2023 11:41:34Livro encontrado The Madness of Crowds
+10/12/2023 11:41:34Extraindo preço/Frete para o Brasil
+10/12/2023 11:41:38Preço/Frete extraídos com sucesso The Madness of Crowds
+10/12/2023 11:41:43Acessando ao site Amazon USA
+10/12/2023 11:41:43Acessando ao site Amazon USA
+10/12/2023 11:41:43Pesquisando livro The Paper Palace 
+10/12/2023 11:41:46Livro Encontrado The Paper Palace 
+10/12/2023 11:41:49Livro selecionado:  The Paper Palace 
+10/12/2023 11:41:49Extraindo preço do Livro/Frete para o Brasil The Paper Palace 
+10/12/2023 11:41:52Preço extraído com sucesso
+10/12/2023 11:42:00O valor do frete é: US$ 21,02
+10/12/2023 11:42:00Erro ao extrair o frete do livro:  The Paper Palace 
+10/12/2023 11:42:00Acessando ao site Amazon USA
+10/12/2023 11:42:00Pesquisando livro The Madness of Crowds
+10/12/2023 11:42:03Livro Encontrado The Madness of Crowds
+10/12/2023 11:42:04Livro selecionado:  The Madness of Crowds
+10/12/2023 11:42:04Extraindo preço do Livro/Frete para o Brasil The Madness of Crowds

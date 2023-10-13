@@ -22,7 +22,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "LeituradeEmails.xaml",
+      "Path": "tasks/LeituradeEmails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strFileName&Sequence_23",
@@ -38,7 +38,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "NotificarFinalizacaoProcesso.xaml",
+      "Path": "tasks/NotificarFinalizacaoProcesso.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strPathProcessados&Sequence_10",
@@ -53,7 +53,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Preparaçãodoprojeto.xaml",
+      "Path": "tasks/Preparaçãodoprojeto.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strDateTime&Sequence_17",
@@ -70,7 +70,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "TratamentodedadosdoEmail.xaml",
+      "Path": "tasks/TratamentodedadosdoEmail.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
@@ -82,15 +82,16 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "EnviarEmailDadosIncompletos.xaml",
+      "Path": "tasks/EnviarEmailDadosIncompletos.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strColuna&Sequence_19",
         "strIdEmail&Sequence_19",
+        "strDadoFaltante&Sequence_13",
         "CellIndexValue&Sequence_15",
         "dtSheet1&Sequence_15"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_strLogPath",
         "in_strSpreadsheetPath"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -163,7 +164,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Pesquisa cotação corrigido sem VBA.xaml",
+      "Path": "tasks/Pesquisa cotação corrigido sem VBA.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "valorCelula&Sequence_16",
@@ -181,10 +182,130 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "verificarMelhorPreco.xaml",
+      "Path": "tasks/verificarMelhorPreco.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath",
+        "in_strLogPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/PesquisarlivrosnaAmazon (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFreteUK&Sequence_214",
+        "uiElementFreteUK&Sequence_214",
+        "uiElementRelativeResultLivro&Sequence_9",
+        "uiElemResultsBuscaLivro&Sequence_9",
+        "boolSemFreteUK&Sequence_125",
+        "strDadoCapa&Flowchart_1",
+        "strDadoAutor&Flowchart_1",
+        "dataTableTabelaExcel&Flowchart_1",
+        "strUrlAmazonUk&Flowchart_1",
+        "strValorElementoBusca&Flowchart_1",
+        "uiElemElementoBusca&Flowchart_1",
+        "strUrlAmazonUsa&Flowchart_1",
+        "strDadoNome&Flowchart_1",
+        "dataTableDadosUK&Sequence_7",
+        "variable1&Sequence_8",
+        "strDadoId&Sequence_10",
+        "strDadoAutor&Sequence_10",
+        "strDadoPaginas&Sequence_10",
+        "strDadoCapa&Sequence_10",
+        "dataTablePrecoLibra&Sequence_10",
+        "strPrecoLibra2&Sequence_10",
+        "dataTablePrecoLibraDt&Sequence_10",
+        "variable1&Sequence_10",
+        "resultsElement&Sequence_10",
+        "ExtractDataTable&Sequence_10",
+        "uiElemPrecoLibra&Sequence_10",
+        "strPrecoLibra&Sequence_10",
+        "extractedDataTable&Sequence_10",
+        "boolSemPrecoUK&Sequence_10",
+        "uiElemAllBuyingOptions&Sequence_169",
+        "dataTableBuyingOptions&Sequence_169",
+        "strValorFreteUk&Sequence_36",
+        "filteredDatatable&Sequence_36",
+        "datatableDadosExtraidos&Sequence_36",
+        "strSheetNameUK&Sequence_36",
+        "strDadoId&Sequence_116",
+        "strDadoPaginas&Sequence_116",
+        "dataTablePrecoLibra&Sequence_116",
+        "strPrecoLibra2&Sequence_116",
+        "dataTablePrecoLibraDt&Sequence_116",
+        "variable1&Sequence_116",
+        "resultsElement&Sequence_116",
+        "ExtractDataTable&Sequence_116",
+        "uiElemPrecoLibra&Sequence_116",
+        "strPrecoLibra&Sequence_116",
+        "uiElemDetailPreco&Sequence_116",
+        "dataTableExtractedUsaAlter&Sequence_116",
+        "dataTableExtractedUsa&Sequence_116",
+        "dataTableExtractedFilteredUsa&Sequence_116",
+        "strPrecoFreteUsa&Sequence_116",
+        "boolSemPrecoUSA&Sequence_116",
+        "uiElemResultsBuscaLivro&Sequence_171",
+        "uiElementRelativeResultLivro&Sequence_171",
+        "uiElemAllBuyingOptions&Sequence_171",
+        "dataTableBuyingOptions&Sequence_171",
+        "uiElemDetailPrecoFrete&Sequence_115",
+        "dataTableDescricaoPrecos&Sequence_115",
+        "dataTableFilteredPrecoFrete&Sequence_115",
+        "strSheetNameUSA&TryCatch_6",
+        "strValorFreteUk&Sequence_113",
+        "extractedDataTable&Sequence_113",
+        "filteredDatatable&Sequence_113",
+        "datatableDadosExtraidos&Sequence_113"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strLogPath",
+        "in_strSpreadsheetPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/TratamentoDeDadosPesquisa.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/PesquisaCotação.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strValorDolar&Sequence_16",
+        "strValorLibra&Sequence_16",
+        "logTeste&Sequence_1",
+        "strBcbSitePath&TryCatch_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strLogPath",
+        "in_strSpreadsheetPath",
+        "in_strFalhaPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tasks/EnviarEmailPrecoIncompleto.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strIdEmail&Sequence_38",
+        "strDadoFaltante&Sequence_13",
+        "dtSheet1&Sequence_15",
+        "CellIndexValue&Sequence_15",
+        "strIdEmail&Sequence_19"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSpreadsheetPath",
         "in_strLogPath"
       ],
       "ConstantsSectionElementsOrder": [],

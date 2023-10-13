@@ -6,48 +6,48 @@ Sub DestacarMelhorPreco()
     'Dim ws As Worksheet: declara a varíável ws,  que vai ser usada para fazer
     'referência à planilha do Excel onde estão localizados os dados.
     'Dim lastRow As Long: esta variável vai ser usada para armazenar o número da última
-    'linha com dados na coluna F (coluna referente ao valor em dólar).
+    'linha com dados na coluna O (coluna referente ao valor em dólar).
     'Dim i As Long: a variável i vai ser usada como um contador de loop, que vai percorrer
     'as linhas da planilha.
     
     On Error Resume Next
     'Ativa o tratamento de erro.
-    Set ws = ThisWorkbook.Sheets("Dados")
+    Set ws = ThisWorkbook.Sheets("Planilha2")
     'Esta linha define a variável ws para indicar para a planilha de nome Dados.
     On Error GoTo 0
     'Limpa o tratamento de erro.
     
     If ws Is Nothing Then
-        MsgBox "Planilha 'Dados' não encontrada!", vbExclamation
+        MsgBox "Planilha 'Planilha2' não encontrada!", vbExclamation
         Exit Sub
     End If
     'Aqui verificamos se a planilha foi encontrada. Se não, o código exibe uma
     'caixa de mensagem indicando o erro.
  
-    lastRow = ws.Cells(ws.Rows.Count, "F").End(xlUp).Row
-    'Encontra a última linha com dados na coluna F (coluna referente ao valor em dólar),
+    lastRow = ws.Cells(ws.Rows.Count, "O").End(xlUp).Row
+    'Encontra a última linha com dados na coluna O (coluna referente ao valor em dólar),
     'usando, para isso, a função End(xlUp), que vai percorrer a coluna de baixo para cima.
 
     For i = 2 To lastRow
     'Loop que percorre as linhas com dados, começando a partir da segunda linha (pois assume
     'que a primeira é o header).
     
-        If Not IsEmpty(ws.Cells(i, 6).Value) And Not IsEmpty(ws.Cells(i, 7).Value) Then
-        'Aqui, verificamos se as células em F e G não estão vazias.
+        If Not IsEmpty(ws.Cells(i, 15).Value) And Not IsEmpty(ws.Cells(i, 10).Value) Then
+        'Aqui, verificamos se as células em O e J não estão vazias.
     
             On Error Resume Next
             'Trata erros relacionados à conversão de dados.
             
             Dim valorDolar As Double
             Dim valorLibra As Double
-            valorDolar = ws.Cells(i, 6).Value
-            valorLibra = ws.Cells(i, 7).Value
+            valorDolar = ws.Cells(i, 15).Value
+            valorLibra = ws.Cells(i, 10).Value
             'valorDolar e valorLibra declaram duas variáveis que armazenarão os valores em dólar e
             'libra, respectivamente.
-            'valorDolar = ws.Cells(i, 6).Value: essa linha atribui, à variável valorDolar, o valor
-            'da célula na coluna F (coluna 6), da linha atual do loop (linha i), na planilha.
-            'valorLibra = ws.Cells(i, 7).Value: do mesmo modo que com valorDolar, esta linha atribui,
-            'à variável valorLibra, o valor da célula na coluna G (coluna 7), da linha atual do loop,
+            'valorDolar = ws.Cells(i, 15).Value: essa linha atribui, à variável valorDolar, o valor
+            'da célula na coluna O (coluna 15), da linha atual do loop (linha i), na planilha.
+            'valorLibra = ws.Cells(i, 10).Value: do mesmo modo que com valorDolar, esta linha atribui,
+            'à variável valorLibra, o valor da célula na coluna J (coluna 10), da linha atual do loop,
             '(linha i), na planilha.
             
             On Error GoTo 0
@@ -55,8 +55,8 @@ Sub DestacarMelhorPreco()
             
              If Err.Number <> 0 Then
              'Verifica se há erro de conversão nas células.
-                ws.Cells(i, 6).Interior.Color = RGB(255, 0, 0)
-                ws.Cells(i, 7).Interior.Color = RGB(255, 0, 0)
+                ws.Cells(i, 15).Interior.Color = RGB(255, 0, 0)
+                ws.Cells(i, 10).Interior.Color = RGB(255, 0, 0)
                 'Se houve erro de conversão em alguma delas, ou em ambas da mesma linha, as duas serão
                 'destacadas de vermelho.
                 Err.Clear
@@ -64,8 +64,8 @@ Sub DestacarMelhorPreco()
             Else
                 Dim taxaCambioDolar As Double
                 Dim taxaCambioLibra As Double
-                taxaCambioDolar = 5
-                taxaCambioLibra = 6
+                taxaCambioDolar = Range("O2").Value
+                taxaCambioLibra = Range("J2").Value
                 'taxaCambioDolar e taxaCambioLibra são as variáveis que representam as taxas de câmbio
                 'para dólar e libra.
                 Dim valorRealDolar As Double
@@ -76,25 +76,25 @@ Sub DestacarMelhorPreco()
                 'em dólar e libra pelas taxas de câmbio correspondentes.
                 
                 If valorRealDolar <= valorRealLibra Then
-                'Determina o valor mais vantajoso, em reais, na coluna H.
-                    ws.Cells(i, 8).Value = Format(valorRealDolar, "Currency")
-                    'define o valor mais vantajoso na célula da coluna H (coluna 8), da linha atual do loop
+                'Determina o valor mais vantajoso, em reais, na coluna P.
+                    ws.Cells(i, 11).Value = Format(valorRealDolar, "Currency")
+                    'define o valor mais vantajoso na célula da coluna P (coluna 11), da linha atual do loop
                     '(linha i) na planilha, bem como formata este valor(que aqui é o dólar, convertido em reais),
                     'no formato da moeda.
-                    ws.Cells(i, 6).Interior.Color = RGB(0, 255, 0)
-                    'Destaca de verde a célula em F (Dólar).
+                    ws.Cells(i, 15).Interior.Color = RGB(0, 255, 0)
+                    'Destaca de verde a célula em N (Dólar).
                 Else
-                    ws.Cells(i, 8).Value = Format(valorRealLibra, "Currency")
+                    ws.Cells(i, 10).Value = Format(valorRealLibra, "Currency")
                     'define o valor mais vantajoso na célula da coluna H (coluna 8), da linha atual do loop
                     '(linha i) na planilha, bem como formata este valor(que aqui é a libra, convertida em reais),
                     'no formato da moeda.
-                    ws.Cells(i, 7).Interior.Color = RGB(0, 255, 0)
+                    ws.Cells(i, 15).Interior.Color = RGB(0, 255, 0)
                     'Destaca de verde a célula em G (Libra).
                 End If
             End If
         Else
-            ws.Cells(i, 6).Interior.Color = RGB(255, 0, 0)
-            ws.Cells(i, 7).Interior.Color = RGB(255, 0, 0)
+            ws.Cells(i, 10).Interior.Color = RGB(255, 0, 0)
+            ws.Cells(i, 15).Interior.Color = RGB(255, 0, 0)
             'Aqui, verificamos se uma das células em F ou G está vazia. Se sim, marca as duas células (ou seja, as da mesma linha) em vermelho.
         End If
     Next i

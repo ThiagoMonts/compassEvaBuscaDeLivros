@@ -1,0 +1,89 @@
+10/12/2023 10:12:46 Início da Execução
+10/12/2023 10:12:46 Criando planilha
+10/12/2023 10:12:46 Armazenando caminho da planilha
+10/12/2023 10:12:46 Caminho da planilha armazenado com sucesso!
+10/12/2023 10:12:50 Planilha livros-12_10_2023-10_12_46.xlsx criada com sucesso
+10/12/2023 10:12:50 Fim - Preparação do projeto
+10/12/2023 10:12:50 Início - Leitura de E-mails
+10/12/2023 10:12:50 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-10_12_46.xlsx
+10/12/2023 10:12:50 Abrindo a caixa de E-mails
+10/12/2023 10:12:50 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 10:12:50 Extraindo ID do E-mail Livro - ID 99685
+10/12/2023 10:12:50 Copiando o ID para a Data Table
+10/12/2023 10:12:50 Copiando os demais dados do E-mail Livro - ID 99685
+10/12/2023 10:12:50 Copiando os demais dados para a Data Table
+10/12/2023 10:12:50 Demais dados extraídos com sucesso!
+10/12/2023 10:12:50 Adicionando o ID Livro - ID 99685 a planilha
+10/12/2023 10:12:51 ID adicionado a planilha com sucesso!
+10/12/2023 10:12:51 Adicionando os demais dados Livro - ID 99685 a planilha
+10/12/2023 10:12:51 Demais dados adicionados a planilha com sucesso!
+10/12/2023 10:12:51 E-mail Livro - ID 99685 marcado como lido com sucesso!
+10/12/2023 10:12:51 Fim dos E-mails
+10/12/2023 10:12:51 Fechando a caixa de E-mails
+10/12/2023 10:12:51 Fechando o arquivo Excel
+10/12/2023 10:12:51 Fim - Leitura de E-mails
+10/12/2023 10:12:51 Início do tratamento de dados
+10/12/2023 10:12:51 Abrindo arquivo Excel
+10/12/2023 10:12:51 Inserindo Código VBA
+10/12/2023 10:12:52 Código VBA inserido com sucesso
+10/12/2023 10:12:52 Fechando arquivo Excel
+10/12/2023 10:12:52 Fim do tratamento de dados
+10/12/2023 10:12:52 Início - Envio de e-mails dados incompletos
+10/12/2023 10:12:52 Abrido arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-10_12_46.xlsx
+10/12/2023 10:12:53 Buscando E-mails com informações faltantes
+10/12/2023 10:12:53 Verificando qual informação está faltando
+10/12/2023 10:12:53Abrindo excel
+10/12/2023 10:12:53Selecionando a pasta de dados de referência
+10/12/2023 10:12:53Lendo os dados gravados na planilha
+10/12/2023 10:12:58 Acesso ao site Amazon UK
+10/12/2023 10:12:58Rodando o looping de inputs da DataTable
+10/12/2023 10:12:58Pesquisando livros The Vanishing Half  
+10/12/2023 10:13:02Livro encontrado The Vanishing Half  
+10/12/2023 10:13:02Extraindo preço/Frete para o Brasil
+10/12/2023 10:13:06Erro ao extrair Preço/Frete do livro:  The Vanishing Half  
+10/12/2023 10:13:16Extraido Preço/Frete de livro usado com sucesso:  The Vanishing Half  
+10/12/2023 10:13:20Acessando ao site Amazon USA
+10/12/2023 10:13:20Acessando ao site Amazon USA
+10/12/2023 10:13:21Pesquisando livro The Vanishing Half  
+10/12/2023 10:13:24Livro Encontrado The Vanishing Half  
+10/12/2023 10:13:26Livro selecionado:  The Vanishing Half  
+10/12/2023 10:13:26Extraindo preço do Livro/Frete para o Brasil The Vanishing Half  
+10/12/2023 10:13:28Preço extraído com sucesso
+10/12/2023 10:13:37O valor do frete é: US$ 20,26
+10/12/2023 10:13:37Erro ao extrair o frete do livro:  The Vanishing Half  
+10/12/2023 10:13:39 Início - pesquisa cotação de valores
+10/12/2023 10:13:39Início - acesso ao site BCB
+10/12/2023 10:13:42 Localizando cotação dólar
+10/12/2023 10:13:46 Valor do dólar extraído com sucesso
+10/12/2023 10:13:46 Inserção valor do dolar no excel
+10/12/2023 10:13:46 Início - Processo de notificação
+10/12/2023 10:13:46 Início mover planilha
+10/12/2023 10:13:46 Planilha movida com sucesso!
+10/12/2023 10:13:46 Fim - Mover Planilha
+10/12/2023 10:13:46 Início do envio de E-mails para o time RPA
+10/12/2023 10:13:46 Abrindo arquivo Excel com os dados
+10/12/2023 10:13:47 Lendo os e-mails na planilha
+10/12/2023 10:13:47 Abrindo Desktop Outlook App
+10/12/2023 10:13:47 Enviando E-mail
+10/12/2023 10:13:47 E-mail enviado com sucesso!
+10/12/2023 10:13:47 Fechando Desktop Outlook App
+10/12/2023 10:13:47 Abrindo Desktop Outlook App
+10/12/2023 10:13:47 Enviando E-mail
+10/12/2023 10:13:47 E-mail enviado com sucesso!
+10/12/2023 10:13:47 Fechando Desktop Outlook App
+10/12/2023 10:13:47 Abrindo Desktop Outlook App
+10/12/2023 10:13:47 Enviando E-mail
+10/12/2023 10:13:47 E-mail enviado com sucesso!
+10/12/2023 10:13:47 Fechando Desktop Outlook App
+10/12/2023 10:13:47 Abrindo Desktop Outlook App
+10/12/2023 10:13:47 Enviando E-mail
+10/12/2023 10:13:48 E-mail enviado com sucesso!
+10/12/2023 10:13:48 Fechando Desktop Outlook App
+10/12/2023 10:13:48 Abrindo Desktop Outlook App
+10/12/2023 10:13:48 Enviando E-mail
+10/12/2023 10:13:48 E-mail enviado com sucesso!
+10/12/2023 10:13:48 Fechando Desktop Outlook App
+10/12/2023 10:13:48 Fim do envio de E-mails
+10/12/2023 10:13:48 Fechando arquivo Excel
+10/12/2023 10:13:48 Fechando o escopo do processo Excel
+10/12/2023 10:13:48 Fim - Processo de finalização

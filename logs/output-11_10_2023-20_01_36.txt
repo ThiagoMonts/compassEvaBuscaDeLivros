@@ -1,0 +1,30 @@
+10/11/2023 20:01:37 Início da Execução
+10/11/2023 20:01:37 Criando planilha
+10/11/2023 20:01:37 Armazenando caminho da planilha
+10/11/2023 20:01:37 Caminho da planilha armazenado com sucesso!
+10/11/2023 20:01:40 Planilha livros-11_10_2023-20_01_36.xlsx criada com sucesso
+10/11/2023 20:01:40 Fim - Preparação do projeto
+10/11/2023 20:01:40 Início - Leitura de E-mails
+10/11/2023 20:01:40 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-11_10_2023-20_01_36.xlsx
+10/11/2023 20:01:41 Abrindo a caixa de E-mails
+10/11/2023 20:01:41 Percorrendo os e-mails em busca dos dados dos livros
+10/11/2023 20:01:41 Extraindo ID do E-mail Livro - ID 26985
+10/11/2023 20:01:41 Copiando o ID para a Data Table
+10/11/2023 20:01:41 Copiando os demais dados do E-mail Livro - ID 26985
+10/11/2023 20:01:41 Copiando os demais dados para a Data Table
+10/11/2023 20:01:41 Demais dados extraídos com sucesso!
+10/11/2023 20:01:41 Adicionando o ID Livro - ID 26985 a planilha
+10/11/2023 20:01:41 ID adicionado a planilha com sucesso!
+10/11/2023 20:01:41 Adicionando os demais dados Livro - ID 26985 a planilha
+10/11/2023 20:01:42 Demais dados adicionados a planilha com sucesso!
+10/11/2023 20:01:42 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/11/2023 20:01:42 Fim dos E-mails
+10/11/2023 20:01:42 Fechando a caixa de E-mails
+10/11/2023 20:01:42 Fechando o arquivo Excel
+10/11/2023 20:01:42 Fim - Leitura de E-mails
+10/11/2023 20:01:42 Início do tratamento de dados
+10/11/2023 20:01:42 Abrindo arquivo Excel
+10/11/2023 20:01:42 Inserindo Código VBA
+10/11/2023 20:01:43 Código VBA inserido com sucesso
+10/11/2023 20:01:43 Fechando arquivo Excel
+10/11/2023 20:01:43 Fim do tratamento de dados

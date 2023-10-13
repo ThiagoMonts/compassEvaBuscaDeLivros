@@ -1,0 +1,36 @@
+10/12/2023 12:05:26 Início da Execução
+10/12/2023 12:05:26 Criando planilha
+10/12/2023 12:05:26 Armazenando caminho da planilha
+10/12/2023 12:05:26 Caminho da planilha armazenado com sucesso!
+10/12/2023 12:05:28 Planilha livros-12_10_2023-12_05_26.xlsx criada com sucesso
+10/12/2023 12:05:28 Fim - Preparação do projeto
+10/12/2023 12:05:28 Início - Leitura de E-mails
+10/12/2023 12:05:28 Abrindo arquivo ExcelC:\RPA\compassEvaBuscaDeLivros\source\livros-12_10_2023-12_05_26.xlsx
+10/12/2023 12:05:28 Abrindo a caixa de E-mails
+10/12/2023 12:05:29 Percorrendo os e-mails em busca dos dados dos livros
+10/12/2023 12:05:29 Extraindo ID do E-mail Livro - ID 26985
+10/12/2023 12:05:29 Copiando o ID para a Data Table
+10/12/2023 12:05:29 Copiando os demais dados do E-mail Livro - ID 26985
+10/12/2023 12:05:29 Copiando os demais dados para a Data Table
+10/12/2023 12:05:29 Demais dados extraídos com sucesso!
+10/12/2023 12:05:29 Adicionando o ID Livro - ID 26985 a planilha
+10/12/2023 12:05:29 ID adicionado a planilha com sucesso!
+10/12/2023 12:05:29 Adicionando os demais dados Livro - ID 26985 a planilha
+10/12/2023 12:05:30 Demais dados adicionados a planilha com sucesso!
+10/12/2023 12:05:30 E-mail Livro - ID 26985 marcado como lido com sucesso!
+10/12/2023 12:05:30 Extraindo ID do E-mail Livro - ID 15902
+10/12/2023 12:05:30 Copiando o ID para a Data Table
+10/12/2023 12:05:30 Copiando os demais dados do E-mail Livro - ID 15902
+10/12/2023 12:05:30 Copiando os demais dados para a Data Table
+10/12/2023 12:05:30 Demais dados extraídos com sucesso!
+10/12/2023 12:05:30 Adicionando o ID Livro - ID 15902 a planilha
+10/12/2023 12:05:30 ID adicionado a planilha com sucesso!
+10/12/2023 12:05:30 Adicionando os demais dados Livro - ID 15902 a planilha
+10/12/2023 12:05:30 Demais dados adicionados a planilha com sucesso!
+10/12/2023 12:05:30 E-mail Livro - ID 15902 marcado como lido com sucesso!
+10/12/2023 12:05:30 Fim dos E-mails
+10/12/2023 12:05:30 Fechando a caixa de E-mails
+10/12/2023 12:05:30 Fechando o arquivo Excel
+10/12/2023 12:05:30 Fim - Leitura de E-mails
+10/12/2023 12:05:30 Início do tratamento de dados
+10/12/2023 12:05:30 Abrindo arquivo Excel
