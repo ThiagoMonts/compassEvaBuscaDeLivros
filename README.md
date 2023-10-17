@@ -11,14 +11,13 @@ Através de sorteios, foram definidos os grupos e as ferramentas que seriam util
 
 O objetivo do desafio era criar um robô que fizesse uma busca em uma caixa de e-mails em busca de informações sobre autor, nome do livro e tipo de capa de diversos livros, realizasse uma busca tanto na Amazon UK, quanto na Amazon USA procurando o preço deles, depois teríamos que verificar a cotação do Dólar e da Libra, fazer a conversão dos valores e em uma planilha do Excel, indicar o melhor valor, colorindo o melhor preço com a cor verde.
 
-Mais detalhes podem ser encontrados na [Instrução de Automação](#)
+Mais detalhes podem ser encontrados na [Instrução de Automação](https://github.com/ThiagoMonts/compassEvaBuscaDeLivros/blob/main/.github/Instru%C3%A7%C3%A3o%20de%20Automa%C3%A7%C3%A3o%20-%20Busca%20de%20Livros.pdf)
 
 <br>
 
 
 <p align="center">
   <a href="#-tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-vídeo">▶️ Vídeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">:memo: Licença</a>
 </p>
 
@@ -32,13 +31,6 @@ Neste desafio, utilizamos o UiPath para criação do robô, além de fazer algum
 <div align="center">
 <img src=".github/logo_uiPathAcademy.png" width="450px" alt="UiPath"> 
 </div>
-
-<br>
-
-
-## ▶️ Vídeo
-
-- [Execução do bot](#)
 
 <br>
 
