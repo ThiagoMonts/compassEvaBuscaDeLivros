@@ -1,0 +1,240 @@
+Sub TratamentoDados()
+' Tratamento de Dados - Informações a mais na extração de dados E-mail
+
+    Dim ws As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set ws = ThisWorkbook.Sheets("Planilha1")
+
+    ' Encontra a última linha na coluna 1 onde há dados
+    ultimaLinha = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
+
+    ' Exclui informações desnecessárias "<https" ou "column"
+    For i = ultimaLinha To 1 Step -1
+        If InStr(1, ws.Cells(i, 1).Value, "<https") > 0 Or InStr(1, ws.Cells(i, 1).Value, "Column") > 0 Then
+            ws.Rows(i).Delete
+        End If
+    Next i
+End Sub
+
+Sub RecebeID()
+
+    Dim planilha As Worksheet
+    Dim celula As Range
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Percorre todas as células na planilha
+    For Each celula In planilha.UsedRange
+        ' Verifica se o conteúdo da célula começa com "ID"
+        If Left(celula.Value, 2) = "ID" Then
+            celula.ClearContents ' Apaga o conteúdo da célula
+        End If
+        If Left(celula.Value, 1) = "-" Then
+            celula.ClearContents
+        End If
+        
+    Next celula
+End Sub
+
+Sub ExcluirColuna1()
+    Dim ws As Worksheet
+    
+    Set ws = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Exclui a coluna 1
+    ws.Columns(1).Delete
+End Sub
+
+Sub Cabecalho()
+    Dim ws As Worksheet
+    Dim Cabecalho As Range
+    
+    Set ws = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Adiciona uma nova linha 1
+    ws.Rows(1).Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    
+    ' Obtem a referência para o cabeçalho
+    Set Cabecalho = ws.Cells(1, 1)
+    
+    ' Escreve as informações em negrito no cabeçalho
+    Cabecalho.Value = "ID E-mail"
+    Cabecalho.Font.Bold = True
+    
+    Cabecalho.Offset(0, 1) = "Nome"
+    Cabecalho.Offset(0, 1).Font.Bold = True
+    
+    Cabecalho.Offset(0, 2).Value = "Autor"
+    Cabecalho.Offset(0, 2).Font.Bold = True
+    
+    Cabecalho.Offset(0, 3).Value = "Nº de Páginas"
+    Cabecalho.Offset(0, 3).Font.Bold = True
+    
+    Cabecalho.Offset(0, 4).Value = "Tipo de Capa"
+    Cabecalho.Offset(0, 4).Font.Bold = True
+    
+    Cabecalho.Offset(0, 5).Value = "Status RPA"
+    Cabecalho.Offset(0, 5).Font.Bold = True
+    
+    ' Organiza espaçamento e alinhando texto
+    Columns("B:B").ColumnWidth = 21.29
+    Columns("C:C").ColumnWidth = 21#
+    Columns("D:D").ColumnWidth = 13.57
+    Columns("E:E").ColumnWidth = 21#
+    Columns("F:F").ColumnWidth = 40#
+    
+End Sub
+
+Sub OrganizaDados()
+    Dim planilha As Worksheet
+    Dim linha As Integer
+    Dim colunaOrigem As Integer
+    Dim colunaDestino As Integer
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Declaração de colunas
+    colunaID_Origem = 3
+    colunaID_Destino = 1
+    
+    colunaNome_Origem = 1
+    colunaNome_Destino = 2
+    
+    colunaAutor_Origem = 1
+    colunaAutor_Destino = 3
+    
+    colunaPag_Origem = 1
+    colunaPag_Destino = 4
+    
+    colunaTipoCapa_Origem = 1
+    colunaTipoCapa_Destino = 5
+    
+    ' A cada 5 linhas
+    For linha = 2 To planilha.UsedRange.Rows.Count Step 5
+        planilha.Cells(linha, colunaID_Destino).Value = planilha.Cells(linha, colunaID_Origem).Value
+    Next linha
+    
+    For linha = 3 To planilha.UsedRange.Rows.Count Step 5
+        planilha.Cells(linha - 1, colunaNome_Destino).Value = planilha.Cells(linha, colunaNome_Origem).Value
+    Next linha
+    
+    For linha = 4 To planilha.UsedRange.Rows.Count Step 5
+        planilha.Cells(linha - 2, colunaAutor_Destino).Value = planilha.Cells(linha, colunaAutor_Origem).Value
+    Next linha
+    
+    For linha = 5 To planilha.UsedRange.Rows.Count Step 5
+        planilha.Cells(linha - 3, colunaPag_Destino).Value = planilha.Cells(linha, colunaPag_Origem).Value
+    Next linha
+    
+    For linha = 6 To planilha.UsedRange.Rows.Count Step 5
+        planilha.Cells(linha - 4, colunaTipoCapa_Destino).Value = planilha.Cells(linha, colunaTipoCapa_Origem).Value
+    Next linha
+    
+End Sub
+
+Sub LimpaConteudo()
+    Dim planilha As Worksheet
+    Dim linha As Integer
+    Dim intervaloLinhas As Integer
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Intervalo de linhas a cada iteração
+    intervaloLinhas = 5
+    
+    For linha = 3 To planilha.UsedRange.Rows.Count Step intervaloLinhas
+        planilha.Range(planilha.Cells(linha, 1), planilha.Cells(linha + 3, 1)).ClearContents
+    Next linha
+End Sub
+
+Sub OrdenaDados()
+    Dim planilha As Worksheet
+    Dim linhaOrigem As Integer
+    Dim linhaDestino As Integer
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha1")
+    
+    ' Linhas de origem e destino
+    linhaOrigem = 7
+    linhaDestino = 3
+    
+    Do While planilha.Cells(linhaOrigem, 1).Value <> ""
+        ' Copia e colar o conteúdo
+        planilha.Rows(linhaOrigem).Cut
+        planilha.Rows(linhaDestino).Insert Shift:=xlDown
+        
+        ' Atualizar contagem do loop
+        linhaOrigem = linhaOrigem + 5
+        linhaDestino = linhaDestino + 1
+    Loop
+End Sub
+
+Sub LimparCelulasComEspacoEmBranco()
+    Dim planilha1 As Worksheet
+    Dim linha As Long
+    Dim coluna As Integer
+    
+    Set planilha1 = ThisWorkbook.Sheets("Planilha1")
+    
+    For linha = 1 To planilha1.UsedRange.Rows.Count
+        For coluna = 1 To 5
+            If Len(Trim(planilha1.Cells(linha, coluna).Value)) = 0 Then
+                planilha1.Cells(linha, coluna).ClearContents
+            End If
+        Next coluna
+    Next linha
+End Sub
+
+Sub StausRPA_Verificacao1()
+    Dim planilha As Worksheet
+    Dim ultimaLinha As Long
+    Dim i As Long
+    
+    Set planilha = ThisWorkbook.Sheets("Planilha1")
+    
+    ultimaLinha = planilha.Cells(planilha.Rows.Count, 1).End(xlUp).Row
+    
+    For i = 1 To ultimaLinha
+        ' Verifica se alguma célula nas colunas 1 a 5 está vazia
+        If WorksheetFunction.CountBlank(planilha.Range(planilha.Cells(i, 1), planilha.Cells(i, 5))) > 0 Then
+            planilha.Cells(i, 6).Value = "Falta informações - E-mail incompleto"
+        End If
+    Next i
+End Sub
+
+Sub CopiarLinhasCompletasParaPlanilha2()
+    Dim planilha1 As Worksheet
+    Dim planilha2 As Worksheet
+    Dim linha As Long
+    Dim coluna As Integer
+    Dim ultimaLinhaPlanilha2 As Long
+    Dim temInformacao As Boolean
+    
+    Set planilha1 = ThisWorkbook.Sheets("Planilha1")
+    Set planilha2 = ThisWorkbook.Sheets("Planilha2")
+    
+    ' Limpa o conteúdo da Planilha2 a partir da linha 1
+    planilha2.Rows("1:" & planilha2.Rows.Count).Clear
+    
+    ultimaLinhaPlanilha2 = 1
+    
+    For linha = 1 To planilha1.UsedRange.Rows.Count
+        temInformacao = True
+        
+        For coluna = 1 To 5
+            If IsEmpty(planilha1.Cells(linha, coluna)) Then
+                temInformacao = False
+                Exit For
+            End If
+        Next coluna
+        
+        If temInformacao Then
+            planilha1.Rows(linha).Copy
+            planilha2.Rows(ultimaLinhaPlanilha2).PasteSpecial Paste:=xlPasteAll
+            Application.CutCopyMode = False
+            ultimaLinhaPlanilha2 = ultimaLinhaPlanilha2 + 1
+        End If
+    Next linha
+End Sub
